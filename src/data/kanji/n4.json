@@ -1,12 +1,1157 @@
 [
-  { "id": "k-n4-001", "character": "働", "meaning": "일하다", "onyomi": ["ドウ"], "kunyomi": ["はたら(く)"], "strokes": 13, "level": "N4", "words": [ { "word": "労働", "reading": "ろうどう", "meaning": "노동" }, { "word": "働く", "reading": "はたらく", "meaning": "일하다" } ], "example": { "jp": "日本の会社で働きたいです。", "ko": "일본 회사에서 일하고 싶습니다." } },
-  { "id": "k-n4-002", "character": "経", "meaning": "지나다, 경영", "onyomi": ["ケイ", "キョウ"], "kunyomi": ["へ(る)"], "strokes": 11, "level": "N4", "words": [ { "word": "経験", "reading": "けいけん", "meaning": "경험" }, { "word": "経済", "reading": "けいざい", "meaning": "경제" } ], "example": { "jp": "三年の実務経験があります。", "ko": "3년의 실무 경험이 있습니다." } },
-  { "id": "k-n4-003", "character": "験", "meaning": "시험, 겪다", "onyomi": ["ケン"], "kunyomi": [], "strokes": 18, "level": "N4", "words": [ { "word": "試験", "reading": "しけん", "meaning": "시험" }, { "word": "実験", "reading": "じっけん", "meaning": "실험" } ], "example": { "jp": "十二月の試験を受けます。", "ko": "12월 시험을 봅니다." } },
-  { "id": "k-n4-004", "character": "族", "meaning": "겨레, 가족", "onyomi": ["ゾク"], "kunyomi": [], "strokes": 11, "level": "N4", "words": [ { "word": "家族", "reading": "かぞく", "meaning": "가족" }, { "word": "民族", "reading": "みんぞく", "meaning": "민족" } ], "example": { "jp": "家族は韓国にいます。", "ko": "가족은 한국에 있습니다." } },
-  { "id": "k-n4-005", "character": "楽", "meaning": "즐겁다, 음악", "onyomi": ["ガク", "ラク"], "kunyomi": ["たの(しい)"], "strokes": 13, "level": "N4", "words": [ { "word": "音楽", "reading": "おんがく", "meaning": "음악" }, { "word": "楽しい", "reading": "たのしい", "meaning": "즐겁다" } ], "example": { "jp": "日本語の勉強は楽しいです。", "ko": "일본어 공부는 즐겁습니다." } },
-  { "id": "k-n4-006", "character": "医", "meaning": "의사, 의술", "onyomi": ["イ"], "kunyomi": [], "strokes": 7, "level": "N4", "words": [ { "word": "医者", "reading": "いしゃ", "meaning": "의사" }, { "word": "医療", "reading": "いりょう", "meaning": "의료" } ], "example": { "jp": "医者に行ってきます。", "ko": "병원에 다녀오겠습니다." } },
-  { "id": "k-n4-007", "character": "説", "meaning": "말하다, 설명", "onyomi": ["セツ"], "kunyomi": ["と(く)"], "strokes": 14, "level": "N4", "words": [ { "word": "説明", "reading": "せつめい", "meaning": "설명" }, { "word": "小説", "reading": "しょうせつ", "meaning": "소설" } ], "example": { "jp": "もう一度ご説明いただけますか。", "ko": "한 번 더 설명해 주실 수 있습니까?" } },
-  { "id": "k-n4-008", "character": "考", "meaning": "생각하다", "onyomi": ["コウ"], "kunyomi": ["かんが(える)"], "strokes": 6, "level": "N4", "words": [ { "word": "考える", "reading": "かんがえる", "meaning": "생각하다" }, { "word": "参考", "reading": "さんこう", "meaning": "참고" } ], "example": { "jp": "ご参考までにお送りします。", "ko": "참고로 보내 드립니다." } },
-  { "id": "k-n4-009", "character": "計", "meaning": "세다, 계획", "onyomi": ["ケイ"], "kunyomi": ["はか(る)"], "strokes": 9, "level": "N4", "words": [ { "word": "計画", "reading": "けいかく", "meaning": "계획" }, { "word": "合計", "reading": "ごうけい", "meaning": "합계" } ], "example": { "jp": "学習計画を立てました。", "ko": "학습 계획을 세웠습니다." } },
-  { "id": "k-n4-010", "character": "調", "meaning": "조사하다, 고르다", "onyomi": ["チョウ"], "kunyomi": ["しら(べる)", "ととの(える)"], "strokes": 15, "level": "N4", "words": [ { "word": "調査", "reading": "ちょうさ", "meaning": "조사" }, { "word": "調整", "reading": "ちょうせい", "meaning": "조정" } ], "example": { "jp": "日程を調整いたします。", "ko": "일정을 조정하겠습니다." } }
+  {
+    "id": "k-n4-001",
+    "character": "働",
+    "meaning": "일하다",
+    "onyomi": [
+      "ドウ"
+    ],
+    "kunyomi": [
+      "はたら(く)"
+    ],
+    "strokes": 13,
+    "level": "N4",
+    "words": [
+      {
+        "word": "労働",
+        "reading": "ろうどう",
+        "meaning": "노동"
+      },
+      {
+        "word": "働く",
+        "reading": "はたらく",
+        "meaning": "일하다"
+      }
+    ],
+    "example": {
+      "jp": "日本の会社で働きたいです。",
+      "ko": "일본 회사에서 일하고 싶습니다."
+    }
+  },
+  {
+    "id": "k-n4-002",
+    "character": "経",
+    "meaning": "지나다, 경영",
+    "onyomi": [
+      "ケイ",
+      "キョウ"
+    ],
+    "kunyomi": [
+      "へ(る)"
+    ],
+    "strokes": 11,
+    "level": "N4",
+    "words": [
+      {
+        "word": "経験",
+        "reading": "けいけん",
+        "meaning": "경험"
+      },
+      {
+        "word": "経済",
+        "reading": "けいざい",
+        "meaning": "경제"
+      }
+    ],
+    "example": {
+      "jp": "三年の実務経験があります。",
+      "ko": "3년의 실무 경험이 있습니다."
+    }
+  },
+  {
+    "id": "k-n4-003",
+    "character": "験",
+    "meaning": "시험, 겪다",
+    "onyomi": [
+      "ケン"
+    ],
+    "kunyomi": [],
+    "strokes": 18,
+    "level": "N4",
+    "words": [
+      {
+        "word": "試験",
+        "reading": "しけん",
+        "meaning": "시험"
+      },
+      {
+        "word": "実験",
+        "reading": "じっけん",
+        "meaning": "실험"
+      }
+    ],
+    "example": {
+      "jp": "十二月の試験を受けます。",
+      "ko": "12월 시험을 봅니다."
+    }
+  },
+  {
+    "id": "k-n4-004",
+    "character": "族",
+    "meaning": "겨레, 가족",
+    "onyomi": [
+      "ゾク"
+    ],
+    "kunyomi": [],
+    "strokes": 11,
+    "level": "N4",
+    "words": [
+      {
+        "word": "家族",
+        "reading": "かぞく",
+        "meaning": "가족"
+      },
+      {
+        "word": "民族",
+        "reading": "みんぞく",
+        "meaning": "민족"
+      }
+    ],
+    "example": {
+      "jp": "家族は韓国にいます。",
+      "ko": "가족은 한국에 있습니다."
+    }
+  },
+  {
+    "id": "k-n4-005",
+    "character": "楽",
+    "meaning": "즐겁다, 음악",
+    "onyomi": [
+      "ガク",
+      "ラク"
+    ],
+    "kunyomi": [
+      "たの(しい)"
+    ],
+    "strokes": 13,
+    "level": "N4",
+    "words": [
+      {
+        "word": "音楽",
+        "reading": "おんがく",
+        "meaning": "음악"
+      },
+      {
+        "word": "楽しい",
+        "reading": "たのしい",
+        "meaning": "즐겁다"
+      }
+    ],
+    "example": {
+      "jp": "日本語の勉強は楽しいです。",
+      "ko": "일본어 공부는 즐겁습니다."
+    }
+  },
+  {
+    "id": "k-n4-006",
+    "character": "医",
+    "meaning": "의사, 의술",
+    "onyomi": [
+      "イ"
+    ],
+    "kunyomi": [],
+    "strokes": 7,
+    "level": "N4",
+    "words": [
+      {
+        "word": "医者",
+        "reading": "いしゃ",
+        "meaning": "의사"
+      },
+      {
+        "word": "医療",
+        "reading": "いりょう",
+        "meaning": "의료"
+      }
+    ],
+    "example": {
+      "jp": "医者に行ってきます。",
+      "ko": "병원에 다녀오겠습니다."
+    }
+  },
+  {
+    "id": "k-n4-007",
+    "character": "説",
+    "meaning": "말하다, 설명",
+    "onyomi": [
+      "セツ"
+    ],
+    "kunyomi": [
+      "と(く)"
+    ],
+    "strokes": 14,
+    "level": "N4",
+    "words": [
+      {
+        "word": "説明",
+        "reading": "せつめい",
+        "meaning": "설명"
+      },
+      {
+        "word": "小説",
+        "reading": "しょうせつ",
+        "meaning": "소설"
+      }
+    ],
+    "example": {
+      "jp": "もう一度ご説明いただけますか。",
+      "ko": "한 번 더 설명해 주실 수 있습니까?"
+    }
+  },
+  {
+    "id": "k-n4-008",
+    "character": "考",
+    "meaning": "생각하다",
+    "onyomi": [
+      "コウ"
+    ],
+    "kunyomi": [
+      "かんが(える)"
+    ],
+    "strokes": 6,
+    "level": "N4",
+    "words": [
+      {
+        "word": "考える",
+        "reading": "かんがえる",
+        "meaning": "생각하다"
+      },
+      {
+        "word": "参考",
+        "reading": "さんこう",
+        "meaning": "참고"
+      }
+    ],
+    "example": {
+      "jp": "ご参考までにお送りします。",
+      "ko": "참고로 보내 드립니다."
+    }
+  },
+  {
+    "id": "k-n4-009",
+    "character": "計",
+    "meaning": "세다, 계획",
+    "onyomi": [
+      "ケイ"
+    ],
+    "kunyomi": [
+      "はか(る)"
+    ],
+    "strokes": 9,
+    "level": "N4",
+    "words": [
+      {
+        "word": "計画",
+        "reading": "けいかく",
+        "meaning": "계획"
+      },
+      {
+        "word": "合計",
+        "reading": "ごうけい",
+        "meaning": "합계"
+      }
+    ],
+    "example": {
+      "jp": "学習計画を立てました。",
+      "ko": "학습 계획을 세웠습니다."
+    }
+  },
+  {
+    "id": "k-n4-010",
+    "character": "調",
+    "meaning": "조사하다, 고르다",
+    "onyomi": [
+      "チョウ"
+    ],
+    "kunyomi": [
+      "しら(べる)",
+      "ととの(える)"
+    ],
+    "strokes": 15,
+    "level": "N4",
+    "words": [
+      {
+        "word": "調査",
+        "reading": "ちょうさ",
+        "meaning": "조사"
+      },
+      {
+        "word": "調整",
+        "reading": "ちょうせい",
+        "meaning": "조정"
+      }
+    ],
+    "example": {
+      "jp": "日程を調整いたします。",
+      "ko": "일정을 조정하겠습니다."
+    }
+  },
+  {
+    "id": "k-n4-011",
+    "character": "京",
+    "meaning": "서울, 수도",
+    "onyomi": [
+      "キョウ",
+      "ケイ"
+    ],
+    "kunyomi": [],
+    "strokes": 8,
+    "level": "N4",
+    "words": [
+      {
+        "word": "東京",
+        "reading": "とうきょう",
+        "meaning": "도쿄"
+      },
+      {
+        "word": "京都",
+        "reading": "きょうと",
+        "meaning": "교토"
+      }
+    ],
+    "example": {
+      "jp": "東京本社で面接があります。",
+      "ko": "도쿄 본사에서 면접이 있습니다."
+    }
+  },
+  {
+    "id": "k-n4-012",
+    "character": "都",
+    "meaning": "도읍, 도시",
+    "onyomi": [
+      "ト",
+      "ツ"
+    ],
+    "kunyomi": [
+      "みやこ"
+    ],
+    "strokes": 11,
+    "level": "N4",
+    "words": [
+      {
+        "word": "都市",
+        "reading": "とし",
+        "meaning": "도시"
+      },
+      {
+        "word": "都合",
+        "reading": "つごう",
+        "meaning": "사정, 형편"
+      }
+    ],
+    "example": {
+      "jp": "ご都合はいかがでしょうか。",
+      "ko": "사정은 어떠신지요?"
+    }
+  },
+  {
+    "id": "k-n4-013",
+    "character": "室",
+    "meaning": "방",
+    "onyomi": [
+      "シツ"
+    ],
+    "kunyomi": [
+      "むろ"
+    ],
+    "strokes": 9,
+    "level": "N4",
+    "words": [
+      {
+        "word": "会議室",
+        "reading": "かいぎしつ",
+        "meaning": "회의실"
+      },
+      {
+        "word": "教室",
+        "reading": "きょうしつ",
+        "meaning": "교실"
+      }
+    ],
+    "example": {
+      "jp": "第三会議室に集まってください。",
+      "ko": "제3회의실로 모여 주세요."
+    }
+  },
+  {
+    "id": "k-n4-014",
+    "character": "建",
+    "meaning": "세우다",
+    "onyomi": [
+      "ケン"
+    ],
+    "kunyomi": [
+      "た(てる)"
+    ],
+    "strokes": 9,
+    "level": "N4",
+    "words": [
+      {
+        "word": "建物",
+        "reading": "たてもの",
+        "meaning": "건물"
+      },
+      {
+        "word": "建設",
+        "reading": "けんせつ",
+        "meaning": "건설"
+      }
+    ],
+    "example": {
+      "jp": "白い建物が御社ですか。",
+      "ko": "하얀 건물이 귀사입니까?"
+    }
+  },
+  {
+    "id": "k-n4-015",
+    "character": "物",
+    "meaning": "물건",
+    "onyomi": [
+      "ブツ",
+      "モツ"
+    ],
+    "kunyomi": [
+      "もの"
+    ],
+    "strokes": 8,
+    "level": "N4",
+    "words": [
+      {
+        "word": "荷物",
+        "reading": "にもつ",
+        "meaning": "짐"
+      },
+      {
+        "word": "品物",
+        "reading": "しなもの",
+        "meaning": "물품"
+      }
+    ],
+    "example": {
+      "jp": "荷物は明日届く予定です。",
+      "ko": "짐은 내일 도착할 예정입니다."
+    }
+  },
+  {
+    "id": "k-n4-016",
+    "character": "質",
+    "meaning": "바탕, 성질",
+    "onyomi": [
+      "シツ",
+      "シチ"
+    ],
+    "kunyomi": [],
+    "strokes": 15,
+    "level": "N4",
+    "words": [
+      {
+        "word": "品質",
+        "reading": "ひんしつ",
+        "meaning": "품질"
+      },
+      {
+        "word": "質問",
+        "reading": "しつもん",
+        "meaning": "질문"
+      }
+    ],
+    "example": {
+      "jp": "品質管理を担当しておりました。",
+      "ko": "품질 관리를 담당하고 있었습니다."
+    }
+  },
+  {
+    "id": "k-n4-017",
+    "character": "問",
+    "meaning": "묻다",
+    "onyomi": [
+      "モン"
+    ],
+    "kunyomi": [
+      "と(う)"
+    ],
+    "strokes": 11,
+    "level": "N4",
+    "words": [
+      {
+        "word": "問題",
+        "reading": "もんだい",
+        "meaning": "문제"
+      },
+      {
+        "word": "問い合わせ",
+        "reading": "といあわせ",
+        "meaning": "문의"
+      }
+    ],
+    "example": {
+      "jp": "お問い合わせありがとうございます。",
+      "ko": "문의해 주셔서 감사합니다."
+    }
+  },
+  {
+    "id": "k-n4-018",
+    "character": "答",
+    "meaning": "대답하다",
+    "onyomi": [
+      "トウ"
+    ],
+    "kunyomi": [
+      "こた(える)"
+    ],
+    "strokes": 12,
+    "level": "N4",
+    "words": [
+      {
+        "word": "回答",
+        "reading": "かいとう",
+        "meaning": "회답"
+      },
+      {
+        "word": "答える",
+        "reading": "こたえる",
+        "meaning": "대답하다"
+      }
+    ],
+    "example": {
+      "jp": "本日中にご回答いたします。",
+      "ko": "오늘 중으로 회답드리겠습니다."
+    }
+  },
+  {
+    "id": "k-n4-019",
+    "character": "世",
+    "meaning": "세상",
+    "onyomi": [
+      "セイ",
+      "セ"
+    ],
+    "kunyomi": [
+      "よ"
+    ],
+    "strokes": 5,
+    "level": "N4",
+    "words": [
+      {
+        "word": "世界",
+        "reading": "せかい",
+        "meaning": "세계"
+      },
+      {
+        "word": "お世話",
+        "reading": "おせわ",
+        "meaning": "신세, 돌봄"
+      }
+    ],
+    "example": {
+      "jp": "いつもお世話になっております。",
+      "ko": "늘 신세 지고 있습니다."
+    }
+  },
+  {
+    "id": "k-n4-020",
+    "character": "界",
+    "meaning": "경계, 세계",
+    "onyomi": [
+      "カイ"
+    ],
+    "kunyomi": [],
+    "strokes": 9,
+    "level": "N4",
+    "words": [
+      {
+        "word": "世界",
+        "reading": "せかい",
+        "meaning": "세계"
+      },
+      {
+        "word": "業界",
+        "reading": "ぎょうかい",
+        "meaning": "업계"
+      }
+    ],
+    "example": {
+      "jp": "業界の動向を調べています。",
+      "ko": "업계 동향을 조사하고 있습니다."
+    }
+  },
+  {
+    "id": "k-n4-021",
+    "character": "動",
+    "meaning": "움직이다",
+    "onyomi": [
+      "ドウ"
+    ],
+    "kunyomi": [
+      "うご(く)"
+    ],
+    "strokes": 11,
+    "level": "N4",
+    "words": [
+      {
+        "word": "行動",
+        "reading": "こうどう",
+        "meaning": "행동"
+      },
+      {
+        "word": "自動",
+        "reading": "じどう",
+        "meaning": "자동"
+      }
+    ],
+    "example": {
+      "jp": "自分で考えて行動します。",
+      "ko": "스스로 생각해서 행동합니다."
+    }
+  },
+  {
+    "id": "k-n4-022",
+    "character": "場",
+    "meaning": "장소",
+    "onyomi": [
+      "ジョウ"
+    ],
+    "kunyomi": [
+      "ば"
+    ],
+    "strokes": 12,
+    "level": "N4",
+    "words": [
+      {
+        "word": "職場",
+        "reading": "しょくば",
+        "meaning": "직장"
+      },
+      {
+        "word": "会場",
+        "reading": "かいじょう",
+        "meaning": "회장, 행사장"
+      }
+    ],
+    "example": {
+      "jp": "職場の雰囲気を大切にしています。",
+      "ko": "직장 분위기를 소중히 여기고 있습니다."
+    }
+  },
+  {
+    "id": "k-n4-023",
+    "character": "業",
+    "meaning": "일, 업",
+    "onyomi": [
+      "ギョウ",
+      "ゴウ"
+    ],
+    "kunyomi": [
+      "わざ"
+    ],
+    "strokes": 13,
+    "level": "N4",
+    "words": [
+      {
+        "word": "業務",
+        "reading": "ぎょうむ",
+        "meaning": "업무"
+      },
+      {
+        "word": "営業",
+        "reading": "えいぎょう",
+        "meaning": "영업"
+      }
+    ],
+    "example": {
+      "jp": "営業業務を三年経験しました。",
+      "ko": "영업 업무를 3년 경험했습니다."
+    }
+  },
+  {
+    "id": "k-n4-024",
+    "character": "服",
+    "meaning": "옷",
+    "onyomi": [
+      "フク"
+    ],
+    "kunyomi": [],
+    "strokes": 8,
+    "level": "N4",
+    "words": [
+      {
+        "word": "洋服",
+        "reading": "ようふく",
+        "meaning": "양복, 옷"
+      },
+      {
+        "word": "制服",
+        "reading": "せいふく",
+        "meaning": "제복"
+      }
+    ],
+    "example": {
+      "jp": "面接には地味な服で行きます。",
+      "ko": "면접에는 수수한 옷을 입고 갑니다."
+    }
+  },
+  {
+    "id": "k-n4-025",
+    "character": "地",
+    "meaning": "땅",
+    "onyomi": [
+      "チ",
+      "ジ"
+    ],
+    "kunyomi": [],
+    "strokes": 6,
+    "level": "N4",
+    "words": [
+      {
+        "word": "地図",
+        "reading": "ちず",
+        "meaning": "지도"
+      },
+      {
+        "word": "現地",
+        "reading": "げんち",
+        "meaning": "현지"
+      }
+    ],
+    "example": {
+      "jp": "現地の担当者と話しました。",
+      "ko": "현지 담당자와 이야기했습니다."
+    }
+  },
+  {
+    "id": "k-n4-026",
+    "character": "図",
+    "meaning": "그림, 꾀하다",
+    "onyomi": [
+      "ズ",
+      "ト"
+    ],
+    "kunyomi": [
+      "はか(る)"
+    ],
+    "strokes": 7,
+    "level": "N4",
+    "words": [
+      {
+        "word": "地図",
+        "reading": "ちず",
+        "meaning": "지도"
+      },
+      {
+        "word": "図書館",
+        "reading": "としょかん",
+        "meaning": "도서관"
+      }
+    ],
+    "example": {
+      "jp": "図書館で日本語を勉強します。",
+      "ko": "도서관에서 일본어를 공부합니다."
+    }
+  },
+  {
+    "id": "k-n4-027",
+    "character": "音",
+    "meaning": "소리",
+    "onyomi": [
+      "オン",
+      "イン"
+    ],
+    "kunyomi": [
+      "おと",
+      "ね"
+    ],
+    "strokes": 9,
+    "level": "N4",
+    "words": [
+      {
+        "word": "発音",
+        "reading": "はつおん",
+        "meaning": "발음"
+      },
+      {
+        "word": "音楽",
+        "reading": "おんがく",
+        "meaning": "음악"
+      }
+    ],
+    "example": {
+      "jp": "発音を毎日練習しています。",
+      "ko": "발음을 매일 연습하고 있습니다."
+    }
+  },
+  {
+    "id": "k-n4-028",
+    "character": "色",
+    "meaning": "색",
+    "onyomi": [
+      "ショク",
+      "シキ"
+    ],
+    "kunyomi": [
+      "いろ"
+    ],
+    "strokes": 6,
+    "level": "N4",
+    "words": [
+      {
+        "word": "特色",
+        "reading": "とくしょく",
+        "meaning": "특색"
+      },
+      {
+        "word": "顔色",
+        "reading": "かおいろ",
+        "meaning": "안색"
+      }
+    ],
+    "example": {
+      "jp": "御社の特色について伺いたいです。",
+      "ko": "귀사의 특색에 대해 여쭙고 싶습니다."
+    }
+  },
+  {
+    "id": "k-n4-029",
+    "character": "走",
+    "meaning": "달리다",
+    "onyomi": [
+      "ソウ"
+    ],
+    "kunyomi": [
+      "はし(る)"
+    ],
+    "strokes": 7,
+    "level": "N4",
+    "words": [
+      {
+        "word": "走る",
+        "reading": "はしる",
+        "meaning": "달리다"
+      },
+      {
+        "word": "競走",
+        "reading": "きょうそう",
+        "meaning": "경주"
+      }
+    ],
+    "example": {
+      "jp": "駅まで走って間に合いました。",
+      "ko": "역까지 뛰어서 시간에 맞췄습니다."
+    }
+  },
+  {
+    "id": "k-n4-030",
+    "character": "集",
+    "meaning": "모으다",
+    "onyomi": [
+      "シュウ"
+    ],
+    "kunyomi": [
+      "あつ(まる)"
+    ],
+    "strokes": 12,
+    "level": "N4",
+    "words": [
+      {
+        "word": "募集",
+        "reading": "ぼしゅう",
+        "meaning": "모집"
+      },
+      {
+        "word": "集合",
+        "reading": "しゅうごう",
+        "meaning": "집합"
+      }
+    ],
+    "example": {
+      "jp": "新卒を募集しています。",
+      "ko": "신졸을 모집하고 있습니다."
+    }
+  },
+  {
+    "id": "k-n4-031",
+    "character": "心",
+    "meaning": "마음",
+    "onyomi": [
+      "シン"
+    ],
+    "kunyomi": [
+      "こころ"
+    ],
+    "strokes": 4,
+    "level": "N4",
+    "words": [
+      {
+        "word": "安心",
+        "reading": "あんしん",
+        "meaning": "안심"
+      },
+      {
+        "word": "心配",
+        "reading": "しんぱい",
+        "meaning": "걱정"
+      }
+    ],
+    "example": {
+      "jp": "ご連絡いただき安心しました。",
+      "ko": "연락 주셔서 안심했습니다."
+    }
+  },
+  {
+    "id": "k-n4-032",
+    "character": "思",
+    "meaning": "생각하다",
+    "onyomi": [
+      "シ"
+    ],
+    "kunyomi": [
+      "おも(う)"
+    ],
+    "strokes": 9,
+    "level": "N4",
+    "words": [
+      {
+        "word": "思う",
+        "reading": "おもう",
+        "meaning": "생각하다"
+      },
+      {
+        "word": "意思",
+        "reading": "いし",
+        "meaning": "의사"
+      }
+    ],
+    "example": {
+      "jp": "この方法がよいと思います。",
+      "ko": "이 방법이 좋다고 생각합니다."
+    }
+  },
+  {
+    "id": "k-n4-033",
+    "character": "特",
+    "meaning": "특별하다",
+    "onyomi": [
+      "トク"
+    ],
+    "kunyomi": [],
+    "strokes": 10,
+    "level": "N4",
+    "words": [
+      {
+        "word": "特別",
+        "reading": "とくべつ",
+        "meaning": "특별"
+      },
+      {
+        "word": "特に",
+        "reading": "とくに",
+        "meaning": "특히"
+      }
+    ],
+    "example": {
+      "jp": "特に品質を重視しています。",
+      "ko": "특히 품질을 중시하고 있습니다."
+    }
+  },
+  {
+    "id": "k-n4-034",
+    "character": "急",
+    "meaning": "급하다",
+    "onyomi": [
+      "キュウ"
+    ],
+    "kunyomi": [
+      "いそ(ぐ)"
+    ],
+    "strokes": 9,
+    "level": "N4",
+    "words": [
+      {
+        "word": "至急",
+        "reading": "しきゅう",
+        "meaning": "지급, 급히"
+      },
+      {
+        "word": "急行",
+        "reading": "きゅうこう",
+        "meaning": "급행"
+      }
+    ],
+    "example": {
+      "jp": "至急ご対応をお願いします。",
+      "ko": "급히 대응을 부탁드립니다."
+    }
+  },
+  {
+    "id": "k-n4-035",
+    "character": "味",
+    "meaning": "맛, 의미",
+    "onyomi": [
+      "ミ"
+    ],
+    "kunyomi": [
+      "あじ"
+    ],
+    "strokes": 8,
+    "level": "N4",
+    "words": [
+      {
+        "word": "意味",
+        "reading": "いみ",
+        "meaning": "의미"
+      },
+      {
+        "word": "趣味",
+        "reading": "しゅみ",
+        "meaning": "취미"
+      }
+    ],
+    "example": {
+      "jp": "この表現の意味を教えてください。",
+      "ko": "이 표현의 의미를 알려주세요."
+    }
+  },
+  {
+    "id": "k-n4-036",
+    "character": "起",
+    "meaning": "일어나다",
+    "onyomi": [
+      "キ"
+    ],
+    "kunyomi": [
+      "お(きる)"
+    ],
+    "strokes": 10,
+    "level": "N4",
+    "words": [
+      {
+        "word": "起きる",
+        "reading": "おきる",
+        "meaning": "일어나다"
+      },
+      {
+        "word": "起業",
+        "reading": "きぎょう",
+        "meaning": "창업"
+      }
+    ],
+    "example": {
+      "jp": "毎朝六時に起きています。",
+      "ko": "매일 아침 6시에 일어나고 있습니다."
+    }
+  },
+  {
+    "id": "k-n4-037",
+    "character": "台",
+    "meaning": "받침, 대",
+    "onyomi": [
+      "ダイ",
+      "タイ"
+    ],
+    "kunyomi": [],
+    "strokes": 5,
+    "level": "N4",
+    "words": [
+      {
+        "word": "一台",
+        "reading": "いちだい",
+        "meaning": "한 대"
+      },
+      {
+        "word": "台所",
+        "reading": "だいどころ",
+        "meaning": "부엌"
+      }
+    ],
+    "example": {
+      "jp": "パソコンを一台お借りできますか。",
+      "ko": "컴퓨터를 한 대 빌릴 수 있을까요?"
+    }
+  },
+  {
+    "id": "k-n4-038",
+    "character": "度",
+    "meaning": "정도, 번",
+    "onyomi": [
+      "ド"
+    ],
+    "kunyomi": [
+      "たび"
+    ],
+    "strokes": 9,
+    "level": "N4",
+    "words": [
+      {
+        "word": "今度",
+        "reading": "こんど",
+        "meaning": "이번, 다음번"
+      },
+      {
+        "word": "一度",
+        "reading": "いちど",
+        "meaning": "한 번"
+      }
+    ],
+    "example": {
+      "jp": "もう一度確認いたします。",
+      "ko": "한 번 더 확인하겠습니다."
+    }
+  },
+  {
+    "id": "k-n4-039",
+    "character": "送",
+    "meaning": "보내다",
+    "onyomi": [
+      "ソウ"
+    ],
+    "kunyomi": [
+      "おく(る)"
+    ],
+    "strokes": 9,
+    "level": "N4",
+    "words": [
+      {
+        "word": "送信",
+        "reading": "そうしん",
+        "meaning": "송신"
+      },
+      {
+        "word": "見送る",
+        "reading": "みおくる",
+        "meaning": "배웅하다, 보류하다"
+      }
+    ],
+    "example": {
+      "jp": "先ほど資料をお送りしました。",
+      "ko": "조금 전에 자료를 보내 드렸습니다."
+    }
+  },
+  {
+    "id": "k-n4-040",
+    "character": "転",
+    "meaning": "구르다, 옮기다",
+    "onyomi": [
+      "テン"
+    ],
+    "kunyomi": [
+      "ころ(ぶ)"
+    ],
+    "strokes": 11,
+    "level": "N4",
+    "words": [
+      {
+        "word": "転職",
+        "reading": "てんしょく",
+        "meaning": "이직"
+      },
+      {
+        "word": "運転",
+        "reading": "うんてん",
+        "meaning": "운전"
+      }
+    ],
+    "example": {
+      "jp": "転職を考えています。",
+      "ko": "이직을 생각하고 있습니다."
+    }
+  }
 ]

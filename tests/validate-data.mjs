@@ -88,6 +88,22 @@ for (const dir of fs.readdirSync(ROOT)) {
   }
 }
 
+// 같은 단어·한자·문법이 두 레벨에 동시에 들어가지 않았는지 확인합니다.
+for (const [dir, key] of [["vocabulary", "word"], ["kanji", "character"], ["grammar", "title"]]) {
+  const dirPath = path.join(ROOT, dir);
+  if (!fs.existsSync(dirPath)) continue;
+  const seen = new Map();
+  for (const file of fs.readdirSync(dirPath)) {
+    if (!file.endsWith(".json")) continue;
+    for (const item of JSON.parse(fs.readFileSync(path.join(dirPath, file), "utf8"))) {
+      const value = item[key];
+      if (!value) continue;
+      if (seen.has(value)) problems.push(`${dir}: "${value}"가 ${seen.get(value)}와 ${file} 양쪽에 중복`);
+      else seen.set(value, file);
+    }
+  }
+}
+
 console.log("=== 파일별 항목 수 ===");
 for (const [file, count] of Object.entries(counts).sort()) console.log(`${count.toString().padStart(4)}  ${file}`);
 console.log(`\n총 ${Object.values(counts).reduce((a, b) => a + b, 0)}개 항목, 고유 id ${allIds.size}개`);

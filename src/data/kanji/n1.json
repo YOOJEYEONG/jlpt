@@ -1,12 +1,997 @@
 [
-  { "id": "k-n1-001", "character": "顕", "meaning": "드러나다", "onyomi": ["ケン"], "kunyomi": ["あらわ(れる)"], "strokes": 18, "level": "N1", "words": [ { "word": "顕著", "reading": "けんちょ", "meaning": "현저" }, { "word": "顕在", "reading": "けんざい", "meaning": "현재화" } ], "example": { "jp": "効果が顕著に表れた。", "ko": "효과가 현저히 나타났다." } },
-  { "id": "k-n1-002", "character": "懸", "meaning": "매달다, 걸다", "onyomi": ["ケン", "ケ"], "kunyomi": ["か(ける)"], "strokes": 20, "level": "N1", "words": [ { "word": "懸念", "reading": "けねん", "meaning": "우려" }, { "word": "懸命", "reading": "けんめい", "meaning": "열심" } ], "example": { "jp": "遅延が懸念されている。", "ko": "지연이 우려되고 있다." } },
-  { "id": "k-n1-003", "character": "覆", "meaning": "덮다, 뒤집다", "onyomi": ["フク"], "kunyomi": ["おお(う)", "くつがえ(す)"], "strokes": 18, "level": "N1", "words": [ { "word": "覆面", "reading": "ふくめん", "meaning": "복면" }, { "word": "覆す", "reading": "くつがえす", "meaning": "뒤집다" } ], "example": { "jp": "予想を覆す結果となった。", "ko": "예상을 뒤집는 결과가 되었다." } },
-  { "id": "k-n1-004", "character": "促", "meaning": "재촉하다", "onyomi": ["ソク"], "kunyomi": ["うなが(す)"], "strokes": 9, "level": "N1", "words": [ { "word": "促進", "reading": "そくしん", "meaning": "촉진" }, { "word": "催促", "reading": "さいそく", "meaning": "재촉" } ], "example": { "jp": "参加を促すメールを送った。", "ko": "참가를 촉구하는 메일을 보냈다." } },
-  { "id": "k-n1-005", "character": "滑", "meaning": "미끄럽다", "onyomi": ["カツ", "コツ"], "kunyomi": ["すべ(る)", "なめ(らか)"], "strokes": 13, "level": "N1", "words": [ { "word": "円滑", "reading": "えんかつ", "meaning": "원활" }, { "word": "滑走", "reading": "かっそう", "meaning": "활주" } ], "example": { "jp": "業務が円滑に進んでいる。", "ko": "업무가 원활히 진행되고 있다." } },
-  { "id": "k-n1-006", "character": "緻", "meaning": "촘촘하다", "onyomi": ["チ"], "kunyomi": [], "strokes": 16, "level": "N1", "words": [ { "word": "緻密", "reading": "ちみつ", "meaning": "치밀" }, { "word": "精緻", "reading": "せいち", "meaning": "정치, 정교" } ], "example": { "jp": "緻密な分析が必要だ。", "ko": "치밀한 분석이 필요하다." } },
-  { "id": "k-n1-007", "character": "潜", "meaning": "잠기다, 숨다", "onyomi": ["セン"], "kunyomi": ["ひそ(む)", "もぐ(る)"], "strokes": 15, "level": "N1", "words": [ { "word": "潜在", "reading": "せんざい", "meaning": "잠재" }, { "word": "潜入", "reading": "せんにゅう", "meaning": "잠입" } ], "example": { "jp": "潜在能力を引き出す。", "ko": "잠재 능력을 끌어낸다." } },
-  { "id": "k-n1-008", "character": "是", "meaning": "옳다, 이것", "onyomi": ["ゼ"], "kunyomi": [], "strokes": 9, "level": "N1", "words": [ { "word": "是正", "reading": "ぜせい", "meaning": "시정" }, { "word": "是非", "reading": "ぜひ", "meaning": "꼭, 시비" } ], "example": { "jp": "ぜひ御社で働きたいです。", "ko": "꼭 귀사에서 일하고 싶습니다." } },
-  { "id": "k-n1-009", "character": "践", "meaning": "밟다, 실천", "onyomi": ["セン"], "kunyomi": [], "strokes": 13, "level": "N1", "words": [ { "word": "実践", "reading": "じっせん", "meaning": "실천" }, { "word": "実践的", "reading": "じっせんてき", "meaning": "실천적" } ], "example": { "jp": "学んだことを実践します。", "ko": "배운 것을 실천합니다." } },
-  { "id": "k-n1-010", "character": "薦", "meaning": "천거하다", "onyomi": ["セン"], "kunyomi": ["すす(める)"], "strokes": 16, "level": "N1", "words": [ { "word": "推薦", "reading": "すいせん", "meaning": "추천" }, { "word": "自薦", "reading": "じせん", "meaning": "자천" } ], "example": { "jp": "教授の推薦状を提出しました。", "ko": "교수님의 추천서를 제출했습니다." } }
+  {
+    "id": "k-n1-001",
+    "character": "顕",
+    "meaning": "드러나다",
+    "onyomi": [
+      "ケン"
+    ],
+    "kunyomi": [
+      "あらわ(れる)"
+    ],
+    "strokes": 18,
+    "level": "N1",
+    "words": [
+      {
+        "word": "顕著",
+        "reading": "けんちょ",
+        "meaning": "현저"
+      },
+      {
+        "word": "顕在",
+        "reading": "けんざい",
+        "meaning": "현재화"
+      }
+    ],
+    "example": {
+      "jp": "効果が顕著に表れた。",
+      "ko": "효과가 현저히 나타났다."
+    }
+  },
+  {
+    "id": "k-n1-002",
+    "character": "懸",
+    "meaning": "매달다, 걸다",
+    "onyomi": [
+      "ケン",
+      "ケ"
+    ],
+    "kunyomi": [
+      "か(ける)"
+    ],
+    "strokes": 20,
+    "level": "N1",
+    "words": [
+      {
+        "word": "懸念",
+        "reading": "けねん",
+        "meaning": "우려"
+      },
+      {
+        "word": "懸命",
+        "reading": "けんめい",
+        "meaning": "열심"
+      }
+    ],
+    "example": {
+      "jp": "遅延が懸念されている。",
+      "ko": "지연이 우려되고 있다."
+    }
+  },
+  {
+    "id": "k-n1-003",
+    "character": "覆",
+    "meaning": "덮다, 뒤집다",
+    "onyomi": [
+      "フク"
+    ],
+    "kunyomi": [
+      "おお(う)",
+      "くつがえ(す)"
+    ],
+    "strokes": 18,
+    "level": "N1",
+    "words": [
+      {
+        "word": "覆面",
+        "reading": "ふくめん",
+        "meaning": "복면"
+      },
+      {
+        "word": "覆す",
+        "reading": "くつがえす",
+        "meaning": "뒤집다"
+      }
+    ],
+    "example": {
+      "jp": "予想を覆す結果となった。",
+      "ko": "예상을 뒤집는 결과가 되었다."
+    }
+  },
+  {
+    "id": "k-n1-004",
+    "character": "促",
+    "meaning": "재촉하다",
+    "onyomi": [
+      "ソク"
+    ],
+    "kunyomi": [
+      "うなが(す)"
+    ],
+    "strokes": 9,
+    "level": "N1",
+    "words": [
+      {
+        "word": "促進",
+        "reading": "そくしん",
+        "meaning": "촉진"
+      },
+      {
+        "word": "催促",
+        "reading": "さいそく",
+        "meaning": "재촉"
+      }
+    ],
+    "example": {
+      "jp": "参加を促すメールを送った。",
+      "ko": "참가를 촉구하는 메일을 보냈다."
+    }
+  },
+  {
+    "id": "k-n1-005",
+    "character": "滑",
+    "meaning": "미끄럽다",
+    "onyomi": [
+      "カツ",
+      "コツ"
+    ],
+    "kunyomi": [
+      "すべ(る)",
+      "なめ(らか)"
+    ],
+    "strokes": 13,
+    "level": "N1",
+    "words": [
+      {
+        "word": "円滑",
+        "reading": "えんかつ",
+        "meaning": "원활"
+      },
+      {
+        "word": "滑走",
+        "reading": "かっそう",
+        "meaning": "활주"
+      }
+    ],
+    "example": {
+      "jp": "業務が円滑に進んでいる。",
+      "ko": "업무가 원활히 진행되고 있다."
+    }
+  },
+  {
+    "id": "k-n1-006",
+    "character": "緻",
+    "meaning": "촘촘하다",
+    "onyomi": [
+      "チ"
+    ],
+    "kunyomi": [],
+    "strokes": 16,
+    "level": "N1",
+    "words": [
+      {
+        "word": "緻密",
+        "reading": "ちみつ",
+        "meaning": "치밀"
+      },
+      {
+        "word": "精緻",
+        "reading": "せいち",
+        "meaning": "정치, 정교"
+      }
+    ],
+    "example": {
+      "jp": "緻密な分析が必要だ。",
+      "ko": "치밀한 분석이 필요하다."
+    }
+  },
+  {
+    "id": "k-n1-007",
+    "character": "潜",
+    "meaning": "잠기다, 숨다",
+    "onyomi": [
+      "セン"
+    ],
+    "kunyomi": [
+      "ひそ(む)",
+      "もぐ(る)"
+    ],
+    "strokes": 15,
+    "level": "N1",
+    "words": [
+      {
+        "word": "潜在",
+        "reading": "せんざい",
+        "meaning": "잠재"
+      },
+      {
+        "word": "潜入",
+        "reading": "せんにゅう",
+        "meaning": "잠입"
+      }
+    ],
+    "example": {
+      "jp": "潜在能力を引き出す。",
+      "ko": "잠재 능력을 끌어낸다."
+    }
+  },
+  {
+    "id": "k-n1-008",
+    "character": "是",
+    "meaning": "옳다, 이것",
+    "onyomi": [
+      "ゼ"
+    ],
+    "kunyomi": [],
+    "strokes": 9,
+    "level": "N1",
+    "words": [
+      {
+        "word": "是正",
+        "reading": "ぜせい",
+        "meaning": "시정"
+      },
+      {
+        "word": "是非",
+        "reading": "ぜひ",
+        "meaning": "꼭, 시비"
+      }
+    ],
+    "example": {
+      "jp": "ぜひ御社で働きたいです。",
+      "ko": "꼭 귀사에서 일하고 싶습니다."
+    }
+  },
+  {
+    "id": "k-n1-009",
+    "character": "践",
+    "meaning": "밟다, 실천",
+    "onyomi": [
+      "セン"
+    ],
+    "kunyomi": [],
+    "strokes": 13,
+    "level": "N1",
+    "words": [
+      {
+        "word": "実践",
+        "reading": "じっせん",
+        "meaning": "실천"
+      },
+      {
+        "word": "実践的",
+        "reading": "じっせんてき",
+        "meaning": "실천적"
+      }
+    ],
+    "example": {
+      "jp": "学んだことを実践します。",
+      "ko": "배운 것을 실천합니다."
+    }
+  },
+  {
+    "id": "k-n1-010",
+    "character": "薦",
+    "meaning": "천거하다",
+    "onyomi": [
+      "セン"
+    ],
+    "kunyomi": [
+      "すす(める)"
+    ],
+    "strokes": 16,
+    "level": "N1",
+    "words": [
+      {
+        "word": "推薦",
+        "reading": "すいせん",
+        "meaning": "추천"
+      },
+      {
+        "word": "自薦",
+        "reading": "じせん",
+        "meaning": "자천"
+      }
+    ],
+    "example": {
+      "jp": "教授の推薦状を提出しました。",
+      "ko": "교수님의 추천서를 제출했습니다."
+    }
+  },
+  {
+    "id": "k-n1-011",
+    "character": "妥",
+    "meaning": "온당하다",
+    "onyomi": [
+      "ダ"
+    ],
+    "kunyomi": [],
+    "strokes": 7,
+    "level": "N1",
+    "words": [
+      {
+        "word": "妥協",
+        "reading": "だきょう",
+        "meaning": "타협"
+      },
+      {
+        "word": "妥当",
+        "reading": "だとう",
+        "meaning": "타당"
+      }
+    ],
+    "example": {
+      "jp": "品質に関しては妥協しません。",
+      "ko": "품질에 관해서는 타협하지 않습니다."
+    }
+  },
+  {
+    "id": "k-n1-012",
+    "character": "協",
+    "meaning": "힘을 합하다",
+    "onyomi": [
+      "キョウ"
+    ],
+    "kunyomi": [],
+    "strokes": 8,
+    "level": "N1",
+    "words": [
+      {
+        "word": "協力",
+        "reading": "きょうりょく",
+        "meaning": "협력"
+      },
+      {
+        "word": "協調性",
+        "reading": "きょうちょうせい",
+        "meaning": "협조성"
+      }
+    ],
+    "example": {
+      "jp": "協調性を重視する社風です。",
+      "ko": "협조성을 중시하는 사풍입니다."
+    }
+  },
+  {
+    "id": "k-n1-013",
+    "character": "衝",
+    "meaning": "찌르다, 부딪치다",
+    "onyomi": [
+      "ショウ"
+    ],
+    "kunyomi": [],
+    "strokes": 15,
+    "level": "N1",
+    "words": [
+      {
+        "word": "折衝",
+        "reading": "せっしょう",
+        "meaning": "절충, 교섭"
+      },
+      {
+        "word": "衝撃",
+        "reading": "しょうげき",
+        "meaning": "충격"
+      }
+    ],
+    "example": {
+      "jp": "取引先との折衝を担当しました。",
+      "ko": "거래처와의 교섭을 담당했습니다."
+    }
+  },
+  {
+    "id": "k-n1-014",
+    "character": "折",
+    "meaning": "꺾다",
+    "onyomi": [
+      "セツ"
+    ],
+    "kunyomi": [
+      "お(る)"
+    ],
+    "strokes": 7,
+    "level": "N1",
+    "words": [
+      {
+        "word": "折衝",
+        "reading": "せっしょう",
+        "meaning": "교섭"
+      },
+      {
+        "word": "折り返し",
+        "reading": "おりかえし",
+        "meaning": "회신, 되걸기"
+      }
+    ],
+    "example": {
+      "jp": "折り返しご連絡いたします。",
+      "ko": "회신 연락드리겠습니다."
+    }
+  },
+  {
+    "id": "k-n1-015",
+    "character": "裁",
+    "meaning": "마르다, 판단하다",
+    "onyomi": [
+      "サイ"
+    ],
+    "kunyomi": [
+      "さば(く)"
+    ],
+    "strokes": 12,
+    "level": "N1",
+    "words": [
+      {
+        "word": "裁量",
+        "reading": "さいりょう",
+        "meaning": "재량"
+      },
+      {
+        "word": "裁判",
+        "reading": "さいばん",
+        "meaning": "재판"
+      }
+    ],
+    "example": {
+      "jp": "現場の裁量に任されています。",
+      "ko": "현장의 재량에 맡겨져 있습니다."
+    }
+  },
+  {
+    "id": "k-n1-016",
+    "character": "遂",
+    "meaning": "이루다",
+    "onyomi": [
+      "スイ"
+    ],
+    "kunyomi": [
+      "と(げる)"
+    ],
+    "strokes": 12,
+    "level": "N1",
+    "words": [
+      {
+        "word": "遂行",
+        "reading": "すいこう",
+        "meaning": "수행"
+      },
+      {
+        "word": "完遂",
+        "reading": "かんすい",
+        "meaning": "완수"
+      }
+    ],
+    "example": {
+      "jp": "任された業務を確実に遂行します。",
+      "ko": "맡은 업무를 확실히 수행하겠습니다."
+    }
+  },
+  {
+    "id": "k-n1-017",
+    "character": "統",
+    "meaning": "거느리다",
+    "onyomi": [
+      "トウ"
+    ],
+    "kunyomi": [
+      "す(べる)"
+    ],
+    "strokes": 12,
+    "level": "N1",
+    "words": [
+      {
+        "word": "統括",
+        "reading": "とうかつ",
+        "meaning": "총괄"
+      },
+      {
+        "word": "伝統",
+        "reading": "でんとう",
+        "meaning": "전통"
+      }
+    ],
+    "example": {
+      "jp": "三つのチームを統括しています。",
+      "ko": "세 팀을 총괄하고 있습니다."
+    }
+  },
+  {
+    "id": "k-n1-018",
+    "character": "括",
+    "meaning": "묶다",
+    "onyomi": [
+      "カツ"
+    ],
+    "kunyomi": [],
+    "strokes": 9,
+    "level": "N1",
+    "words": [
+      {
+        "word": "一括",
+        "reading": "いっかつ",
+        "meaning": "일괄"
+      },
+      {
+        "word": "包括",
+        "reading": "ほうかつ",
+        "meaning": "포괄"
+      }
+    ],
+    "example": {
+      "jp": "一括で処理いたします。",
+      "ko": "일괄로 처리하겠습니다."
+    }
+  },
+  {
+    "id": "k-n1-019",
+    "character": "精",
+    "meaning": "정밀하다, 정신",
+    "onyomi": [
+      "セイ",
+      "ショウ"
+    ],
+    "kunyomi": [],
+    "strokes": 14,
+    "level": "N1",
+    "words": [
+      {
+        "word": "精通",
+        "reading": "せいつう",
+        "meaning": "정통함"
+      },
+      {
+        "word": "精密",
+        "reading": "せいみつ",
+        "meaning": "정밀"
+      }
+    ],
+    "example": {
+      "jp": "業界の事情に精通しております。",
+      "ko": "업계 사정에 정통합니다."
+    }
+  },
+  {
+    "id": "k-n1-020",
+    "character": "該",
+    "meaning": "해당하다",
+    "onyomi": [
+      "ガイ"
+    ],
+    "kunyomi": [],
+    "strokes": 13,
+    "level": "N1",
+    "words": [
+      {
+        "word": "該当",
+        "reading": "がいとう",
+        "meaning": "해당"
+      },
+      {
+        "word": "当該",
+        "reading": "とうがい",
+        "meaning": "당해, 해당"
+      }
+    ],
+    "example": {
+      "jp": "該当する項目にご記入ください。",
+      "ko": "해당하는 항목에 기입해 주세요."
+    }
+  },
+  {
+    "id": "k-n1-021",
+    "character": "遵",
+    "meaning": "좇다, 지키다",
+    "onyomi": [
+      "ジュン"
+    ],
+    "kunyomi": [],
+    "strokes": 15,
+    "level": "N1",
+    "words": [
+      {
+        "word": "遵守",
+        "reading": "じゅんしゅ",
+        "meaning": "준수"
+      },
+      {
+        "word": "遵法",
+        "reading": "じゅんぽう",
+        "meaning": "준법"
+      }
+    ],
+    "example": {
+      "jp": "社内規定を遵守してください。",
+      "ko": "사내 규정을 준수해 주세요."
+    }
+  },
+  {
+    "id": "k-n1-022",
+    "character": "網",
+    "meaning": "그물",
+    "onyomi": [
+      "モウ"
+    ],
+    "kunyomi": [
+      "あみ"
+    ],
+    "strokes": 14,
+    "level": "N1",
+    "words": [
+      {
+        "word": "網羅",
+        "reading": "もうら",
+        "meaning": "망라"
+      },
+      {
+        "word": "通信網",
+        "reading": "つうしんもう",
+        "meaning": "통신망"
+      }
+    ],
+    "example": {
+      "jp": "主要な論点を網羅した資料です。",
+      "ko": "주요 논점을 망라한 자료입니다."
+    }
+  },
+  {
+    "id": "k-n1-023",
+    "character": "示",
+    "meaning": "보이다",
+    "onyomi": [
+      "ジ",
+      "シ"
+    ],
+    "kunyomi": [
+      "しめ(す)"
+    ],
+    "strokes": 5,
+    "level": "N1",
+    "words": [
+      {
+        "word": "示唆",
+        "reading": "しさ",
+        "meaning": "시사"
+      },
+      {
+        "word": "指示",
+        "reading": "しじ",
+        "meaning": "지시"
+      }
+    ],
+    "example": {
+      "jp": "根拠を示していただけますか。",
+      "ko": "근거를 제시해 주시겠습니까?"
+    }
+  },
+  {
+    "id": "k-n1-024",
+    "character": "唆",
+    "meaning": "부추기다",
+    "onyomi": [
+      "サ"
+    ],
+    "kunyomi": [
+      "そそのか(す)"
+    ],
+    "strokes": 10,
+    "level": "N1",
+    "words": [
+      {
+        "word": "示唆",
+        "reading": "しさ",
+        "meaning": "시사"
+      },
+      {
+        "word": "教唆",
+        "reading": "きょうさ",
+        "meaning": "교사"
+      }
+    ],
+    "example": {
+      "jp": "調査結果は重要な点を示唆している。",
+      "ko": "조사 결과는 중요한 점을 시사하고 있다."
+    }
+  },
+  {
+    "id": "k-n1-025",
+    "character": "拡",
+    "meaning": "넓히다",
+    "onyomi": [
+      "カク"
+    ],
+    "kunyomi": [
+      "ひろ(げる)"
+    ],
+    "strokes": 8,
+    "level": "N1",
+    "words": [
+      {
+        "word": "拡充",
+        "reading": "かくじゅう",
+        "meaning": "확충"
+      },
+      {
+        "word": "拡大",
+        "reading": "かくだい",
+        "meaning": "확대"
+      }
+    ],
+    "example": {
+      "jp": "海外事業を拡大しています。",
+      "ko": "해외 사업을 확대하고 있습니다."
+    }
+  },
+  {
+    "id": "k-n1-026",
+    "character": "充",
+    "meaning": "채우다",
+    "onyomi": [
+      "ジュウ"
+    ],
+    "kunyomi": [
+      "あ(てる)"
+    ],
+    "strokes": 6,
+    "level": "N1",
+    "words": [
+      {
+        "word": "充実",
+        "reading": "じゅうじつ",
+        "meaning": "충실"
+      },
+      {
+        "word": "拡充",
+        "reading": "かくじゅう",
+        "meaning": "확충"
+      }
+    ],
+    "example": {
+      "jp": "研修制度が充実しています。",
+      "ko": "연수 제도가 충실합니다."
+    }
+  },
+  {
+    "id": "k-n1-027",
+    "character": "軌",
+    "meaning": "바퀴자국, 궤도",
+    "onyomi": [
+      "キ"
+    ],
+    "kunyomi": [],
+    "strokes": 9,
+    "level": "N1",
+    "words": [
+      {
+        "word": "軌道",
+        "reading": "きどう",
+        "meaning": "궤도"
+      },
+      {
+        "word": "常軌",
+        "reading": "じょうき",
+        "meaning": "상궤"
+      }
+    ],
+    "example": {
+      "jp": "新事業が軌道に乗りました。",
+      "ko": "신사업이 궤도에 올랐습니다."
+    }
+  },
+  {
+    "id": "k-n1-028",
+    "character": "衡",
+    "meaning": "저울대, 균형",
+    "onyomi": [
+      "コウ"
+    ],
+    "kunyomi": [],
+    "strokes": 16,
+    "level": "N1",
+    "words": [
+      {
+        "word": "均衡",
+        "reading": "きんこう",
+        "meaning": "균형"
+      },
+      {
+        "word": "平衡",
+        "reading": "へいこう",
+        "meaning": "평형"
+      }
+    ],
+    "example": {
+      "jp": "仕事と生活の均衡を保ちたいです。",
+      "ko": "일과 생활의 균형을 유지하고 싶습니다."
+    }
+  },
+  {
+    "id": "k-n1-029",
+    "character": "阻",
+    "meaning": "막다",
+    "onyomi": [
+      "ソ"
+    ],
+    "kunyomi": [
+      "はば(む)"
+    ],
+    "strokes": 8,
+    "level": "N1",
+    "words": [
+      {
+        "word": "阻害",
+        "reading": "そがい",
+        "meaning": "저해"
+      },
+      {
+        "word": "阻止",
+        "reading": "そし",
+        "meaning": "저지"
+      }
+    ],
+    "example": {
+      "jp": "成長を阻害する要因を取り除きます。",
+      "ko": "성장을 저해하는 요인을 제거하겠습니다."
+    }
+  },
+  {
+    "id": "k-n1-030",
+    "character": "醸",
+    "meaning": "빚다",
+    "onyomi": [
+      "ジョウ"
+    ],
+    "kunyomi": [
+      "かも(す)"
+    ],
+    "strokes": 20,
+    "level": "N1",
+    "words": [
+      {
+        "word": "醸成",
+        "reading": "じょうせい",
+        "meaning": "조성"
+      },
+      {
+        "word": "醸造",
+        "reading": "じょうぞう",
+        "meaning": "양조"
+      }
+    ],
+    "example": {
+      "jp": "相談しやすい雰囲気を醸成したいです。",
+      "ko": "상담하기 쉬운 분위기를 조성하고 싶습니다."
+    }
+  },
+  {
+    "id": "k-n1-031",
+    "character": "払",
+    "meaning": "떨치다, 지불하다",
+    "onyomi": [
+      "フツ"
+    ],
+    "kunyomi": [
+      "はら(う)"
+    ],
+    "strokes": 5,
+    "level": "N1",
+    "words": [
+      {
+        "word": "払拭",
+        "reading": "ふっしょく",
+        "meaning": "불식"
+      },
+      {
+        "word": "支払い",
+        "reading": "しはらい",
+        "meaning": "지불"
+      }
+    ],
+    "example": {
+      "jp": "不安を払拭するために説明を重ねました。",
+      "ko": "불안을 불식하기 위해 설명을 거듭했습니다."
+    }
+  },
+  {
+    "id": "k-n1-032",
+    "character": "携",
+    "meaning": "지니다, 관계하다",
+    "onyomi": [
+      "ケイ"
+    ],
+    "kunyomi": [
+      "たずさ(わる)",
+      "たずさ(える)"
+    ],
+    "strokes": 13,
+    "level": "N1",
+    "words": [
+      {
+        "word": "携帯",
+        "reading": "けいたい",
+        "meaning": "휴대"
+      },
+      {
+        "word": "提携",
+        "reading": "ていけい",
+        "meaning": "제휴"
+      }
+    ],
+    "example": {
+      "jp": "品質管理に五年間携わってまいりました。",
+      "ko": "품질 관리에 5년간 종사해 왔습니다."
+    }
+  },
+  {
+    "id": "k-n1-033",
+    "character": "顧",
+    "meaning": "돌아보다",
+    "onyomi": [
+      "コ"
+    ],
+    "kunyomi": [
+      "かえり(みる)"
+    ],
+    "strokes": 21,
+    "level": "N1",
+    "words": [
+      {
+        "word": "顧客",
+        "reading": "こきゃく",
+        "meaning": "고객"
+      },
+      {
+        "word": "回顧",
+        "reading": "かいこ",
+        "meaning": "회고"
+      }
+    ],
+    "example": {
+      "jp": "顧客の声を製品に反映します。",
+      "ko": "고객의 목소리를 제품에 반영합니다."
+    }
+  },
+  {
+    "id": "k-n1-034",
+    "character": "把",
+    "meaning": "잡다",
+    "onyomi": [
+      "ハ"
+    ],
+    "kunyomi": [],
+    "strokes": 7,
+    "level": "N1",
+    "words": [
+      {
+        "word": "把握",
+        "reading": "はあく",
+        "meaning": "파악"
+      },
+      {
+        "word": "大雑把",
+        "reading": "おおざっぱ",
+        "meaning": "대략적임"
+      }
+    ],
+    "example": {
+      "jp": "現状を正確に把握しています。",
+      "ko": "현 상황을 정확히 파악하고 있습니다."
+    }
+  },
+  {
+    "id": "k-n1-035",
+    "character": "頻",
+    "meaning": "자주",
+    "onyomi": [
+      "ヒン"
+    ],
+    "kunyomi": [],
+    "strokes": 17,
+    "level": "N1",
+    "words": [
+      {
+        "word": "頻繁",
+        "reading": "ひんぱん",
+        "meaning": "빈번"
+      },
+      {
+        "word": "頻度",
+        "reading": "ひんど",
+        "meaning": "빈도"
+      }
+    ],
+    "example": {
+      "jp": "海外拠点と頻繁にやり取りしています。",
+      "ko": "해외 거점과 빈번히 연락을 주고받고 있습니다."
+    }
+  }
 ]

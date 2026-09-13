@@ -1,26 +1,827 @@
 [
-  { "id": "v-n4-001", "word": "経験", "reading": "けいけん", "meaning": "경험", "partOfSpeech": "명사", "level": "N4", "example": "海外で働いた経験があります。", "exampleReading": "かいがいではたらいたけいけんがあります。", "exampleTranslation": "해외에서 일한 경험이 있습니다.", "importance": 3, "tags": ["취업"] },
-  { "id": "v-n4-002", "word": "準備", "reading": "じゅんび", "meaning": "준비", "partOfSpeech": "명사", "level": "N4", "example": "面接の準備をしています。", "exampleReading": "めんせつのじゅんびをしています。", "exampleTranslation": "면접 준비를 하고 있습니다.", "importance": 3, "tags": ["취업"] },
-  { "id": "v-n4-003", "word": "説明", "reading": "せつめい", "meaning": "설명", "partOfSpeech": "명사", "level": "N4", "example": "もう一度説明していただけますか。", "exampleReading": "もういちどせつめいしていただけますか。", "exampleTranslation": "한 번 더 설명해 주실 수 있습니까?", "importance": 3 },
-  { "id": "v-n4-004", "word": "予定", "reading": "よてい", "meaning": "예정", "partOfSpeech": "명사", "level": "N4", "example": "来月日本へ行く予定です。", "exampleReading": "らいげつにほんへいくよていです。", "exampleTranslation": "다음 달에 일본에 갈 예정입니다.", "importance": 3 },
-  { "id": "v-n4-005", "word": "約束", "reading": "やくそく", "meaning": "약속", "partOfSpeech": "명사", "level": "N4", "example": "友達と約束があります。", "exampleReading": "ともだちとやくそくがあります。", "exampleTranslation": "친구와 약속이 있습니다.", "importance": 3 },
-  { "id": "v-n4-006", "word": "理由", "reading": "りゆう", "meaning": "이유", "partOfSpeech": "명사", "level": "N4", "example": "遅れた理由を教えてください。", "exampleReading": "おくれたりゆうをおしえてください。", "exampleTranslation": "늦은 이유를 알려주세요.", "importance": 3 },
-  { "id": "v-n4-007", "word": "意見", "reading": "いけん", "meaning": "의견", "partOfSpeech": "명사", "level": "N4", "example": "ご意見をお聞かせください。", "exampleReading": "ごいけんをおきかせください。", "exampleTranslation": "의견을 들려주세요.", "importance": 3, "tags": ["비즈니스"] },
-  { "id": "v-n4-008", "word": "経済", "reading": "けいざい", "meaning": "경제", "partOfSpeech": "명사", "level": "N4", "example": "日本の経済について勉強しています。", "exampleReading": "にほんのけいざいについてべんきょうしています。", "exampleTranslation": "일본 경제에 대해 공부하고 있습니다.", "importance": 2 },
-  { "id": "v-n4-009", "word": "習慣", "reading": "しゅうかん", "meaning": "습관", "partOfSpeech": "명사", "level": "N4", "example": "毎日日記を書く習慣があります。", "exampleReading": "まいにちにっきをかくしゅうかんがあります。", "exampleTranslation": "매일 일기를 쓰는 습관이 있습니다.", "importance": 2 },
-  { "id": "v-n4-010", "word": "文化", "reading": "ぶんか", "meaning": "문화", "partOfSpeech": "명사", "level": "N4", "example": "日本の会社文化に興味があります。", "exampleReading": "にほんのかいしゃぶんかにきょうみがあります。", "exampleTranslation": "일본의 회사 문화에 관심이 있습니다.", "importance": 3, "tags": ["취업"] },
-  { "id": "v-n4-011", "word": "調べる", "reading": "しらべる", "meaning": "조사하다, 알아보다", "partOfSpeech": "동사(2류)", "level": "N4", "example": "会社について調べました。", "exampleReading": "かいしゃについてしらべました。", "exampleTranslation": "회사에 대해 알아보았습니다.", "importance": 3 },
-  { "id": "v-n4-012", "word": "伝える", "reading": "つたえる", "meaning": "전하다", "partOfSpeech": "동사(2류)", "level": "N4", "example": "部長にお伝えします。", "exampleReading": "ぶちょうにおつたえします。", "exampleTranslation": "부장님께 전해 드리겠습니다.", "importance": 3, "tags": ["비즈니스"] },
-  { "id": "v-n4-013", "word": "決める", "reading": "きめる", "meaning": "정하다", "partOfSpeech": "동사(2류)", "level": "N4", "example": "日程を決めましょう。", "exampleReading": "にっていをきめましょう。", "exampleTranslation": "일정을 정합시다.", "importance": 3 },
-  { "id": "v-n4-014", "word": "続ける", "reading": "つづける", "meaning": "계속하다", "partOfSpeech": "동사(2류)", "level": "N4", "example": "毎日勉強を続けています。", "exampleReading": "まいにちべんきょうをつづけています。", "exampleTranslation": "매일 공부를 계속하고 있습니다.", "importance": 3 },
-  { "id": "v-n4-015", "word": "比べる", "reading": "くらべる", "meaning": "비교하다", "partOfSpeech": "동사(2류)", "level": "N4", "example": "去年と比べて上手になりました。", "exampleReading": "きょねんとくらべてじょうずになりました。", "exampleTranslation": "작년과 비교해서 능숙해졌습니다.", "importance": 2 },
-  { "id": "v-n4-016", "word": "頑張る", "reading": "がんばる", "meaning": "힘내다, 노력하다", "partOfSpeech": "동사(1류)", "level": "N4", "example": "合格するまで頑張ります。", "exampleReading": "ごうかくするまでがんばります。", "exampleTranslation": "합격할 때까지 노력하겠습니다.", "importance": 3 },
-  { "id": "v-n4-017", "word": "選ぶ", "reading": "えらぶ", "meaning": "고르다", "partOfSpeech": "동사(1류)", "level": "N4", "example": "この会社を選んだ理由を話します。", "exampleReading": "このかいしゃをえらんだりゆうをはなします。", "exampleTranslation": "이 회사를 고른 이유를 말하겠습니다.", "importance": 3, "tags": ["취업"] },
-  { "id": "v-n4-018", "word": "急ぐ", "reading": "いそぐ", "meaning": "서두르다", "partOfSpeech": "동사(1류)", "level": "N4", "example": "急がないと間に合いません。", "exampleReading": "いそがないとまにあいません。", "exampleTranslation": "서두르지 않으면 시간에 못 맞춥니다.", "importance": 2 },
-  { "id": "v-n4-019", "word": "慣れる", "reading": "なれる", "meaning": "익숙해지다", "partOfSpeech": "동사(2류)", "level": "N4", "example": "日本の生活にもう慣れました。", "exampleReading": "にほんのせいかつにもうなれました。", "exampleTranslation": "일본 생활에 이제 익숙해졌습니다.", "importance": 3 },
-  { "id": "v-n4-020", "word": "複雑", "reading": "ふくざつ", "meaning": "복잡함", "partOfSpeech": "な형용사", "level": "N4", "example": "手続きが複雑です。", "exampleReading": "てつづきがふくざつです。", "exampleTranslation": "절차가 복잡합니다.", "importance": 2 },
-  { "id": "v-n4-021", "word": "大切", "reading": "たいせつ", "meaning": "소중함, 중요함", "partOfSpeech": "な형용사", "level": "N4", "example": "毎日の復習が大切です。", "exampleReading": "まいにちのふくしゅうがたいせつです。", "exampleTranslation": "매일의 복습이 중요합니다.", "importance": 3 },
-  { "id": "v-n4-022", "word": "残念", "reading": "ざんねん", "meaning": "유감스러움", "partOfSpeech": "な형용사", "level": "N4", "example": "参加できなくて残念です。", "exampleReading": "さんかできなくてざんねんです。", "exampleTranslation": "참가할 수 없어서 유감입니다.", "importance": 3 },
-  { "id": "v-n4-023", "word": "必ず", "reading": "かならず", "meaning": "반드시", "partOfSpeech": "부사", "level": "N4", "example": "必ず連絡します。", "exampleReading": "かならずれんらくします。", "exampleTranslation": "반드시 연락하겠습니다.", "importance": 3 },
-  { "id": "v-n4-024", "word": "例えば", "reading": "たとえば", "meaning": "예를 들면", "partOfSpeech": "부사", "level": "N4", "example": "例えば、こういう場合です。", "exampleReading": "たとえば、こういうばあいです。", "exampleTranslation": "예를 들면 이런 경우입니다.", "importance": 3 }
+  {
+    "id": "v-n4-001",
+    "word": "経験",
+    "reading": "けいけん",
+    "meaning": "경험",
+    "partOfSpeech": "명사",
+    "level": "N4",
+    "example": "海外で働いた経験があります。",
+    "exampleReading": "かいがいではたらいたけいけんがあります。",
+    "exampleTranslation": "해외에서 일한 경험이 있습니다.",
+    "importance": 3,
+    "tags": [
+      "취업"
+    ]
+  },
+  {
+    "id": "v-n4-002",
+    "word": "準備",
+    "reading": "じゅんび",
+    "meaning": "준비",
+    "partOfSpeech": "명사",
+    "level": "N4",
+    "example": "面接の準備をしています。",
+    "exampleReading": "めんせつのじゅんびをしています。",
+    "exampleTranslation": "면접 준비를 하고 있습니다.",
+    "importance": 3,
+    "tags": [
+      "취업"
+    ]
+  },
+  {
+    "id": "v-n4-003",
+    "word": "説明",
+    "reading": "せつめい",
+    "meaning": "설명",
+    "partOfSpeech": "명사",
+    "level": "N4",
+    "example": "もう一度説明していただけますか。",
+    "exampleReading": "もういちどせつめいしていただけますか。",
+    "exampleTranslation": "한 번 더 설명해 주실 수 있습니까?",
+    "importance": 3
+  },
+  {
+    "id": "v-n4-004",
+    "word": "予定",
+    "reading": "よてい",
+    "meaning": "예정",
+    "partOfSpeech": "명사",
+    "level": "N4",
+    "example": "来月日本へ行く予定です。",
+    "exampleReading": "らいげつにほんへいくよていです。",
+    "exampleTranslation": "다음 달에 일본에 갈 예정입니다.",
+    "importance": 3
+  },
+  {
+    "id": "v-n4-005",
+    "word": "約束",
+    "reading": "やくそく",
+    "meaning": "약속",
+    "partOfSpeech": "명사",
+    "level": "N4",
+    "example": "友達と約束があります。",
+    "exampleReading": "ともだちとやくそくがあります。",
+    "exampleTranslation": "친구와 약속이 있습니다.",
+    "importance": 3
+  },
+  {
+    "id": "v-n4-006",
+    "word": "理由",
+    "reading": "りゆう",
+    "meaning": "이유",
+    "partOfSpeech": "명사",
+    "level": "N4",
+    "example": "遅れた理由を教えてください。",
+    "exampleReading": "おくれたりゆうをおしえてください。",
+    "exampleTranslation": "늦은 이유를 알려주세요.",
+    "importance": 3
+  },
+  {
+    "id": "v-n4-007",
+    "word": "意見",
+    "reading": "いけん",
+    "meaning": "의견",
+    "partOfSpeech": "명사",
+    "level": "N4",
+    "example": "ご意見をお聞かせください。",
+    "exampleReading": "ごいけんをおきかせください。",
+    "exampleTranslation": "의견을 들려주세요.",
+    "importance": 3,
+    "tags": [
+      "비즈니스"
+    ]
+  },
+  {
+    "id": "v-n4-008",
+    "word": "経済",
+    "reading": "けいざい",
+    "meaning": "경제",
+    "partOfSpeech": "명사",
+    "level": "N4",
+    "example": "日本の経済について勉強しています。",
+    "exampleReading": "にほんのけいざいについてべんきょうしています。",
+    "exampleTranslation": "일본 경제에 대해 공부하고 있습니다.",
+    "importance": 2
+  },
+  {
+    "id": "v-n4-009",
+    "word": "習慣",
+    "reading": "しゅうかん",
+    "meaning": "습관",
+    "partOfSpeech": "명사",
+    "level": "N4",
+    "example": "毎日日記を書く習慣があります。",
+    "exampleReading": "まいにちにっきをかくしゅうかんがあります。",
+    "exampleTranslation": "매일 일기를 쓰는 습관이 있습니다.",
+    "importance": 2
+  },
+  {
+    "id": "v-n4-010",
+    "word": "文化",
+    "reading": "ぶんか",
+    "meaning": "문화",
+    "partOfSpeech": "명사",
+    "level": "N4",
+    "example": "日本の会社文化に興味があります。",
+    "exampleReading": "にほんのかいしゃぶんかにきょうみがあります。",
+    "exampleTranslation": "일본의 회사 문화에 관심이 있습니다.",
+    "importance": 3,
+    "tags": [
+      "취업"
+    ]
+  },
+  {
+    "id": "v-n4-011",
+    "word": "調べる",
+    "reading": "しらべる",
+    "meaning": "조사하다, 알아보다",
+    "partOfSpeech": "동사(2류)",
+    "level": "N4",
+    "example": "会社について調べました。",
+    "exampleReading": "かいしゃについてしらべました。",
+    "exampleTranslation": "회사에 대해 알아보았습니다.",
+    "importance": 3
+  },
+  {
+    "id": "v-n4-012",
+    "word": "伝える",
+    "reading": "つたえる",
+    "meaning": "전하다",
+    "partOfSpeech": "동사(2류)",
+    "level": "N4",
+    "example": "部長にお伝えします。",
+    "exampleReading": "ぶちょうにおつたえします。",
+    "exampleTranslation": "부장님께 전해 드리겠습니다.",
+    "importance": 3,
+    "tags": [
+      "비즈니스"
+    ]
+  },
+  {
+    "id": "v-n4-013",
+    "word": "決める",
+    "reading": "きめる",
+    "meaning": "정하다",
+    "partOfSpeech": "동사(2류)",
+    "level": "N4",
+    "example": "日程を決めましょう。",
+    "exampleReading": "にっていをきめましょう。",
+    "exampleTranslation": "일정을 정합시다.",
+    "importance": 3
+  },
+  {
+    "id": "v-n4-014",
+    "word": "続ける",
+    "reading": "つづける",
+    "meaning": "계속하다",
+    "partOfSpeech": "동사(2류)",
+    "level": "N4",
+    "example": "毎日勉強を続けています。",
+    "exampleReading": "まいにちべんきょうをつづけています。",
+    "exampleTranslation": "매일 공부를 계속하고 있습니다.",
+    "importance": 3
+  },
+  {
+    "id": "v-n4-015",
+    "word": "比べる",
+    "reading": "くらべる",
+    "meaning": "비교하다",
+    "partOfSpeech": "동사(2류)",
+    "level": "N4",
+    "example": "去年と比べて上手になりました。",
+    "exampleReading": "きょねんとくらべてじょうずになりました。",
+    "exampleTranslation": "작년과 비교해서 능숙해졌습니다.",
+    "importance": 2
+  },
+  {
+    "id": "v-n4-016",
+    "word": "頑張る",
+    "reading": "がんばる",
+    "meaning": "힘내다, 노력하다",
+    "partOfSpeech": "동사(1류)",
+    "level": "N4",
+    "example": "合格するまで頑張ります。",
+    "exampleReading": "ごうかくするまでがんばります。",
+    "exampleTranslation": "합격할 때까지 노력하겠습니다.",
+    "importance": 3
+  },
+  {
+    "id": "v-n4-017",
+    "word": "選ぶ",
+    "reading": "えらぶ",
+    "meaning": "고르다",
+    "partOfSpeech": "동사(1류)",
+    "level": "N4",
+    "example": "この会社を選んだ理由を話します。",
+    "exampleReading": "このかいしゃをえらんだりゆうをはなします。",
+    "exampleTranslation": "이 회사를 고른 이유를 말하겠습니다.",
+    "importance": 3,
+    "tags": [
+      "취업"
+    ]
+  },
+  {
+    "id": "v-n4-018",
+    "word": "急ぐ",
+    "reading": "いそぐ",
+    "meaning": "서두르다",
+    "partOfSpeech": "동사(1류)",
+    "level": "N4",
+    "example": "急がないと間に合いません。",
+    "exampleReading": "いそがないとまにあいません。",
+    "exampleTranslation": "서두르지 않으면 시간에 못 맞춥니다.",
+    "importance": 2
+  },
+  {
+    "id": "v-n4-019",
+    "word": "慣れる",
+    "reading": "なれる",
+    "meaning": "익숙해지다",
+    "partOfSpeech": "동사(2류)",
+    "level": "N4",
+    "example": "日本の生活にもう慣れました。",
+    "exampleReading": "にほんのせいかつにもうなれました。",
+    "exampleTranslation": "일본 생활에 이제 익숙해졌습니다.",
+    "importance": 3
+  },
+  {
+    "id": "v-n4-020",
+    "word": "複雑",
+    "reading": "ふくざつ",
+    "meaning": "복잡함",
+    "partOfSpeech": "な형용사",
+    "level": "N4",
+    "example": "手続きが複雑です。",
+    "exampleReading": "てつづきがふくざつです。",
+    "exampleTranslation": "절차가 복잡합니다.",
+    "importance": 2
+  },
+  {
+    "id": "v-n4-021",
+    "word": "大切",
+    "reading": "たいせつ",
+    "meaning": "소중함, 중요함",
+    "partOfSpeech": "な형용사",
+    "level": "N4",
+    "example": "毎日の復習が大切です。",
+    "exampleReading": "まいにちのふくしゅうがたいせつです。",
+    "exampleTranslation": "매일의 복습이 중요합니다.",
+    "importance": 3
+  },
+  {
+    "id": "v-n4-022",
+    "word": "残念",
+    "reading": "ざんねん",
+    "meaning": "유감스러움",
+    "partOfSpeech": "な형용사",
+    "level": "N4",
+    "example": "参加できなくて残念です。",
+    "exampleReading": "さんかできなくてざんねんです。",
+    "exampleTranslation": "참가할 수 없어서 유감입니다.",
+    "importance": 3
+  },
+  {
+    "id": "v-n4-023",
+    "word": "必ず",
+    "reading": "かならず",
+    "meaning": "반드시",
+    "partOfSpeech": "부사",
+    "level": "N4",
+    "example": "必ず連絡します。",
+    "exampleReading": "かならずれんらくします。",
+    "exampleTranslation": "반드시 연락하겠습니다.",
+    "importance": 3
+  },
+  {
+    "id": "v-n4-024",
+    "word": "例えば",
+    "reading": "たとえば",
+    "meaning": "예를 들면",
+    "partOfSpeech": "부사",
+    "level": "N4",
+    "example": "例えば、こういう場合です。",
+    "exampleReading": "たとえば、こういうばあいです。",
+    "exampleTranslation": "예를 들면 이런 경우입니다.",
+    "importance": 3
+  },
+  {
+    "id": "v-n4-025",
+    "word": "趣味",
+    "reading": "しゅみ",
+    "meaning": "취미",
+    "partOfSpeech": "명사",
+    "example": "趣味は映画を見ることです。",
+    "exampleReading": "しゅみはえいがをみることです。",
+    "exampleTranslation": "취미는 영화를 보는 것입니다.",
+    "importance": 3,
+    "level": "N4"
+  },
+  {
+    "id": "v-n4-026",
+    "word": "質問",
+    "reading": "しつもん",
+    "meaning": "질문",
+    "partOfSpeech": "명사",
+    "example": "何かご質問はありますか。",
+    "exampleReading": "なにかごしつもんはありますか。",
+    "exampleTranslation": "무언가 질문 있으십니까?",
+    "importance": 3,
+    "tags": [
+      "취업"
+    ],
+    "level": "N4"
+  },
+  {
+    "id": "v-n4-027",
+    "word": "会議",
+    "reading": "かいぎ",
+    "meaning": "회의",
+    "partOfSpeech": "명사",
+    "example": "十時から会議が始まります。",
+    "exampleReading": "じゅうじからかいぎがはじまります。",
+    "exampleTranslation": "10시부터 회의가 시작됩니다.",
+    "importance": 3,
+    "tags": [
+      "비즈니스"
+    ],
+    "level": "N4"
+  },
+  {
+    "id": "v-n4-028",
+    "word": "部長",
+    "reading": "ぶちょう",
+    "meaning": "부장",
+    "partOfSpeech": "명사",
+    "example": "部長に報告してきます。",
+    "exampleReading": "ぶちょうにほうこくしてきます。",
+    "exampleTranslation": "부장님께 보고하고 오겠습니다.",
+    "importance": 3,
+    "tags": [
+      "비즈니스"
+    ],
+    "level": "N4"
+  },
+  {
+    "id": "v-n4-029",
+    "word": "社員",
+    "reading": "しゃいん",
+    "meaning": "사원",
+    "partOfSpeech": "명사",
+    "example": "社員は全部で百人です。",
+    "exampleReading": "しゃいんはぜんぶでひゃくにんです。",
+    "exampleTranslation": "사원은 전부 100명입니다.",
+    "importance": 3,
+    "tags": [
+      "취업"
+    ],
+    "level": "N4"
+  },
+  {
+    "id": "v-n4-030",
+    "word": "予約",
+    "reading": "よやく",
+    "meaning": "예약",
+    "partOfSpeech": "명사",
+    "example": "会議室を予約しました。",
+    "exampleReading": "かいぎしつをよやくしました。",
+    "exampleTranslation": "회의실을 예약했습니다.",
+    "importance": 3,
+    "tags": [
+      "비즈니스"
+    ],
+    "level": "N4"
+  },
+  {
+    "id": "v-n4-031",
+    "word": "用意",
+    "reading": "ようい",
+    "meaning": "준비",
+    "partOfSpeech": "명사",
+    "example": "資料をご用意しております。",
+    "exampleReading": "しりょうをごよういしております。",
+    "exampleTranslation": "자료를 준비해 두었습니다.",
+    "importance": 3,
+    "tags": [
+      "비즈니스"
+    ],
+    "level": "N4"
+  },
+  {
+    "id": "v-n4-032",
+    "word": "案内",
+    "reading": "あんない",
+    "meaning": "안내",
+    "partOfSpeech": "명사",
+    "example": "受付までご案内します。",
+    "exampleReading": "うけつけまでごあんないします。",
+    "exampleTranslation": "접수처까지 안내하겠습니다.",
+    "importance": 3,
+    "tags": [
+      "비즈니스"
+    ],
+    "level": "N4"
+  },
+  {
+    "id": "v-n4-033",
+    "word": "連休",
+    "reading": "れんきゅう",
+    "meaning": "연휴",
+    "partOfSpeech": "명사",
+    "example": "連休は実家に帰ります。",
+    "exampleReading": "れんきゅうはじっかにかえります。",
+    "exampleTranslation": "연휴에는 본가에 돌아갑니다.",
+    "importance": 2,
+    "level": "N4"
+  },
+  {
+    "id": "v-n4-034",
+    "word": "荷物",
+    "reading": "にもつ",
+    "meaning": "짐",
+    "partOfSpeech": "명사",
+    "example": "荷物は明日届きます。",
+    "exampleReading": "にもつはあしたとどきます。",
+    "exampleTranslation": "짐은 내일 도착합니다.",
+    "importance": 2,
+    "level": "N4"
+  },
+  {
+    "id": "v-n4-035",
+    "word": "地図",
+    "reading": "ちず",
+    "meaning": "지도",
+    "partOfSpeech": "명사",
+    "example": "地図を見ながら歩きました。",
+    "exampleReading": "ちずをみながらあるきました。",
+    "exampleTranslation": "지도를 보면서 걸었습니다.",
+    "importance": 2,
+    "level": "N4"
+  },
+  {
+    "id": "v-n4-036",
+    "word": "都合",
+    "reading": "つごう",
+    "meaning": "사정, 형편",
+    "partOfSpeech": "명사",
+    "example": "ご都合のよい日を教えてください。",
+    "exampleReading": "ごつごうのよいひをおしえてください。",
+    "exampleTranslation": "편하신 날을 알려주세요.",
+    "importance": 3,
+    "tags": [
+      "비즈니스"
+    ],
+    "level": "N4"
+  },
+  {
+    "id": "v-n4-037",
+    "word": "場所",
+    "reading": "ばしょ",
+    "meaning": "장소",
+    "partOfSpeech": "명사",
+    "example": "面接の場所を確認しました。",
+    "exampleReading": "めんせつのばしょをかくにんしました。",
+    "exampleTranslation": "면접 장소를 확인했습니다.",
+    "importance": 3,
+    "level": "N4"
+  },
+  {
+    "id": "v-n4-038",
+    "word": "世界",
+    "reading": "せかい",
+    "meaning": "세계",
+    "partOfSpeech": "명사",
+    "example": "世界中で使われている製品です。",
+    "exampleReading": "せかいじゅうでつかわれているせいひんです。",
+    "exampleTranslation": "전 세계에서 쓰이는 제품입니다.",
+    "importance": 2,
+    "level": "N4"
+  },
+  {
+    "id": "v-n4-039",
+    "word": "生活",
+    "reading": "せいかつ",
+    "meaning": "생활",
+    "partOfSpeech": "명사",
+    "example": "日本の生活にも慣れました。",
+    "exampleReading": "にほんのせいかつにもなれました。",
+    "exampleTranslation": "일본 생활에도 익숙해졌습니다.",
+    "importance": 3,
+    "level": "N4"
+  },
+  {
+    "id": "v-n4-040",
+    "word": "安心",
+    "reading": "あんしん",
+    "meaning": "안심",
+    "partOfSpeech": "명사",
+    "example": "ご連絡をいただいて安心しました。",
+    "exampleReading": "ごれんらくをいただいてあんしんしました。",
+    "exampleTranslation": "연락을 주셔서 안심했습니다.",
+    "importance": 3,
+    "level": "N4"
+  },
+  {
+    "id": "v-n4-041",
+    "word": "心配",
+    "reading": "しんぱい",
+    "meaning": "걱정",
+    "partOfSpeech": "명사",
+    "example": "心配しないでください。",
+    "exampleReading": "しんぱいしないでください。",
+    "exampleTranslation": "걱정하지 마세요.",
+    "importance": 3,
+    "level": "N4"
+  },
+  {
+    "id": "v-n4-042",
+    "word": "意味",
+    "reading": "いみ",
+    "meaning": "의미",
+    "partOfSpeech": "명사",
+    "example": "この言葉の意味が分かりません。",
+    "exampleReading": "このことばのいみがわかりません。",
+    "exampleTranslation": "이 말의 의미를 모르겠습니다.",
+    "importance": 3,
+    "level": "N4"
+  },
+  {
+    "id": "v-n4-043",
+    "word": "特別",
+    "reading": "とくべつ",
+    "meaning": "특별",
+    "partOfSpeech": "な형용사",
+    "example": "特別な準備は要りません。",
+    "exampleReading": "とくべつなじゅんびはいりません。",
+    "exampleTranslation": "특별한 준비는 필요 없습니다.",
+    "importance": 2,
+    "level": "N4"
+  },
+  {
+    "id": "v-n4-044",
+    "word": "普通",
+    "reading": "ふつう",
+    "meaning": "보통",
+    "partOfSpeech": "명사",
+    "example": "普通は九時に出社します。",
+    "exampleReading": "ふつうはくじにしゅっしゃします。",
+    "exampleTranslation": "보통은 9시에 출근합니다.",
+    "importance": 3,
+    "level": "N4"
+  },
+  {
+    "id": "v-n4-045",
+    "word": "最近",
+    "reading": "さいきん",
+    "meaning": "최근",
+    "partOfSpeech": "명사",
+    "example": "最近、日本語の勉強を始めました。",
+    "exampleReading": "さいきん、にほんごのべんきょうをはじめました。",
+    "exampleTranslation": "최근에 일본어 공부를 시작했습니다.",
+    "importance": 3,
+    "level": "N4"
+  },
+  {
+    "id": "v-n4-046",
+    "word": "将来",
+    "reading": "しょうらい",
+    "meaning": "장래",
+    "partOfSpeech": "명사",
+    "example": "将来は日本で働きたいです。",
+    "exampleReading": "しょうらいはにほんではたらきたいです。",
+    "exampleTranslation": "장래에는 일본에서 일하고 싶습니다.",
+    "importance": 3,
+    "tags": [
+      "취업"
+    ],
+    "level": "N4"
+  },
+  {
+    "id": "v-n4-047",
+    "word": "自分",
+    "reading": "じぶん",
+    "meaning": "자기, 자신",
+    "partOfSpeech": "명사",
+    "example": "自分で考えて行動します。",
+    "exampleReading": "じぶんでかんがえてこうどうします。",
+    "exampleTranslation": "스스로 생각해서 행동합니다.",
+    "importance": 3,
+    "tags": [
+      "취업"
+    ],
+    "level": "N4"
+  },
+  {
+    "id": "v-n4-048",
+    "word": "気持ち",
+    "reading": "きもち",
+    "meaning": "기분, 마음",
+    "partOfSpeech": "명사",
+    "example": "感謝の気持ちを伝えました。",
+    "exampleReading": "かんしゃのきもちをつたえました。",
+    "exampleTranslation": "감사의 마음을 전했습니다.",
+    "importance": 3,
+    "level": "N4"
+  },
+  {
+    "id": "v-n4-049",
+    "word": "用事",
+    "reading": "ようじ",
+    "meaning": "볼일, 용무",
+    "partOfSpeech": "명사",
+    "example": "午後は用事があります。",
+    "exampleReading": "ごごはようじがあります。",
+    "exampleTranslation": "오후에는 볼일이 있습니다.",
+    "importance": 2,
+    "level": "N4"
+  },
+  {
+    "id": "v-n4-050",
+    "word": "遅れる",
+    "reading": "おくれる",
+    "meaning": "늦다",
+    "partOfSpeech": "동사(2류)",
+    "example": "電車が遅れて、十分遅刻しました。",
+    "exampleReading": "でんしゃがおくれて、じゅっぷんちこくしました。",
+    "exampleTranslation": "전철이 늦어서 10분 지각했습니다.",
+    "importance": 3,
+    "level": "N4"
+  },
+  {
+    "id": "v-n4-051",
+    "word": "間に合う",
+    "reading": "まにあう",
+    "meaning": "시간에 맞추다",
+    "partOfSpeech": "동사(1류)",
+    "example": "急げば間に合います。",
+    "exampleReading": "いそげばまにあいます。",
+    "exampleTranslation": "서두르면 시간에 맞출 수 있습니다.",
+    "importance": 3,
+    "level": "N4"
+  },
+  {
+    "id": "v-n4-052",
+    "word": "覚える",
+    "reading": "おぼえる",
+    "meaning": "외우다, 익히다",
+    "partOfSpeech": "동사(2류)",
+    "example": "毎日三十個の単語を覚えます。",
+    "exampleReading": "まいにちさんじゅっこのたんごをおぼえます。",
+    "exampleTranslation": "매일 30개의 단어를 외웁니다.",
+    "importance": 3,
+    "level": "N4"
+  },
+  {
+    "id": "v-n4-053",
+    "word": "忘れる",
+    "reading": "わすれる",
+    "meaning": "잊다",
+    "partOfSpeech": "동사(2류)",
+    "example": "資料を持ってくるのを忘れました。",
+    "exampleReading": "しりょうをもってくるのをわすれました。",
+    "exampleTranslation": "자료를 가져오는 것을 잊었습니다.",
+    "importance": 3,
+    "level": "N4"
+  },
+  {
+    "id": "v-n4-054",
+    "word": "届く",
+    "reading": "とどく",
+    "meaning": "도착하다, 닿다",
+    "partOfSpeech": "동사(1류)",
+    "example": "メールは届いておりますでしょうか。",
+    "exampleReading": "メールはとどいておりますでしょうか。",
+    "exampleTranslation": "메일은 도착했는지요?",
+    "importance": 3,
+    "tags": [
+      "비즈니스"
+    ],
+    "level": "N4"
+  },
+  {
+    "id": "v-n4-055",
+    "word": "手伝う",
+    "reading": "てつだう",
+    "meaning": "돕다",
+    "partOfSpeech": "동사(1류)",
+    "example": "何かお手伝いしましょうか。",
+    "exampleReading": "なにかおてつだいしましょうか。",
+    "exampleTranslation": "무언가 도와드릴까요?",
+    "importance": 3,
+    "tags": [
+      "비즈니스"
+    ],
+    "level": "N4"
+  },
+  {
+    "id": "v-n4-056",
+    "word": "探す",
+    "reading": "さがす",
+    "meaning": "찾다",
+    "partOfSpeech": "동사(1류)",
+    "example": "日本で仕事を探しています。",
+    "exampleReading": "にほんでしごとをさがしています。",
+    "exampleTranslation": "일본에서 일을 찾고 있습니다.",
+    "importance": 3,
+    "tags": [
+      "취업"
+    ],
+    "level": "N4"
+  },
+  {
+    "id": "v-n4-057",
+    "word": "集まる",
+    "reading": "あつまる",
+    "meaning": "모이다",
+    "partOfSpeech": "동사(1류)",
+    "example": "九時に入口に集まってください。",
+    "exampleReading": "くじにいりぐちにあつまってください。",
+    "exampleTranslation": "9시에 입구에 모여 주세요.",
+    "importance": 2,
+    "level": "N4"
+  },
+  {
+    "id": "v-n4-058",
+    "word": "変わる",
+    "reading": "かわる",
+    "meaning": "바뀌다",
+    "partOfSpeech": "동사(1류)",
+    "example": "会議の時間が変わりました。",
+    "exampleReading": "かいぎのじかんがかわりました。",
+    "exampleTranslation": "회의 시간이 바뀌었습니다.",
+    "importance": 3,
+    "level": "N4"
+  },
+  {
+    "id": "v-n4-059",
+    "word": "疲れる",
+    "reading": "つかれる",
+    "meaning": "지치다, 피곤하다",
+    "partOfSpeech": "동사(2류)",
+    "example": "今日は少し疲れました。",
+    "exampleReading": "きょうはすこしつかれました。",
+    "exampleTranslation": "오늘은 조금 피곤했습니다.",
+    "importance": 2,
+    "level": "N4"
+  },
+  {
+    "id": "v-n4-060",
+    "word": "直す",
+    "reading": "なおす",
+    "meaning": "고치다",
+    "partOfSpeech": "동사(1류)",
+    "example": "間違いを直して提出しました。",
+    "exampleReading": "まちがいをなおしてていしゅつしました。",
+    "exampleTranslation": "잘못된 곳을 고쳐서 제출했습니다.",
+    "importance": 3,
+    "level": "N4"
+  },
+  {
+    "id": "v-n4-061",
+    "word": "もし",
+    "reading": "もし",
+    "meaning": "만약",
+    "partOfSpeech": "부사",
+    "example": "もし都合が悪ければ、お知らせください。",
+    "exampleReading": "もしつごうがわるければ、おしらせください。",
+    "exampleTranslation": "만약 사정이 안 되면 알려주세요.",
+    "importance": 3,
+    "level": "N4"
+  },
+  {
+    "id": "v-n4-062",
+    "word": "やっと",
+    "reading": "やっと",
+    "meaning": "겨우, 드디어",
+    "partOfSpeech": "부사",
+    "example": "やっと資格を取りました。",
+    "exampleReading": "やっとしかくをとりました。",
+    "exampleTranslation": "드디어 자격증을 땄습니다.",
+    "importance": 2,
+    "level": "N4"
+  },
+  {
+    "id": "v-n4-063",
+    "word": "ほとんど",
+    "reading": "ほとんど",
+    "meaning": "거의",
+    "partOfSpeech": "부사",
+    "example": "仕事はほとんど終わりました。",
+    "exampleReading": "しごとはほとんどおわりました。",
+    "exampleTranslation": "일은 거의 끝났습니다.",
+    "importance": 3,
+    "level": "N4"
+  },
+  {
+    "id": "v-n4-064",
+    "word": "たぶん",
+    "reading": "たぶん",
+    "meaning": "아마",
+    "partOfSpeech": "부사",
+    "example": "たぶん明日には届くと思います。",
+    "exampleReading": "たぶんあしたにはとどくとおもいます。",
+    "exampleTranslation": "아마 내일에는 도착할 것 같습니다.",
+    "importance": 3,
+    "level": "N4"
+  }
 ]

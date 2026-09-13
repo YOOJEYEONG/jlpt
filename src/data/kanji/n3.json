@@ -1,12 +1,1131 @@
 [
-  { "id": "k-n3-001", "character": "担", "meaning": "메다, 담당하다", "onyomi": ["タン"], "kunyomi": ["かつ(ぐ)", "にな(う)"], "strokes": 8, "level": "N3", "words": [ { "word": "担当", "reading": "たんとう", "meaning": "담당" }, { "word": "負担", "reading": "ふたん", "meaning": "부담" } ], "example": { "jp": "営業を担当しております。", "ko": "영업을 담당하고 있습니다." } },
-  { "id": "k-n3-002", "character": "確", "meaning": "확실하다", "onyomi": ["カク"], "kunyomi": ["たし(か)"], "strokes": 15, "level": "N3", "words": [ { "word": "確認", "reading": "かくにん", "meaning": "확인" }, { "word": "正確", "reading": "せいかく", "meaning": "정확" } ], "example": { "jp": "ご確認のほどよろしくお願いいたします。", "ko": "확인 부탁드립니다." } },
-  { "id": "k-n3-003", "character": "責", "meaning": "책임, 꾸짖다", "onyomi": ["セキ"], "kunyomi": ["せ(める)"], "strokes": 11, "level": "N3", "words": [ { "word": "責任", "reading": "せきにん", "meaning": "책임" }, { "word": "責任者", "reading": "せきにんしゃ", "meaning": "책임자" } ], "example": { "jp": "責任を持って対応します。", "ko": "책임지고 대응하겠습니다." } },
-  { "id": "k-n3-004", "character": "務", "meaning": "힘쓰다, 업무", "onyomi": ["ム"], "kunyomi": ["つと(める)"], "strokes": 11, "level": "N3", "words": [ { "word": "業務", "reading": "ぎょうむ", "meaning": "업무" }, { "word": "勤務", "reading": "きんむ", "meaning": "근무" } ], "example": { "jp": "職務経歴書を提出しました。", "ko": "직무경력서를 제출했습니다." } },
-  { "id": "k-n3-005", "character": "募", "meaning": "모으다, 모집", "onyomi": ["ボ"], "kunyomi": ["つの(る)"], "strokes": 12, "level": "N3", "words": [ { "word": "応募", "reading": "おうぼ", "meaning": "응모, 지원" }, { "word": "募集", "reading": "ぼしゅう", "meaning": "모집" } ], "example": { "jp": "求人に応募しました。", "ko": "구인에 지원했습니다." } },
-  { "id": "k-n3-006", "character": "採", "meaning": "캐다, 채용", "onyomi": ["サイ"], "kunyomi": ["と(る)"], "strokes": 11, "level": "N3", "words": [ { "word": "採用", "reading": "さいよう", "meaning": "채용" }, { "word": "採点", "reading": "さいてん", "meaning": "채점" } ], "example": { "jp": "新卒採用に応募します。", "ko": "신졸 채용에 지원합니다." } },
-  { "id": "k-n3-007", "character": "総", "meaning": "모두, 총괄", "onyomi": ["ソウ"], "kunyomi": [], "strokes": 14, "level": "N3", "words": [ { "word": "総務", "reading": "そうむ", "meaning": "총무" }, { "word": "総合", "reading": "そうごう", "meaning": "종합" } ], "example": { "jp": "総務部に配属されました。", "ko": "총무부에 배속되었습니다." } },
-  { "id": "k-n3-008", "character": "希", "meaning": "바라다, 드물다", "onyomi": ["キ"], "kunyomi": [], "strokes": 7, "level": "N3", "words": [ { "word": "希望", "reading": "きぼう", "meaning": "희망" }, { "word": "希少", "reading": "きしょう", "meaning": "희소" } ], "example": { "jp": "東京勤務を希望しております。", "ko": "도쿄 근무를 희망하고 있습니다." } },
-  { "id": "k-n3-009", "character": "率", "meaning": "비율, 이끌다", "onyomi": ["リツ", "ソツ"], "kunyomi": ["ひき(いる)"], "strokes": 11, "level": "N3", "words": [ { "word": "効率", "reading": "こうりつ", "meaning": "효율" }, { "word": "正答率", "reading": "せいとうりつ", "meaning": "정답률" } ], "example": { "jp": "正答率が八割を超えました。", "ko": "정답률이 80퍼센트를 넘었습니다." } },
-  { "id": "k-n3-010", "character": "識", "meaning": "알다, 지식", "onyomi": ["シキ"], "kunyomi": [], "strokes": 19, "level": "N3", "words": [ { "word": "知識", "reading": "ちしき", "meaning": "지식" }, { "word": "意識", "reading": "いしき", "meaning": "의식" } ], "example": { "jp": "業界の知識を身につけたいです。", "ko": "업계 지식을 익히고 싶습니다." } }
+  {
+    "id": "k-n3-001",
+    "character": "担",
+    "meaning": "메다, 담당하다",
+    "onyomi": [
+      "タン"
+    ],
+    "kunyomi": [
+      "かつ(ぐ)",
+      "にな(う)"
+    ],
+    "strokes": 8,
+    "level": "N3",
+    "words": [
+      {
+        "word": "担当",
+        "reading": "たんとう",
+        "meaning": "담당"
+      },
+      {
+        "word": "負担",
+        "reading": "ふたん",
+        "meaning": "부담"
+      }
+    ],
+    "example": {
+      "jp": "営業を担当しております。",
+      "ko": "영업을 담당하고 있습니다."
+    }
+  },
+  {
+    "id": "k-n3-002",
+    "character": "確",
+    "meaning": "확실하다",
+    "onyomi": [
+      "カク"
+    ],
+    "kunyomi": [
+      "たし(か)"
+    ],
+    "strokes": 15,
+    "level": "N3",
+    "words": [
+      {
+        "word": "確認",
+        "reading": "かくにん",
+        "meaning": "확인"
+      },
+      {
+        "word": "正確",
+        "reading": "せいかく",
+        "meaning": "정확"
+      }
+    ],
+    "example": {
+      "jp": "ご確認のほどよろしくお願いいたします。",
+      "ko": "확인 부탁드립니다."
+    }
+  },
+  {
+    "id": "k-n3-003",
+    "character": "責",
+    "meaning": "책임, 꾸짖다",
+    "onyomi": [
+      "セキ"
+    ],
+    "kunyomi": [
+      "せ(める)"
+    ],
+    "strokes": 11,
+    "level": "N3",
+    "words": [
+      {
+        "word": "責任",
+        "reading": "せきにん",
+        "meaning": "책임"
+      },
+      {
+        "word": "責任者",
+        "reading": "せきにんしゃ",
+        "meaning": "책임자"
+      }
+    ],
+    "example": {
+      "jp": "責任を持って対応します。",
+      "ko": "책임지고 대응하겠습니다."
+    }
+  },
+  {
+    "id": "k-n3-004",
+    "character": "務",
+    "meaning": "힘쓰다, 업무",
+    "onyomi": [
+      "ム"
+    ],
+    "kunyomi": [
+      "つと(める)"
+    ],
+    "strokes": 11,
+    "level": "N3",
+    "words": [
+      {
+        "word": "業務",
+        "reading": "ぎょうむ",
+        "meaning": "업무"
+      },
+      {
+        "word": "勤務",
+        "reading": "きんむ",
+        "meaning": "근무"
+      }
+    ],
+    "example": {
+      "jp": "職務経歴書を提出しました。",
+      "ko": "직무경력서를 제출했습니다."
+    }
+  },
+  {
+    "id": "k-n3-005",
+    "character": "募",
+    "meaning": "모으다, 모집",
+    "onyomi": [
+      "ボ"
+    ],
+    "kunyomi": [
+      "つの(る)"
+    ],
+    "strokes": 12,
+    "level": "N3",
+    "words": [
+      {
+        "word": "応募",
+        "reading": "おうぼ",
+        "meaning": "응모, 지원"
+      },
+      {
+        "word": "募集",
+        "reading": "ぼしゅう",
+        "meaning": "모집"
+      }
+    ],
+    "example": {
+      "jp": "求人に応募しました。",
+      "ko": "구인에 지원했습니다."
+    }
+  },
+  {
+    "id": "k-n3-006",
+    "character": "採",
+    "meaning": "캐다, 채용",
+    "onyomi": [
+      "サイ"
+    ],
+    "kunyomi": [
+      "と(る)"
+    ],
+    "strokes": 11,
+    "level": "N3",
+    "words": [
+      {
+        "word": "採用",
+        "reading": "さいよう",
+        "meaning": "채용"
+      },
+      {
+        "word": "採点",
+        "reading": "さいてん",
+        "meaning": "채점"
+      }
+    ],
+    "example": {
+      "jp": "新卒採用に応募します。",
+      "ko": "신졸 채용에 지원합니다."
+    }
+  },
+  {
+    "id": "k-n3-007",
+    "character": "総",
+    "meaning": "모두, 총괄",
+    "onyomi": [
+      "ソウ"
+    ],
+    "kunyomi": [],
+    "strokes": 14,
+    "level": "N3",
+    "words": [
+      {
+        "word": "総務",
+        "reading": "そうむ",
+        "meaning": "총무"
+      },
+      {
+        "word": "総合",
+        "reading": "そうごう",
+        "meaning": "종합"
+      }
+    ],
+    "example": {
+      "jp": "総務部に配属されました。",
+      "ko": "총무부에 배속되었습니다."
+    }
+  },
+  {
+    "id": "k-n3-008",
+    "character": "希",
+    "meaning": "바라다, 드물다",
+    "onyomi": [
+      "キ"
+    ],
+    "kunyomi": [],
+    "strokes": 7,
+    "level": "N3",
+    "words": [
+      {
+        "word": "希望",
+        "reading": "きぼう",
+        "meaning": "희망"
+      },
+      {
+        "word": "希少",
+        "reading": "きしょう",
+        "meaning": "희소"
+      }
+    ],
+    "example": {
+      "jp": "東京勤務を希望しております。",
+      "ko": "도쿄 근무를 희망하고 있습니다."
+    }
+  },
+  {
+    "id": "k-n3-009",
+    "character": "率",
+    "meaning": "비율, 이끌다",
+    "onyomi": [
+      "リツ",
+      "ソツ"
+    ],
+    "kunyomi": [
+      "ひき(いる)"
+    ],
+    "strokes": 11,
+    "level": "N3",
+    "words": [
+      {
+        "word": "効率",
+        "reading": "こうりつ",
+        "meaning": "효율"
+      },
+      {
+        "word": "正答率",
+        "reading": "せいとうりつ",
+        "meaning": "정답률"
+      }
+    ],
+    "example": {
+      "jp": "正答率が八割を超えました。",
+      "ko": "정답률이 80퍼센트를 넘었습니다."
+    }
+  },
+  {
+    "id": "k-n3-010",
+    "character": "識",
+    "meaning": "알다, 지식",
+    "onyomi": [
+      "シキ"
+    ],
+    "kunyomi": [],
+    "strokes": 19,
+    "level": "N3",
+    "words": [
+      {
+        "word": "知識",
+        "reading": "ちしき",
+        "meaning": "지식"
+      },
+      {
+        "word": "意識",
+        "reading": "いしき",
+        "meaning": "의식"
+      }
+    ],
+    "example": {
+      "jp": "業界の知識を身につけたいです。",
+      "ko": "업계 지식을 익히고 싶습니다."
+    }
+  },
+  {
+    "id": "k-n3-011",
+    "character": "案",
+    "meaning": "안건, 생각",
+    "onyomi": [
+      "アン"
+    ],
+    "kunyomi": [],
+    "strokes": 10,
+    "level": "N3",
+    "words": [
+      {
+        "word": "提案",
+        "reading": "ていあん",
+        "meaning": "제안"
+      },
+      {
+        "word": "案内",
+        "reading": "あんない",
+        "meaning": "안내"
+      }
+    ],
+    "example": {
+      "jp": "改善案を提出しました。",
+      "ko": "개선안을 제출했습니다."
+    }
+  },
+  {
+    "id": "k-n3-012",
+    "character": "内",
+    "meaning": "안, 내부",
+    "onyomi": [
+      "ナイ"
+    ],
+    "kunyomi": [
+      "うち"
+    ],
+    "strokes": 4,
+    "level": "N3",
+    "words": [
+      {
+        "word": "社内",
+        "reading": "しゃない",
+        "meaning": "사내"
+      },
+      {
+        "word": "内定",
+        "reading": "ないてい",
+        "meaning": "내정"
+      }
+    ],
+    "example": {
+      "jp": "先週、内定をいただきました。",
+      "ko": "지난주에 내정을 받았습니다."
+    }
+  },
+  {
+    "id": "k-n3-013",
+    "character": "受",
+    "meaning": "받다",
+    "onyomi": [
+      "ジュ"
+    ],
+    "kunyomi": [
+      "う(ける)"
+    ],
+    "strokes": 8,
+    "level": "N3",
+    "words": [
+      {
+        "word": "受付",
+        "reading": "うけつけ",
+        "meaning": "접수처"
+      },
+      {
+        "word": "受験",
+        "reading": "じゅけん",
+        "meaning": "수험, 응시"
+      }
+    ],
+    "example": {
+      "jp": "十二月にN1を受験します。",
+      "ko": "12월에 N1을 응시합니다."
+    }
+  },
+  {
+    "id": "k-n3-014",
+    "character": "付",
+    "meaning": "붙이다",
+    "onyomi": [
+      "フ"
+    ],
+    "kunyomi": [
+      "つ(く)",
+      "つ(ける)"
+    ],
+    "strokes": 5,
+    "level": "N3",
+    "words": [
+      {
+        "word": "添付",
+        "reading": "てんぷ",
+        "meaning": "첨부"
+      },
+      {
+        "word": "受付",
+        "reading": "うけつけ",
+        "meaning": "접수처"
+      }
+    ],
+    "example": {
+      "jp": "詳細は添付をご覧ください。",
+      "ko": "상세 내용은 첨부를 봐 주세요."
+    }
+  },
+  {
+    "id": "k-n3-015",
+    "character": "願",
+    "meaning": "바라다",
+    "onyomi": [
+      "ガン"
+    ],
+    "kunyomi": [
+      "ねが(う)"
+    ],
+    "strokes": 19,
+    "level": "N3",
+    "words": [
+      {
+        "word": "お願い",
+        "reading": "おねがい",
+        "meaning": "부탁"
+      },
+      {
+        "word": "志願",
+        "reading": "しがん",
+        "meaning": "지원"
+      }
+    ],
+    "example": {
+      "jp": "よろしくお願いいたします。",
+      "ko": "잘 부탁드립니다."
+    }
+  },
+  {
+    "id": "k-n3-016",
+    "character": "届",
+    "meaning": "닿다, 신고하다",
+    "onyomi": [],
+    "kunyomi": [
+      "とど(く)",
+      "とど(ける)"
+    ],
+    "strokes": 8,
+    "level": "N3",
+    "words": [
+      {
+        "word": "届く",
+        "reading": "とどく",
+        "meaning": "도착하다"
+      },
+      {
+        "word": "届ける",
+        "reading": "とどける",
+        "meaning": "전하다, 신고하다"
+      }
+    ],
+    "example": {
+      "jp": "書類は無事に届きました。",
+      "ko": "서류는 무사히 도착했습니다."
+    }
+  },
+  {
+    "id": "k-n3-017",
+    "character": "訪",
+    "meaning": "찾다, 방문하다",
+    "onyomi": [
+      "ホウ"
+    ],
+    "kunyomi": [
+      "たず(ねる)",
+      "おとず(れる)"
+    ],
+    "strokes": 11,
+    "level": "N3",
+    "words": [
+      {
+        "word": "訪問",
+        "reading": "ほうもん",
+        "meaning": "방문"
+      },
+      {
+        "word": "来訪",
+        "reading": "らいほう",
+        "meaning": "내방"
+      }
+    ],
+    "example": {
+      "jp": "明日、御社を訪問いたします。",
+      "ko": "내일 귀사를 방문하겠습니다."
+    }
+  },
+  {
+    "id": "k-n3-018",
+    "character": "迎",
+    "meaning": "맞이하다",
+    "onyomi": [
+      "ゲイ"
+    ],
+    "kunyomi": [
+      "むか(える)"
+    ],
+    "strokes": 7,
+    "level": "N3",
+    "words": [
+      {
+        "word": "歓迎",
+        "reading": "かんげい",
+        "meaning": "환영"
+      },
+      {
+        "word": "迎える",
+        "reading": "むかえる",
+        "meaning": "맞이하다"
+      }
+    ],
+    "example": {
+      "jp": "新入社員を歓迎しました。",
+      "ko": "신입사원을 환영했습니다."
+    }
+  },
+  {
+    "id": "k-n3-019",
+    "character": "職",
+    "meaning": "직업, 직무",
+    "onyomi": [
+      "ショク"
+    ],
+    "kunyomi": [],
+    "strokes": 18,
+    "level": "N3",
+    "words": [
+      {
+        "word": "職場",
+        "reading": "しょくば",
+        "meaning": "직장"
+      },
+      {
+        "word": "職務",
+        "reading": "しょくむ",
+        "meaning": "직무"
+      }
+    ],
+    "example": {
+      "jp": "職務経歴書を作成しました。",
+      "ko": "직무경력서를 작성했습니다."
+    }
+  },
+  {
+    "id": "k-n3-020",
+    "character": "就",
+    "meaning": "나아가다, 취임하다",
+    "onyomi": [
+      "シュウ"
+    ],
+    "kunyomi": [
+      "つ(く)"
+    ],
+    "strokes": 12,
+    "level": "N3",
+    "words": [
+      {
+        "word": "就職",
+        "reading": "しゅうしょく",
+        "meaning": "취직"
+      },
+      {
+        "word": "就業",
+        "reading": "しゅうぎょう",
+        "meaning": "취업"
+      }
+    ],
+    "example": {
+      "jp": "日本での就職を目指しています。",
+      "ko": "일본에서의 취직을 목표로 하고 있습니다."
+    }
+  },
+  {
+    "id": "k-n3-021",
+    "character": "勤",
+    "meaning": "근무하다",
+    "onyomi": [
+      "キン"
+    ],
+    "kunyomi": [
+      "つと(める)"
+    ],
+    "strokes": 12,
+    "level": "N3",
+    "words": [
+      {
+        "word": "勤務",
+        "reading": "きんむ",
+        "meaning": "근무"
+      },
+      {
+        "word": "通勤",
+        "reading": "つうきん",
+        "meaning": "통근"
+      }
+    ],
+    "example": {
+      "jp": "勤務地は東京を希望します。",
+      "ko": "근무지는 도쿄를 희망합니다."
+    }
+  },
+  {
+    "id": "k-n3-022",
+    "character": "営",
+    "meaning": "경영하다",
+    "onyomi": [
+      "エイ"
+    ],
+    "kunyomi": [
+      "いとな(む)"
+    ],
+    "strokes": 12,
+    "level": "N3",
+    "words": [
+      {
+        "word": "営業",
+        "reading": "えいぎょう",
+        "meaning": "영업"
+      },
+      {
+        "word": "経営",
+        "reading": "けいえい",
+        "meaning": "경영"
+      }
+    ],
+    "example": {
+      "jp": "営業部に配属されました。",
+      "ko": "영업부에 배속되었습니다."
+    }
+  },
+  {
+    "id": "k-n3-023",
+    "character": "販",
+    "meaning": "팔다",
+    "onyomi": [
+      "ハン"
+    ],
+    "kunyomi": [],
+    "strokes": 11,
+    "level": "N3",
+    "words": [
+      {
+        "word": "販売",
+        "reading": "はんばい",
+        "meaning": "판매"
+      },
+      {
+        "word": "販路",
+        "reading": "はんろ",
+        "meaning": "판로"
+      }
+    ],
+    "example": {
+      "jp": "新製品の販売を担当します。",
+      "ko": "신제품 판매를 담당합니다."
+    }
+  },
+  {
+    "id": "k-n3-024",
+    "character": "売",
+    "meaning": "팔다",
+    "onyomi": [
+      "バイ"
+    ],
+    "kunyomi": [
+      "う(る)"
+    ],
+    "strokes": 7,
+    "level": "N3",
+    "words": [
+      {
+        "word": "売上",
+        "reading": "うりあげ",
+        "meaning": "매출"
+      },
+      {
+        "word": "販売",
+        "reading": "はんばい",
+        "meaning": "판매"
+      }
+    ],
+    "example": {
+      "jp": "売上が前年より伸びました。",
+      "ko": "매출이 전년보다 늘었습니다."
+    }
+  },
+  {
+    "id": "k-n3-025",
+    "character": "価",
+    "meaning": "값",
+    "onyomi": [
+      "カ"
+    ],
+    "kunyomi": [
+      "あたい"
+    ],
+    "strokes": 8,
+    "level": "N3",
+    "words": [
+      {
+        "word": "価格",
+        "reading": "かかく",
+        "meaning": "가격"
+      },
+      {
+        "word": "評価",
+        "reading": "ひょうか",
+        "meaning": "평가"
+      }
+    ],
+    "example": {
+      "jp": "価格について交渉しています。",
+      "ko": "가격에 대해 협상하고 있습니다."
+    }
+  },
+  {
+    "id": "k-n3-026",
+    "character": "格",
+    "meaning": "격식, 자격",
+    "onyomi": [
+      "カク"
+    ],
+    "kunyomi": [],
+    "strokes": 10,
+    "level": "N3",
+    "words": [
+      {
+        "word": "合格",
+        "reading": "ごうかく",
+        "meaning": "합격"
+      },
+      {
+        "word": "資格",
+        "reading": "しかく",
+        "meaning": "자격"
+      }
+    ],
+    "example": {
+      "jp": "N2に合格しました。",
+      "ko": "N2에 합격했습니다."
+    }
+  },
+  {
+    "id": "k-n3-027",
+    "character": "資",
+    "meaning": "재물, 자질",
+    "onyomi": [
+      "シ"
+    ],
+    "kunyomi": [],
+    "strokes": 13,
+    "level": "N3",
+    "words": [
+      {
+        "word": "資料",
+        "reading": "しりょう",
+        "meaning": "자료"
+      },
+      {
+        "word": "資格",
+        "reading": "しかく",
+        "meaning": "자격"
+      }
+    ],
+    "example": {
+      "jp": "会議の資料を印刷しました。",
+      "ko": "회의 자료를 인쇄했습니다."
+    }
+  },
+  {
+    "id": "k-n3-028",
+    "character": "産",
+    "meaning": "낳다, 생산",
+    "onyomi": [
+      "サン"
+    ],
+    "kunyomi": [
+      "う(む)"
+    ],
+    "strokes": 11,
+    "level": "N3",
+    "words": [
+      {
+        "word": "生産",
+        "reading": "せいさん",
+        "meaning": "생산"
+      },
+      {
+        "word": "産業",
+        "reading": "さんぎょう",
+        "meaning": "산업"
+      }
+    ],
+    "example": {
+      "jp": "生産ラインを見学しました。",
+      "ko": "생산 라인을 견학했습니다."
+    }
+  },
+  {
+    "id": "k-n3-029",
+    "character": "績",
+    "meaning": "공적, 실적",
+    "onyomi": [
+      "セキ"
+    ],
+    "kunyomi": [],
+    "strokes": 17,
+    "level": "N3",
+    "words": [
+      {
+        "word": "実績",
+        "reading": "じっせき",
+        "meaning": "실적"
+      },
+      {
+        "word": "成績",
+        "reading": "せいせき",
+        "meaning": "성적"
+      }
+    ],
+    "example": {
+      "jp": "前職での実績をご説明します。",
+      "ko": "전 직장에서의 실적을 설명하겠습니다."
+    }
+  },
+  {
+    "id": "k-n3-030",
+    "character": "制",
+    "meaning": "제도, 억제하다",
+    "onyomi": [
+      "セイ"
+    ],
+    "kunyomi": [],
+    "strokes": 8,
+    "level": "N3",
+    "words": [
+      {
+        "word": "制度",
+        "reading": "せいど",
+        "meaning": "제도"
+      },
+      {
+        "word": "体制",
+        "reading": "たいせい",
+        "meaning": "체제"
+      }
+    ],
+    "example": {
+      "jp": "研修制度が充実しています。",
+      "ko": "연수 제도가 충실합니다."
+    }
+  },
+  {
+    "id": "k-n3-031",
+    "character": "規",
+    "meaning": "법, 규범",
+    "onyomi": [
+      "キ"
+    ],
+    "kunyomi": [],
+    "strokes": 11,
+    "level": "N3",
+    "words": [
+      {
+        "word": "規則",
+        "reading": "きそく",
+        "meaning": "규칙"
+      },
+      {
+        "word": "規定",
+        "reading": "きてい",
+        "meaning": "규정"
+      }
+    ],
+    "example": {
+      "jp": "社内規定を確認してください。",
+      "ko": "사내 규정을 확인해 주세요."
+    }
+  },
+  {
+    "id": "k-n3-032",
+    "character": "則",
+    "meaning": "법칙",
+    "onyomi": [
+      "ソク"
+    ],
+    "kunyomi": [],
+    "strokes": 9,
+    "level": "N3",
+    "words": [
+      {
+        "word": "規則",
+        "reading": "きそく",
+        "meaning": "규칙"
+      },
+      {
+        "word": "原則",
+        "reading": "げんそく",
+        "meaning": "원칙"
+      }
+    ],
+    "example": {
+      "jp": "原則として在宅勤務です。",
+      "ko": "원칙적으로 재택근무입니다."
+    }
+  },
+  {
+    "id": "k-n3-033",
+    "character": "状",
+    "meaning": "형상, 상태",
+    "onyomi": [
+      "ジョウ"
+    ],
+    "kunyomi": [],
+    "strokes": 7,
+    "level": "N3",
+    "words": [
+      {
+        "word": "状況",
+        "reading": "じょうきょう",
+        "meaning": "상황"
+      },
+      {
+        "word": "現状",
+        "reading": "げんじょう",
+        "meaning": "현 상황"
+      }
+    ],
+    "example": {
+      "jp": "現状をご報告いたします。",
+      "ko": "현 상황을 보고드리겠습니다."
+    }
+  },
+  {
+    "id": "k-n3-034",
+    "character": "況",
+    "meaning": "상황",
+    "onyomi": [
+      "キョウ"
+    ],
+    "kunyomi": [],
+    "strokes": 8,
+    "level": "N3",
+    "words": [
+      {
+        "word": "状況",
+        "reading": "じょうきょう",
+        "meaning": "상황"
+      },
+      {
+        "word": "不況",
+        "reading": "ふきょう",
+        "meaning": "불황"
+      }
+    ],
+    "example": {
+      "jp": "進捗状況を共有します。",
+      "ko": "진척 상황을 공유합니다."
+    }
+  },
+  {
+    "id": "k-n3-035",
+    "character": "現",
+    "meaning": "나타나다, 현재",
+    "onyomi": [
+      "ゲン"
+    ],
+    "kunyomi": [
+      "あらわ(れる)"
+    ],
+    "strokes": 11,
+    "level": "N3",
+    "words": [
+      {
+        "word": "現在",
+        "reading": "げんざい",
+        "meaning": "현재"
+      },
+      {
+        "word": "現場",
+        "reading": "げんば",
+        "meaning": "현장"
+      }
+    ],
+    "example": {
+      "jp": "現在、貿易会社に勤めております。",
+      "ko": "현재 무역회사에 근무하고 있습니다."
+    }
+  },
+  {
+    "id": "k-n3-036",
+    "character": "在",
+    "meaning": "있다",
+    "onyomi": [
+      "ザイ"
+    ],
+    "kunyomi": [
+      "あ(る)"
+    ],
+    "strokes": 6,
+    "level": "N3",
+    "words": [
+      {
+        "word": "現在",
+        "reading": "げんざい",
+        "meaning": "현재"
+      },
+      {
+        "word": "在宅",
+        "reading": "ざいたく",
+        "meaning": "재택"
+      }
+    ],
+    "example": {
+      "jp": "週に二日は在宅勤務です。",
+      "ko": "주 이틀은 재택근무입니다."
+    }
+  },
+  {
+    "id": "k-n3-037",
+    "character": "提",
+    "meaning": "들다, 제시하다",
+    "onyomi": [
+      "テイ"
+    ],
+    "kunyomi": [
+      "さ(げる)"
+    ],
+    "strokes": 12,
+    "level": "N3",
+    "words": [
+      {
+        "word": "提出",
+        "reading": "ていしゅつ",
+        "meaning": "제출"
+      },
+      {
+        "word": "提案",
+        "reading": "ていあん",
+        "meaning": "제안"
+      }
+    ],
+    "example": {
+      "jp": "履歴書を提出しました。",
+      "ko": "이력서를 제출했습니다."
+    }
+  },
+  {
+    "id": "k-n3-038",
+    "character": "査",
+    "meaning": "조사하다",
+    "onyomi": [
+      "サ"
+    ],
+    "kunyomi": [],
+    "strokes": 9,
+    "level": "N3",
+    "words": [
+      {
+        "word": "調査",
+        "reading": "ちょうさ",
+        "meaning": "조사"
+      },
+      {
+        "word": "審査",
+        "reading": "しんさ",
+        "meaning": "심사"
+      }
+    ],
+    "example": {
+      "jp": "書類審査に通りました。",
+      "ko": "서류 심사에 통과했습니다."
+    }
+  },
+  {
+    "id": "k-n3-039",
+    "character": "可",
+    "meaning": "옳다, 가능하다",
+    "onyomi": [
+      "カ"
+    ],
+    "kunyomi": [],
+    "strokes": 5,
+    "level": "N3",
+    "words": [
+      {
+        "word": "可能",
+        "reading": "かのう",
+        "meaning": "가능"
+      },
+      {
+        "word": "許可",
+        "reading": "きょか",
+        "meaning": "허가"
+      }
+    ],
+    "example": {
+      "jp": "日程の変更は可能でしょうか。",
+      "ko": "일정 변경은 가능할까요?"
+    }
+  },
+  {
+    "id": "k-n3-040",
+    "character": "能",
+    "meaning": "능하다, 능력",
+    "onyomi": [
+      "ノウ"
+    ],
+    "kunyomi": [],
+    "strokes": 10,
+    "level": "N3",
+    "words": [
+      {
+        "word": "能力",
+        "reading": "のうりょく",
+        "meaning": "능력"
+      },
+      {
+        "word": "可能",
+        "reading": "かのう",
+        "meaning": "가능"
+      }
+    ],
+    "example": {
+      "jp": "日本語能力試験を受けます。",
+      "ko": "일본어능력시험을 봅니다."
+    }
+  }
 ]

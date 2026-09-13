@@ -229,31 +229,32 @@
   },
   {
     "id": "k-n2-009",
-    "character": "採",
-    "meaning": "고르다, 채택",
+    "character": "著",
+    "meaning": "드러나다, 짓다",
     "onyomi": [
-      "サイ"
+      "チョ"
     ],
     "kunyomi": [
-      "と(る)"
+      "あらわ(す)",
+      "いちじる(しい)"
     ],
     "strokes": 11,
     "level": "N2",
     "words": [
       {
-        "word": "採択",
-        "reading": "さいたく",
-        "meaning": "채택"
+        "word": "著しい",
+        "reading": "いちじるしい",
+        "meaning": "현저하다"
       },
       {
-        "word": "採算",
-        "reading": "さいさん",
-        "meaning": "채산"
+        "word": "著者",
+        "reading": "ちょしゃ",
+        "meaning": "저자"
       }
     ],
     "example": {
-      "jp": "この案が採択されました。",
-      "ko": "이 안이 채택되었습니다."
+      "jp": "売上が著しく伸びました。",
+      "ko": "매출이 현저히 늘었습니다."
     }
   },
   {
@@ -283,6 +284,715 @@
     "example": {
       "jp": "一点だけ補足いたします。",
       "ko": "한 가지만 보충하겠습니다."
+    }
+  },
+  {
+    "id": "k-n2-011",
+    "character": "影",
+    "meaning": "그림자",
+    "onyomi": [
+      "エイ"
+    ],
+    "kunyomi": [
+      "かげ"
+    ],
+    "strokes": 15,
+    "level": "N2",
+    "words": [
+      {
+        "word": "影響",
+        "reading": "えいきょう",
+        "meaning": "영향"
+      },
+      {
+        "word": "面影",
+        "reading": "おもかげ",
+        "meaning": "모습, 자취"
+      }
+    ],
+    "example": {
+      "jp": "全体に影響を及ぼす可能性がある。",
+      "ko": "전체에 영향을 미칠 가능성이 있다."
+    }
+  },
+  {
+    "id": "k-n2-012",
+    "character": "響",
+    "meaning": "울리다",
+    "onyomi": [
+      "キョウ"
+    ],
+    "kunyomi": [
+      "ひび(く)"
+    ],
+    "strokes": 20,
+    "level": "N2",
+    "words": [
+      {
+        "word": "影響",
+        "reading": "えいきょう",
+        "meaning": "영향"
+      },
+      {
+        "word": "反響",
+        "reading": "はんきょう",
+        "meaning": "반향"
+      }
+    ],
+    "example": {
+      "jp": "提案は大きな反響を呼んだ。",
+      "ko": "제안은 큰 반향을 불러일으켰다."
+    }
+  },
+  {
+    "id": "k-n2-013",
+    "character": "需",
+    "meaning": "구하다, 수요",
+    "onyomi": [
+      "ジュ"
+    ],
+    "kunyomi": [],
+    "strokes": 14,
+    "level": "N2",
+    "words": [
+      {
+        "word": "需要",
+        "reading": "じゅよう",
+        "meaning": "수요"
+      },
+      {
+        "word": "必需品",
+        "reading": "ひつじゅひん",
+        "meaning": "필수품"
+      }
+    ],
+    "example": {
+      "jp": "海外での需要が伸びています。",
+      "ko": "해외에서의 수요가 늘고 있습니다."
+    }
+  },
+  {
+    "id": "k-n2-014",
+    "character": "給",
+    "meaning": "주다, 공급",
+    "onyomi": [
+      "キュウ"
+    ],
+    "kunyomi": [],
+    "strokes": 12,
+    "level": "N2",
+    "words": [
+      {
+        "word": "供給",
+        "reading": "きょうきゅう",
+        "meaning": "공급"
+      },
+      {
+        "word": "給料",
+        "reading": "きゅうりょう",
+        "meaning": "급여"
+      }
+    ],
+    "example": {
+      "jp": "部品の供給が不安定です。",
+      "ko": "부품 공급이 불안정합니다."
+    }
+  },
+  {
+    "id": "k-n2-015",
+    "character": "削",
+    "meaning": "깎다",
+    "onyomi": [
+      "サク"
+    ],
+    "kunyomi": [
+      "けず(る)"
+    ],
+    "strokes": 9,
+    "level": "N2",
+    "words": [
+      {
+        "word": "削減",
+        "reading": "さくげん",
+        "meaning": "삭감"
+      },
+      {
+        "word": "削除",
+        "reading": "さくじょ",
+        "meaning": "삭제"
+      }
+    ],
+    "example": {
+      "jp": "コストを二割削減しました。",
+      "ko": "비용을 20퍼센트 절감했습니다."
+    }
+  },
+  {
+    "id": "k-n2-016",
+    "character": "減",
+    "meaning": "줄다",
+    "onyomi": [
+      "ゲン"
+    ],
+    "kunyomi": [
+      "へ(る)"
+    ],
+    "strokes": 12,
+    "level": "N2",
+    "words": [
+      {
+        "word": "削減",
+        "reading": "さくげん",
+        "meaning": "삭감"
+      },
+      {
+        "word": "減少",
+        "reading": "げんしょう",
+        "meaning": "감소"
+      }
+    ],
+    "example": {
+      "jp": "残業時間が減少しました。",
+      "ko": "야근 시간이 감소했습니다."
+    }
+  },
+  {
+    "id": "k-n2-017",
+    "character": "増",
+    "meaning": "늘다",
+    "onyomi": [
+      "ゾウ"
+    ],
+    "kunyomi": [
+      "ふ(える)",
+      "ま(す)"
+    ],
+    "strokes": 14,
+    "level": "N2",
+    "words": [
+      {
+        "word": "増加",
+        "reading": "ぞうか",
+        "meaning": "증가"
+      },
+      {
+        "word": "増える",
+        "reading": "ふえる",
+        "meaning": "늘다"
+      }
+    ],
+    "example": {
+      "jp": "問い合わせが増加しています。",
+      "ko": "문의가 증가하고 있습니다."
+    }
+  },
+  {
+    "id": "k-n2-018",
+    "character": "輸",
+    "meaning": "나르다",
+    "onyomi": [
+      "ユ"
+    ],
+    "kunyomi": [],
+    "strokes": 16,
+    "level": "N2",
+    "words": [
+      {
+        "word": "輸出",
+        "reading": "ゆしゅつ",
+        "meaning": "수출"
+      },
+      {
+        "word": "輸入",
+        "reading": "ゆにゅう",
+        "meaning": "수입"
+      }
+    ],
+    "example": {
+      "jp": "輸出が全体の七割を占めます。",
+      "ko": "수출이 전체의 70퍼센트를 차지합니다."
+    }
+  },
+  {
+    "id": "k-n2-019",
+    "character": "際",
+    "meaning": "즈음, 사이",
+    "onyomi": [
+      "サイ"
+    ],
+    "kunyomi": [
+      "きわ"
+    ],
+    "strokes": 14,
+    "level": "N2",
+    "words": [
+      {
+        "word": "実際",
+        "reading": "じっさい",
+        "meaning": "실제"
+      },
+      {
+        "word": "国際",
+        "reading": "こくさい",
+        "meaning": "국제"
+      }
+    ],
+    "example": {
+      "jp": "入社に際してご挨拶申し上げます。",
+      "ko": "입사에 즈음하여 인사드립니다."
+    }
+  },
+  {
+    "id": "k-n2-020",
+    "character": "援",
+    "meaning": "돕다",
+    "onyomi": [
+      "エン"
+    ],
+    "kunyomi": [],
+    "strokes": 12,
+    "level": "N2",
+    "words": [
+      {
+        "word": "支援",
+        "reading": "しえん",
+        "meaning": "지원"
+      },
+      {
+        "word": "応援",
+        "reading": "おうえん",
+        "meaning": "응원"
+      }
+    ],
+    "example": {
+      "jp": "生活支援の制度があります。",
+      "ko": "생활 지원 제도가 있습니다."
+    }
+  },
+  {
+    "id": "k-n2-021",
+    "character": "慮",
+    "meaning": "생각하다, 헤아리다",
+    "onyomi": [
+      "リョ"
+    ],
+    "kunyomi": [],
+    "strokes": 15,
+    "level": "N2",
+    "words": [
+      {
+        "word": "配慮",
+        "reading": "はいりょ",
+        "meaning": "배려"
+      },
+      {
+        "word": "考慮",
+        "reading": "こうりょ",
+        "meaning": "고려"
+      }
+    ],
+    "example": {
+      "jp": "ご配慮いただき感謝いたします。",
+      "ko": "배려해 주셔서 감사드립니다."
+    }
+  },
+  {
+    "id": "k-n2-022",
+    "character": "徹",
+    "meaning": "관철하다",
+    "onyomi": [
+      "テツ"
+    ],
+    "kunyomi": [],
+    "strokes": 15,
+    "level": "N2",
+    "words": [
+      {
+        "word": "徹底",
+        "reading": "てってい",
+        "meaning": "철저"
+      },
+      {
+        "word": "徹夜",
+        "reading": "てつや",
+        "meaning": "밤샘"
+      }
+    ],
+    "example": {
+      "jp": "情報管理を徹底しております。",
+      "ko": "정보 관리를 철저히 하고 있습니다."
+    }
+  },
+  {
+    "id": "k-n2-023",
+    "character": "底",
+    "meaning": "밑, 바닥",
+    "onyomi": [
+      "テイ"
+    ],
+    "kunyomi": [
+      "そこ"
+    ],
+    "strokes": 8,
+    "level": "N2",
+    "words": [
+      {
+        "word": "徹底",
+        "reading": "てってい",
+        "meaning": "철저"
+      },
+      {
+        "word": "底",
+        "reading": "そこ",
+        "meaning": "바닥"
+      }
+    ],
+    "example": {
+      "jp": "基本を徹底的に見直しました。",
+      "ko": "기본을 철저하게 재검토했습니다."
+    }
+  },
+  {
+    "id": "k-n2-024",
+    "character": "複",
+    "meaning": "겹치다",
+    "onyomi": [
+      "フク"
+    ],
+    "kunyomi": [],
+    "strokes": 14,
+    "level": "N2",
+    "words": [
+      {
+        "word": "複雑",
+        "reading": "ふくざつ",
+        "meaning": "복잡"
+      },
+      {
+        "word": "複数",
+        "reading": "ふくすう",
+        "meaning": "복수, 여럿"
+      }
+    ],
+    "example": {
+      "jp": "複数の候補日をお知らせください。",
+      "ko": "여러 후보 날짜를 알려주세요."
+    }
+  },
+  {
+    "id": "k-n2-025",
+    "character": "雑",
+    "meaning": "섞이다, 잡다하다",
+    "onyomi": [
+      "ザツ",
+      "ゾウ"
+    ],
+    "kunyomi": [],
+    "strokes": 14,
+    "level": "N2",
+    "words": [
+      {
+        "word": "複雑",
+        "reading": "ふくざつ",
+        "meaning": "복잡"
+      },
+      {
+        "word": "雑誌",
+        "reading": "ざっし",
+        "meaning": "잡지"
+      }
+    ],
+    "example": {
+      "jp": "手続きが複雑で時間がかかりました。",
+      "ko": "절차가 복잡해서 시간이 걸렸습니다."
+    }
+  },
+  {
+    "id": "k-n2-026",
+    "character": "互",
+    "meaning": "서로",
+    "onyomi": [
+      "ゴ"
+    ],
+    "kunyomi": [
+      "たが(い)"
+    ],
+    "strokes": 4,
+    "level": "N2",
+    "words": [
+      {
+        "word": "相互",
+        "reading": "そうご",
+        "meaning": "상호"
+      },
+      {
+        "word": "お互い",
+        "reading": "おたがい",
+        "meaning": "서로"
+      }
+    ],
+    "example": {
+      "jp": "お互いの認識を合わせましょう。",
+      "ko": "서로의 인식을 맞춥시다."
+    }
+  },
+  {
+    "id": "k-n2-027",
+    "character": "従",
+    "meaning": "따르다",
+    "onyomi": [
+      "ジュウ"
+    ],
+    "kunyomi": [
+      "したが(う)"
+    ],
+    "strokes": 10,
+    "level": "N2",
+    "words": [
+      {
+        "word": "従業員",
+        "reading": "じゅうぎょういん",
+        "meaning": "종업원"
+      },
+      {
+        "word": "従来",
+        "reading": "じゅうらい",
+        "meaning": "종래"
+      }
+    ],
+    "example": {
+      "jp": "従来のやり方を見直しました。",
+      "ko": "기존의 방식을 재검토했습니다."
+    }
+  },
+  {
+    "id": "k-n2-028",
+    "character": "存",
+    "meaning": "있다, 보존하다",
+    "onyomi": [
+      "ソン",
+      "ゾン"
+    ],
+    "kunyomi": [],
+    "strokes": 6,
+    "level": "N2",
+    "words": [
+      {
+        "word": "存在",
+        "reading": "そんざい",
+        "meaning": "존재"
+      },
+      {
+        "word": "保存",
+        "reading": "ほぞん",
+        "meaning": "보존"
+      }
+    ],
+    "example": {
+      "jp": "その件は存じております。",
+      "ko": "그 건은 알고 있습니다."
+    }
+  },
+  {
+    "id": "k-n2-029",
+    "character": "保",
+    "meaning": "지키다",
+    "onyomi": [
+      "ホ"
+    ],
+    "kunyomi": [
+      "たも(つ)"
+    ],
+    "strokes": 9,
+    "level": "N2",
+    "words": [
+      {
+        "word": "確保",
+        "reading": "かくほ",
+        "meaning": "확보"
+      },
+      {
+        "word": "保険",
+        "reading": "ほけん",
+        "meaning": "보험"
+      }
+    ],
+    "example": {
+      "jp": "人員を確保する必要があります。",
+      "ko": "인원을 확보할 필요가 있습니다."
+    }
+  },
+  {
+    "id": "k-n2-030",
+    "character": "費",
+    "meaning": "쓰다, 비용",
+    "onyomi": [
+      "ヒ"
+    ],
+    "kunyomi": [
+      "つい(やす)"
+    ],
+    "strokes": 12,
+    "level": "N2",
+    "words": [
+      {
+        "word": "費用",
+        "reading": "ひよう",
+        "meaning": "비용"
+      },
+      {
+        "word": "交通費",
+        "reading": "こうつうひ",
+        "meaning": "교통비"
+      }
+    ],
+    "example": {
+      "jp": "交通費は支給されます。",
+      "ko": "교통비는 지급됩니다."
+    }
+  },
+  {
+    "id": "k-n2-031",
+    "character": "負",
+    "meaning": "지다, 떠맡다",
+    "onyomi": [
+      "フ"
+    ],
+    "kunyomi": [
+      "ま(ける)",
+      "お(う)"
+    ],
+    "strokes": 9,
+    "level": "N2",
+    "words": [
+      {
+        "word": "負担",
+        "reading": "ふたん",
+        "meaning": "부담"
+      },
+      {
+        "word": "勝負",
+        "reading": "しょうぶ",
+        "meaning": "승부"
+      }
+    ],
+    "example": {
+      "jp": "現場の負担を減らしたいです。",
+      "ko": "현장의 부담을 줄이고 싶습니다."
+    }
+  },
+  {
+    "id": "k-n2-032",
+    "character": "益",
+    "meaning": "이익",
+    "onyomi": [
+      "エキ"
+    ],
+    "kunyomi": [],
+    "strokes": 10,
+    "level": "N2",
+    "words": [
+      {
+        "word": "利益",
+        "reading": "りえき",
+        "meaning": "이익"
+      },
+      {
+        "word": "有益",
+        "reading": "ゆうえき",
+        "meaning": "유익"
+      }
+    ],
+    "example": {
+      "jp": "利益率が改善しました。",
+      "ko": "이익률이 개선되었습니다."
+    }
+  },
+  {
+    "id": "k-n2-033",
+    "character": "損",
+    "meaning": "덜다, 손해",
+    "onyomi": [
+      "ソン"
+    ],
+    "kunyomi": [
+      "そこ(なう)"
+    ],
+    "strokes": 13,
+    "level": "N2",
+    "words": [
+      {
+        "word": "損害",
+        "reading": "そんがい",
+        "meaning": "손해"
+      },
+      {
+        "word": "損失",
+        "reading": "そんしつ",
+        "meaning": "손실"
+      }
+    ],
+    "example": {
+      "jp": "損失を最小限に抑えました。",
+      "ko": "손실을 최소한으로 억제했습니다."
+    }
+  },
+  {
+    "id": "k-n2-034",
+    "character": "効",
+    "meaning": "효과",
+    "onyomi": [
+      "コウ"
+    ],
+    "kunyomi": [
+      "き(く)"
+    ],
+    "strokes": 8,
+    "level": "N2",
+    "words": [
+      {
+        "word": "効率",
+        "reading": "こうりつ",
+        "meaning": "효율"
+      },
+      {
+        "word": "効果",
+        "reading": "こうか",
+        "meaning": "효과"
+      }
+    ],
+    "example": {
+      "jp": "作業の効率を上げました。",
+      "ko": "작업 효율을 올렸습니다."
+    }
+  },
+  {
+    "id": "k-n2-035",
+    "character": "果",
+    "meaning": "열매, 결과",
+    "onyomi": [
+      "カ"
+    ],
+    "kunyomi": [
+      "は(たす)"
+    ],
+    "strokes": 8,
+    "level": "N2",
+    "words": [
+      {
+        "word": "結果",
+        "reading": "けっか",
+        "meaning": "결과"
+      },
+      {
+        "word": "成果",
+        "reading": "せいか",
+        "meaning": "성과"
+      }
+    ],
+    "example": {
+      "jp": "成果を数字で示しました。",
+      "ko": "성과를 숫자로 제시했습니다."
     }
   }
 ]
