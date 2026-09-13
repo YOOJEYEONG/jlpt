@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# AI 에이전트 도구가 만든 파일 (앱 코드 아님)
+.agents
+.claude
+skills-lock.json

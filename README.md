@@ -111,6 +111,7 @@ QA_BASE=https://jlpt-mu.vercel.app npm run qa   # 배포본 점검
 
 - `tests/qa-smoke.mjs` — 전체 화면 렌더링 · 모바일 가로 넘침 · 콘솔 에러
 - `tests/qa-deep.mjs` — 카운터 정확도 · 새로고침 후 데이터 유지 · 복습/오답 큐 동작
+- `tests/qa-sync.mjs` — 기기 간 진도 동기화 · 로그아웃 · 잘못된 비밀번호 거부
 
 콘텐츠 JSON 무결성 검사는 브라우저 없이 바로 돌릴 수 있습니다.
 
@@ -122,12 +123,28 @@ npm run validate   # id 중복, 필수 필드 누락, 레벨 불일치, 잘못 �
 
 ## 데이터 저장 방식
 
-현재 버전은 **서버 없이 브라우저(localStorage)** 에 계정과 학습 기록을 저장합니다.
-설치나 DB 설정 없이 바로 쓸 수 있지만, 브라우저 데이터를 지우면 기록도 사라지고 기기 간 동기화는 되지 않습니다.
+계정과 학습 기록은 **Postgres(Neon)** 에 저장됩니다. 다른 기기에서 로그인해도 진도가 그대로 이어집니다.
 
-서버 DB로 옮길 때 쓸 수 있도록 목표 스키마를 `prisma/schema.prisma`에 PostgreSQL 기준으로 정의해 두었습니다.
-스토어의 데이터 구조(`src/lib/store.ts`의 `UserData`)가 이 스키마와 1:1로 대응하므로,
-저장소 어댑터만 교체하면 화면 코드를 거의 바꾸지 않고 서버 저장으로 전환할 수 있습니다.
+- 인증: 이메일 + 비밀번호. 비밀번호는 scrypt로 해시해 저장하고, 세션은 httpOnly 쿠키(30일)입니다.
+- 학습 기록: `UserState.data` (JSON) 한 덩어리. 클라이언트 스토어의 `UserData`와 1:1로 대응합니다.
+- 동기화: 화면을 열 때 서버 기록을 불러오고, 학습이 바뀌면 1.5초 모았다가 자동 저장합니다.
+  탭을 닫거나 숨기면 남은 변경분을 즉시 올립니다.
+- **오프라인/서버 없음**: `DATABASE_URL`이 없거나 연결이 끊기면 브라우저 저장만으로 계속 동작합니다.
+  다시 접속했을 때 로컬 쪽이 더 진행돼 있으면(경험치 기준) 로컬 기록을 서버로 올립니다.
+
+### DB 준비
+
+Vercel 마켓플레이스에서 Neon을 설치하면 `DATABASE_URL`이 자동으로 주입됩니다.
+
+```bash
+vercel integration add neon     # 최초 1회 (브라우저에서 약관 동의 필요)
+vercel env pull .env.local --yes
+npm run db:push                 # 스키마 변경 시 마이그레이션 생성 + 반영
+npm run db:migrate              # 기존 마이그레이션만 적용 (배포 환경)
+```
+
+스키마는 `prisma/schema.prisma` — `User` / `Session` / `UserState` 세 테이블입니다.
+학습 콘텐츠는 DB가 아니라 `src/data`의 JSON 파일로 관리합니다.
 
 ---
 
@@ -135,7 +152,8 @@ npm run validate   # id 중복, 필수 필드 누락, 레벨 불일치, 잘못 �
 
 - Next.js 16 (App Router) · React 19 · TypeScript (strict)
 - Tailwind CSS v4
-- Zustand (persist) — 학습 상태
+- Zustand (persist) — 학습 상태 (오프라인 캐시)
+- Prisma 6 + Neon Postgres — 계정·학습 기록 서버 저장
 - Recharts — 통계 그래프
 - Lucide React — 아이콘
 
@@ -153,8 +171,12 @@ src/
 │   ├── ui/            Button, Card, Badge, Progress, Tabs, 상태 표시
 │   ├── layout/        사이드바, 하단 네비, 페이지 헤더, 학습 타이머
 │   └── study/         문제 카드, 오디오 플레이어
+├── app/api/           인증(signup·login·logout·me) · 학습 기록 저장(state)
 ├── lib/
 │   ├── types.ts       콘텐츠 타입
+│   ├── db.ts          Prisma 클라이언트 (지연 생성)
+│   ├── auth.ts        비밀번호 해시 · 세션 쿠키
+│   ├── sync.ts        서버 ↔ 브라우저 동기화
 │   ├── content.ts     JSON 로딩 · 조회
 │   ├── store.ts       사용자 · 진도 · 오답 · 통계 상태
 │   ├── srs.ts         간격 반복 로직

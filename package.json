@@ -4,11 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "prisma generate && next build",
     "start": "next start",
     "lint": "eslint",
-    "qa": "node tests/qa-smoke.mjs && node tests/qa-deep.mjs",
-    "validate": "node tests/validate-data.mjs"
+    "qa": "node tests/qa-smoke.mjs && node tests/qa-deep.mjs && node tests/qa-sync.mjs",
+    "validate": "node tests/validate-data.mjs",
+    "db:migrate": "prisma migrate deploy",
+    "db:push": "prisma migrate dev",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@neondatabase/serverless": "^1.1.0",
