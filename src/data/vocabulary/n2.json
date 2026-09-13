@@ -262,5 +262,554 @@
     "exampleReading": "そのため、にっていをへんこうしました。",
     "exampleTranslation": "그 때문에 일정을 변경했습니다.",
     "importance": 3
+  },
+  {
+    "id": "v-n2-021",
+    "word": "前提",
+    "reading": "ぜんてい",
+    "meaning": "전제",
+    "partOfSpeech": "명사",
+    "example": "全員が参加することを前提に計画しました。",
+    "exampleReading": "ぜんいんがさんかすることをぜんていにけいかくしました。",
+    "exampleTranslation": "전원이 참가하는 것을 전제로 계획했습니다.",
+    "importance": 3,
+    "tags": [
+      "비즈니스"
+    ],
+    "level": "N2"
+  },
+  {
+    "id": "v-n2-022",
+    "word": "概要",
+    "reading": "がいよう",
+    "meaning": "개요",
+    "partOfSpeech": "명사",
+    "example": "まず概要をご説明いたします。",
+    "exampleReading": "まずがいようをごせつめいいたします。",
+    "exampleTranslation": "먼저 개요를 설명드리겠습니다.",
+    "importance": 3,
+    "tags": [
+      "비즈니스"
+    ],
+    "level": "N2"
+  },
+  {
+    "id": "v-n2-023",
+    "word": "手続き",
+    "reading": "てつづき",
+    "meaning": "절차, 수속",
+    "partOfSpeech": "명사",
+    "example": "ビザの手続きを進めています。",
+    "exampleReading": "ビザのてつづきをすすめています。",
+    "exampleTranslation": "비자 절차를 진행하고 있습니다.",
+    "importance": 3,
+    "tags": [
+      "취업"
+    ],
+    "level": "N2"
+  },
+  {
+    "id": "v-n2-024",
+    "word": "承認",
+    "reading": "しょうにん",
+    "meaning": "승인",
+    "partOfSpeech": "명사",
+    "example": "部長の承認が必要です。",
+    "exampleReading": "ぶちょうのしょうにんがひつようです。",
+    "exampleTranslation": "부장님의 승인이 필요합니다.",
+    "importance": 3,
+    "tags": [
+      "비즈니스"
+    ],
+    "level": "N2"
+  },
+  {
+    "id": "v-n2-025",
+    "word": "契約",
+    "reading": "けいやく",
+    "meaning": "계약",
+    "partOfSpeech": "명사",
+    "example": "来月、正式に契約を結びます。",
+    "exampleReading": "らいげつ、せいしきにけいやくをむすびます。",
+    "exampleTranslation": "다음 달에 정식으로 계약을 맺습니다.",
+    "importance": 3,
+    "tags": [
+      "비즈니스"
+    ],
+    "level": "N2"
+  },
+  {
+    "id": "v-n2-026",
+    "word": "交渉",
+    "reading": "こうしょう",
+    "meaning": "교섭, 협상",
+    "partOfSpeech": "명사",
+    "example": "価格について交渉しています。",
+    "exampleReading": "かかくについてこうしょうしています。",
+    "exampleTranslation": "가격에 대해 협상하고 있습니다.",
+    "importance": 3,
+    "tags": [
+      "비즈니스"
+    ],
+    "level": "N2"
+  },
+  {
+    "id": "v-n2-027",
+    "word": "導入",
+    "reading": "どうにゅう",
+    "meaning": "도입",
+    "partOfSpeech": "명사",
+    "example": "新しいシステムを導入しました。",
+    "exampleReading": "あたらしいシステムをどうにゅうしました。",
+    "exampleTranslation": "새로운 시스템을 도입했습니다.",
+    "importance": 3,
+    "tags": [
+      "비즈니스"
+    ],
+    "level": "N2"
+  },
+  {
+    "id": "v-n2-028",
+    "word": "普及",
+    "reading": "ふきゅう",
+    "meaning": "보급",
+    "partOfSpeech": "명사",
+    "example": "在宅勤務が急速に普及した。",
+    "exampleReading": "ざいたくきんむがきゅうそくにふきゅうした。",
+    "exampleTranslation": "재택근무가 급속히 보급되었다.",
+    "importance": 3,
+    "level": "N2"
+  },
+  {
+    "id": "v-n2-029",
+    "word": "需要",
+    "reading": "じゅよう",
+    "meaning": "수요",
+    "partOfSpeech": "명사",
+    "example": "海外での需要が伸びている。",
+    "exampleReading": "かいがいでのじゅようがのびている。",
+    "exampleTranslation": "해외에서의 수요가 늘고 있다.",
+    "importance": 3,
+    "level": "N2"
+  },
+  {
+    "id": "v-n2-030",
+    "word": "供給",
+    "reading": "きょうきゅう",
+    "meaning": "공급",
+    "partOfSpeech": "명사",
+    "example": "部品の供給が不安定だ。",
+    "exampleReading": "ぶひんのきょうきゅうがふあんていだ。",
+    "exampleTranslation": "부품 공급이 불안정하다.",
+    "importance": 2,
+    "level": "N2"
+  },
+  {
+    "id": "v-n2-031",
+    "word": "削減",
+    "reading": "さくげん",
+    "meaning": "삭감, 절감",
+    "partOfSpeech": "명사",
+    "example": "コストを二割削減しました。",
+    "exampleReading": "コストをにわりさくげんしました。",
+    "exampleTranslation": "비용을 20퍼센트 절감했습니다.",
+    "importance": 3,
+    "tags": [
+      "취업"
+    ],
+    "level": "N2"
+  },
+  {
+    "id": "v-n2-032",
+    "word": "実施",
+    "reading": "じっし",
+    "meaning": "실시",
+    "partOfSpeech": "명사",
+    "example": "来週から新制度を実施します。",
+    "exampleReading": "らいしゅうからしんせいどをじっしします。",
+    "exampleTranslation": "다음 주부터 새 제도를 실시합니다.",
+    "importance": 3,
+    "tags": [
+      "비즈니스"
+    ],
+    "level": "N2"
+  },
+  {
+    "id": "v-n2-033",
+    "word": "徹底",
+    "reading": "てってい",
+    "meaning": "철저",
+    "partOfSpeech": "명사",
+    "example": "情報管理を徹底しております。",
+    "exampleReading": "じょうほうかんりをてっていしております。",
+    "exampleTranslation": "정보 관리를 철저히 하고 있습니다.",
+    "importance": 3,
+    "tags": [
+      "비즈니스"
+    ],
+    "level": "N2"
+  },
+  {
+    "id": "v-n2-034",
+    "word": "配慮",
+    "reading": "はいりょ",
+    "meaning": "배려",
+    "partOfSpeech": "명사",
+    "example": "ご配慮いただきありがとうございます。",
+    "exampleReading": "ごはいりょいただきありがとうございます。",
+    "exampleTranslation": "배려해 주셔서 감사합니다.",
+    "importance": 3,
+    "tags": [
+      "비즈니스"
+    ],
+    "level": "N2"
+  },
+  {
+    "id": "v-n2-035",
+    "word": "認識",
+    "reading": "にんしき",
+    "meaning": "인식",
+    "partOfSpeech": "명사",
+    "example": "問題の大きさを認識しています。",
+    "exampleReading": "もんだいのおおきさをにんしきしています。",
+    "exampleTranslation": "문제의 크기를 인식하고 있습니다.",
+    "importance": 3,
+    "level": "N2"
+  },
+  {
+    "id": "v-n2-036",
+    "word": "促す",
+    "reading": "うながす",
+    "meaning": "촉구하다, 재촉하다",
+    "partOfSpeech": "동사(1류)",
+    "example": "提出を促すメールを送りました。",
+    "exampleReading": "ていしゅつをうながすメールをおくりました。",
+    "exampleTranslation": "제출을 촉구하는 메일을 보냈습니다.",
+    "importance": 2,
+    "level": "N2"
+  },
+  {
+    "id": "v-n2-037",
+    "word": "費用",
+    "reading": "ひよう",
+    "meaning": "비용",
+    "partOfSpeech": "명사",
+    "example": "渡航費用は会社が負担します。",
+    "exampleReading": "とこうひようはかいしゃがふたんします。",
+    "exampleTranslation": "도항 비용은 회사가 부담합니다.",
+    "importance": 3,
+    "level": "N2"
+  },
+  {
+    "id": "v-n2-038",
+    "word": "負担",
+    "reading": "ふたん",
+    "meaning": "부담",
+    "partOfSpeech": "명사",
+    "example": "現場の負担を減らしたいです。",
+    "exampleReading": "げんばのふたんをへらしたいです。",
+    "exampleTranslation": "현장의 부담을 줄이고 싶습니다.",
+    "importance": 3,
+    "level": "N2"
+  },
+  {
+    "id": "v-n2-039",
+    "word": "偏る",
+    "reading": "かたよる",
+    "meaning": "치우치다",
+    "partOfSpeech": "동사(1류)",
+    "example": "業務が特定の人に偏っている。",
+    "exampleReading": "ぎょうむがとくていのひとにかたよっている。",
+    "exampleTranslation": "업무가 특정한 사람에게 치우쳐 있다.",
+    "importance": 2,
+    "level": "N2"
+  },
+  {
+    "id": "v-n2-040",
+    "word": "予測",
+    "reading": "よそく",
+    "meaning": "예측",
+    "partOfSpeech": "명사",
+    "example": "来期の売上を予測しました。",
+    "exampleReading": "らいきのうりあげをよそくしました。",
+    "exampleTranslation": "다음 분기의 매출을 예측했습니다.",
+    "importance": 3,
+    "level": "N2"
+  },
+  {
+    "id": "v-n2-041",
+    "word": "分析",
+    "reading": "ぶんせき",
+    "meaning": "분석",
+    "partOfSpeech": "명사",
+    "example": "原因を分析して報告します。",
+    "exampleReading": "げんいんをぶんせきしてほうこくします。",
+    "exampleTranslation": "원인을 분석해서 보고하겠습니다.",
+    "importance": 3,
+    "tags": [
+      "비즈니스"
+    ],
+    "level": "N2"
+  },
+  {
+    "id": "v-n2-042",
+    "word": "指摘",
+    "reading": "してき",
+    "meaning": "지적",
+    "partOfSpeech": "명사",
+    "example": "ご指摘ありがとうございます。",
+    "exampleReading": "ごしてきありがとうございます。",
+    "exampleTranslation": "지적해 주셔서 감사합니다.",
+    "importance": 3,
+    "tags": [
+      "비즈니스"
+    ],
+    "level": "N2"
+  },
+  {
+    "id": "v-n2-043",
+    "word": "反映",
+    "reading": "はんえい",
+    "meaning": "반영",
+    "partOfSpeech": "명사",
+    "example": "ご意見を次回に反映いたします。",
+    "exampleReading": "ごいけんをじかいにはんえいいたします。",
+    "exampleTranslation": "의견을 다음번에 반영하겠습니다.",
+    "importance": 3,
+    "tags": [
+      "비즈니스"
+    ],
+    "level": "N2"
+  },
+  {
+    "id": "v-n2-044",
+    "word": "依頼",
+    "reading": "いらい",
+    "meaning": "의뢰",
+    "partOfSpeech": "명사",
+    "example": "翻訳を依頼されました。",
+    "exampleReading": "ほんやくをいらいされました。",
+    "exampleTranslation": "번역을 의뢰받았습니다.",
+    "importance": 3,
+    "tags": [
+      "비즈니스"
+    ],
+    "level": "N2"
+  },
+  {
+    "id": "v-n2-045",
+    "word": "抱える",
+    "reading": "かかえる",
+    "meaning": "안다, 떠안다",
+    "partOfSpeech": "동사(2류)",
+    "example": "一人で問題を抱えないでください。",
+    "exampleReading": "ひとりでもんだいをかかえないでください。",
+    "exampleTranslation": "혼자 문제를 떠안지 마세요.",
+    "importance": 3,
+    "tags": [
+      "비즈니스"
+    ],
+    "level": "N2"
+  },
+  {
+    "id": "v-n2-046",
+    "word": "述べる",
+    "reading": "のべる",
+    "meaning": "서술하다, 말하다",
+    "partOfSpeech": "동사(2류)",
+    "example": "自分の考えを述べさせていただきます。",
+    "exampleReading": "じぶんのかんがえをのべさせていただきます。",
+    "exampleTranslation": "제 생각을 말씀드리겠습니다.",
+    "importance": 3,
+    "level": "N2"
+  },
+  {
+    "id": "v-n2-047",
+    "word": "及ぼす",
+    "reading": "およぼす",
+    "meaning": "미치다(영향을)",
+    "partOfSpeech": "동사(1류)",
+    "example": "全体に影響を及ぼす可能性がある。",
+    "exampleReading": "ぜんたいにえいきょうをおよぼすかのうせいがある。",
+    "exampleTranslation": "전체에 영향을 미칠 가능성이 있다.",
+    "importance": 3,
+    "level": "N2"
+  },
+  {
+    "id": "v-n2-048",
+    "word": "応じる",
+    "reading": "おうじる",
+    "meaning": "응하다",
+    "partOfSpeech": "동사(2류)",
+    "example": "お客様の要望に応じて変更します。",
+    "exampleReading": "おきゃくさまのようぼうにおうじてへんこうします。",
+    "exampleTranslation": "고객의 요망에 따라 변경합니다.",
+    "importance": 3,
+    "tags": [
+      "비즈니스"
+    ],
+    "level": "N2"
+  },
+  {
+    "id": "v-n2-049",
+    "word": "欠かせない",
+    "reading": "かかせない",
+    "meaning": "빼놓을 수 없다",
+    "partOfSpeech": "관용 표현",
+    "example": "日々の復習は欠かせません。",
+    "exampleReading": "ひびのふくしゅうはかかせません。",
+    "exampleTranslation": "매일의 복습은 빼놓을 수 없습니다.",
+    "importance": 3,
+    "level": "N2"
+  },
+  {
+    "id": "v-n2-050",
+    "word": "明確",
+    "reading": "めいかく",
+    "meaning": "명확함",
+    "partOfSpeech": "な형용사",
+    "example": "役割を明確にしましょう。",
+    "exampleReading": "やくわりをめいかくにしましょう。",
+    "exampleTranslation": "역할을 명확히 합시다.",
+    "importance": 3,
+    "tags": [
+      "비즈니스"
+    ],
+    "level": "N2"
+  },
+  {
+    "id": "v-n2-051",
+    "word": "妥当",
+    "reading": "だとう",
+    "meaning": "타당함",
+    "partOfSpeech": "な형용사",
+    "example": "この価格は妥当だと思います。",
+    "exampleReading": "このかかくはだとうだとおもいます。",
+    "exampleTranslation": "이 가격은 타당하다고 생각합니다.",
+    "importance": 2,
+    "level": "N2"
+  },
+  {
+    "id": "v-n2-052",
+    "word": "深刻",
+    "reading": "しんこく",
+    "meaning": "심각함",
+    "partOfSpeech": "な형용사",
+    "example": "人手不足が深刻になっている。",
+    "exampleReading": "ひとでぶそくがしんこくになっている。",
+    "exampleTranslation": "일손 부족이 심각해지고 있다.",
+    "importance": 3,
+    "level": "N2"
+  },
+  {
+    "id": "v-n2-053",
+    "word": "柔軟",
+    "reading": "じゅうなん",
+    "meaning": "유연함",
+    "partOfSpeech": "な형용사",
+    "example": "状況に柔軟に対応できます。",
+    "exampleReading": "じょうきょうにじゅうなんにたいおうできます。",
+    "exampleTranslation": "상황에 유연하게 대응할 수 있습니다.",
+    "importance": 3,
+    "tags": [
+      "취업"
+    ],
+    "level": "N2"
+  },
+  {
+    "id": "v-n2-054",
+    "word": "順調",
+    "reading": "じゅんちょう",
+    "meaning": "순조로움",
+    "partOfSpeech": "な형용사",
+    "example": "作業は順調に進んでおります。",
+    "exampleReading": "さぎょうはじゅんちょうにすすんでおります。",
+    "exampleTranslation": "작업은 순조롭게 진행되고 있습니다.",
+    "importance": 3,
+    "tags": [
+      "비즈니스"
+    ],
+    "level": "N2"
+  },
+  {
+    "id": "v-n2-055",
+    "word": "あらかじめ",
+    "reading": "あらかじめ",
+    "meaning": "미리",
+    "partOfSpeech": "부사",
+    "example": "あらかじめご連絡ください。",
+    "exampleReading": "あらかじめごれんらくください。",
+    "exampleTranslation": "미리 연락해 주세요.",
+    "importance": 3,
+    "tags": [
+      "비즈니스"
+    ],
+    "level": "N2"
+  },
+  {
+    "id": "v-n2-056",
+    "word": "直ちに",
+    "reading": "ただちに",
+    "meaning": "즉시",
+    "partOfSpeech": "부사",
+    "example": "直ちに対応いたします。",
+    "exampleReading": "ただちにたいおういたします。",
+    "exampleTranslation": "즉시 대응하겠습니다.",
+    "importance": 3,
+    "tags": [
+      "비즈니스"
+    ],
+    "level": "N2"
+  },
+  {
+    "id": "v-n2-057",
+    "word": "常に",
+    "reading": "つねに",
+    "meaning": "항상",
+    "partOfSpeech": "부사",
+    "example": "常に改善を心がけています。",
+    "exampleReading": "つねにかいぜんをこころがけています。",
+    "exampleTranslation": "항상 개선을 유념하고 있습니다.",
+    "importance": 3,
+    "level": "N2"
+  },
+  {
+    "id": "v-n2-058",
+    "word": "いわゆる",
+    "reading": "いわゆる",
+    "meaning": "이른바",
+    "partOfSpeech": "연체사",
+    "example": "いわゆる終身雇用は変わりつつある。",
+    "exampleReading": "いわゆるしゅうしんこようはかわりつつある。",
+    "exampleTranslation": "이른바 종신 고용은 변해 가고 있다.",
+    "importance": 2,
+    "level": "N2"
+  },
+  {
+    "id": "v-n2-059",
+    "word": "なお",
+    "reading": "なお",
+    "meaning": "덧붙여, 또한",
+    "partOfSpeech": "접속사",
+    "example": "なお、詳細は添付をご覧ください。",
+    "exampleReading": "なお、しょうさいはてんぷをごらんください。",
+    "exampleTranslation": "덧붙여 상세 내용은 첨부를 봐 주세요.",
+    "importance": 3,
+    "tags": [
+      "비즈니스"
+    ],
+    "level": "N2"
+  },
+  {
+    "id": "v-n2-060",
+    "word": "一方で",
+    "reading": "いっぽうで",
+    "meaning": "한편으로",
+    "partOfSpeech": "접속 표현",
+    "example": "便利になった一方で、課題も増えた。",
+    "exampleReading": "べんりになったいっぽうで、かだいもふえた。",
+    "exampleTranslation": "편리해진 한편으로 과제도 늘었다.",
+    "importance": 3,
+    "level": "N2"
   }
 ]

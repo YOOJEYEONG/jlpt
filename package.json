@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "qa": "node tests/qa-smoke.mjs && node tests/qa-deep.mjs"
+    "qa": "node tests/qa-smoke.mjs && node tests/qa-deep.mjs",
+    "validate": "node tests/validate-data.mjs"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",

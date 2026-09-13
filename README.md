@@ -112,6 +112,12 @@ QA_BASE=https://jlpt-mu.vercel.app npm run qa   # 배포본 점검
 - `tests/qa-smoke.mjs` — 전체 화면 렌더링 · 모바일 가로 넘침 · 콘솔 에러
 - `tests/qa-deep.mjs` — 카운터 정확도 · 새로고침 후 데이터 유지 · 복습/오답 큐 동작
 
+콘텐츠 JSON 무결성 검사는 브라우저 없이 바로 돌릴 수 있습니다.
+
+```bash
+npm run validate   # id 중복, 필수 필드 누락, 레벨 불일치, 잘못 섞인 문자 검사
+```
+
 ---
 
 ## 데이터 저장 방식
