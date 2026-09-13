@@ -1,0 +1,266 @@
+[
+  {
+    "id": "v-n2-001",
+    "word": "把握",
+    "reading": "はあく",
+    "meaning": "파악",
+    "partOfSpeech": "명사",
+    "level": "N2",
+    "example": "状況を正確に把握してください。",
+    "exampleReading": "じょうきょうをせいかくにはあくしてください。",
+    "exampleTranslation": "상황을 정확히 파악해 주세요.",
+    "importance": 3,
+    "tags": [
+      "비즈니스"
+    ]
+  },
+  {
+    "id": "v-n2-002",
+    "word": "検討",
+    "reading": "けんとう",
+    "meaning": "검토",
+    "partOfSpeech": "명사",
+    "level": "N2",
+    "example": "社内で検討させていただきます。",
+    "exampleReading": "しゃないでけんとうさせていただきます。",
+    "exampleTranslation": "사내에서 검토하겠습니다.",
+    "importance": 3,
+    "tags": [
+      "비즈니스"
+    ]
+  },
+  {
+    "id": "v-n2-003",
+    "word": "効率",
+    "reading": "こうりつ",
+    "meaning": "효율",
+    "partOfSpeech": "명사",
+    "level": "N2",
+    "example": "作業の効率を上げました。",
+    "exampleReading": "さぎょうのこうりつをあげました。",
+    "exampleTranslation": "작업 효율을 올렸습니다.",
+    "importance": 3,
+    "tags": [
+      "비즈니스"
+    ]
+  },
+  {
+    "id": "v-n2-004",
+    "word": "傾向",
+    "reading": "けいこう",
+    "meaning": "경향",
+    "partOfSpeech": "명사",
+    "level": "N2",
+    "example": "若者は都市に集まる傾向がある。",
+    "exampleReading": "わかものはとしにあつまるけいこうがある。",
+    "exampleTranslation": "젊은이들은 도시에 모이는 경향이 있다.",
+    "importance": 3
+  },
+  {
+    "id": "v-n2-005",
+    "word": "課題",
+    "reading": "かだい",
+    "meaning": "과제",
+    "partOfSpeech": "명사",
+    "level": "N2",
+    "example": "今後の課題を整理します。",
+    "exampleReading": "こんごのかだいをせいりします。",
+    "exampleTranslation": "향후 과제를 정리하겠습니다.",
+    "importance": 3,
+    "tags": [
+      "비즈니스"
+    ]
+  },
+  {
+    "id": "v-n2-006",
+    "word": "評価",
+    "reading": "ひょうか",
+    "meaning": "평가",
+    "partOfSpeech": "명사",
+    "level": "N2",
+    "example": "成果が高く評価されました。",
+    "exampleReading": "せいかがたかくひょうかされました。",
+    "exampleTranslation": "성과가 높게 평가되었습니다.",
+    "importance": 3,
+    "tags": [
+      "취업"
+    ]
+  },
+  {
+    "id": "v-n2-007",
+    "word": "根拠",
+    "reading": "こんきょ",
+    "meaning": "근거",
+    "partOfSpeech": "명사",
+    "level": "N2",
+    "example": "その主張には根拠がない。",
+    "exampleReading": "そのしゅちょうにはこんきょがない。",
+    "exampleTranslation": "그 주장에는 근거가 없다.",
+    "importance": 3
+  },
+  {
+    "id": "v-n2-008",
+    "word": "維持",
+    "reading": "いじ",
+    "meaning": "유지",
+    "partOfSpeech": "명사",
+    "level": "N2",
+    "example": "品質を維持することが重要だ。",
+    "exampleReading": "ひんしつをいじすることがじゅうようだ。",
+    "exampleTranslation": "품질을 유지하는 것이 중요하다.",
+    "importance": 2
+  },
+  {
+    "id": "v-n2-009",
+    "word": "余裕",
+    "reading": "よゆう",
+    "meaning": "여유",
+    "partOfSpeech": "명사",
+    "level": "N2",
+    "example": "今週は時間に余裕があります。",
+    "exampleReading": "こんしゅうはじかんによゆうがあります。",
+    "exampleTranslation": "이번 주는 시간에 여유가 있습니다.",
+    "importance": 3
+  },
+  {
+    "id": "v-n2-010",
+    "word": "取り組む",
+    "reading": "とりくむ",
+    "meaning": "몰두하다, 임하다",
+    "partOfSpeech": "동사(1류)",
+    "level": "N2",
+    "example": "新しい課題に取り組んでいます。",
+    "exampleReading": "あたらしいかだいにとりくんでいます。",
+    "exampleTranslation": "새로운 과제에 임하고 있습니다.",
+    "importance": 3,
+    "tags": [
+      "취업"
+    ]
+  },
+  {
+    "id": "v-n2-011",
+    "word": "見直す",
+    "reading": "みなおす",
+    "meaning": "재검토하다",
+    "partOfSpeech": "동사(1류)",
+    "level": "N2",
+    "example": "計画を見直す必要があります。",
+    "exampleReading": "けいかくをみなおすひつようがあります。",
+    "exampleTranslation": "계획을 재검토할 필요가 있습니다.",
+    "importance": 3,
+    "tags": [
+      "비즈니스"
+    ]
+  },
+  {
+    "id": "v-n2-012",
+    "word": "占める",
+    "reading": "しめる",
+    "meaning": "차지하다",
+    "partOfSpeech": "동사(2류)",
+    "level": "N2",
+    "example": "輸出が全体の七割を占める。",
+    "exampleReading": "ゆしゅつがぜんたいのななわりをしめる。",
+    "exampleTranslation": "수출이 전체의 70퍼센트를 차지한다.",
+    "importance": 3
+  },
+  {
+    "id": "v-n2-013",
+    "word": "補う",
+    "reading": "おぎなう",
+    "meaning": "보충하다",
+    "partOfSpeech": "동사(1류)",
+    "level": "N2",
+    "example": "経験の不足を努力で補います。",
+    "exampleReading": "けいけんのふそくをどりょくでおぎないます。",
+    "exampleTranslation": "경험 부족을 노력으로 보충합니다.",
+    "importance": 3,
+    "tags": [
+      "취업"
+    ]
+  },
+  {
+    "id": "v-n2-014",
+    "word": "率直",
+    "reading": "そっちょく",
+    "meaning": "솔직함",
+    "partOfSpeech": "な형용사",
+    "level": "N2",
+    "example": "率直なご意見をお願いします。",
+    "exampleReading": "そっちょくなごいけんをおねがいします。",
+    "exampleTranslation": "솔직한 의견을 부탁드립니다.",
+    "importance": 2
+  },
+  {
+    "id": "v-n2-015",
+    "word": "慎重",
+    "reading": "しんちょう",
+    "meaning": "신중함",
+    "partOfSpeech": "な형용사",
+    "level": "N2",
+    "example": "慎重に判断すべきです。",
+    "exampleReading": "しんちょうにはんだんすべきです。",
+    "exampleTranslation": "신중하게 판단해야 합니다.",
+    "importance": 3
+  },
+  {
+    "id": "v-n2-016",
+    "word": "あらゆる",
+    "reading": "あらゆる",
+    "meaning": "모든",
+    "partOfSpeech": "연체사",
+    "level": "N2",
+    "example": "あらゆる可能性を考えました。",
+    "exampleReading": "あらゆるかのうせいをかんがえました。",
+    "exampleTranslation": "모든 가능성을 생각했습니다.",
+    "importance": 3
+  },
+  {
+    "id": "v-n2-017",
+    "word": "いずれ",
+    "reading": "いずれ",
+    "meaning": "머지않아, 어느 쪽이든",
+    "partOfSpeech": "부사",
+    "level": "N2",
+    "example": "いずれご連絡いたします。",
+    "exampleReading": "いずれごれんらくいたします。",
+    "exampleTranslation": "머지않아 연락드리겠습니다.",
+    "importance": 2
+  },
+  {
+    "id": "v-n2-018",
+    "word": "ほぼ",
+    "reading": "ほぼ",
+    "meaning": "거의",
+    "partOfSpeech": "부사",
+    "level": "N2",
+    "example": "準備はほぼ終わりました。",
+    "exampleReading": "じゅんびはほぼおわりました。",
+    "exampleTranslation": "준비는 거의 끝났습니다.",
+    "importance": 3
+  },
+  {
+    "id": "v-n2-019",
+    "word": "従って",
+    "reading": "したがって",
+    "meaning": "따라서",
+    "partOfSpeech": "접속사",
+    "level": "N2",
+    "example": "従って、結論は次の通りです。",
+    "exampleReading": "したがって、けつろんはつぎのとおりです。",
+    "exampleTranslation": "따라서 결론은 다음과 같습니다.",
+    "importance": 3
+  },
+  {
+    "id": "v-n2-020",
+    "word": "そのため",
+    "reading": "そのため",
+    "meaning": "그 때문에",
+    "partOfSpeech": "접속사",
+    "level": "N2",
+    "example": "そのため、日程を変更しました。",
+    "exampleReading": "そのため、にっていをへんこうしました。",
+    "exampleTranslation": "그 때문에 일정을 변경했습니다.",
+    "importance": 3
+  }
+]

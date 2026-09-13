@@ -1,0 +1,254 @@
+[
+  {
+    "id": "v-n1-001",
+    "word": "把捉",
+    "reading": "はそく",
+    "meaning": "파악, 포착",
+    "partOfSpeech": "명사",
+    "level": "N1",
+    "example": "問題の本質を把捉する。",
+    "exampleReading": "もんだいのほんしつをはそくする。",
+    "exampleTranslation": "문제의 본질을 파악하다.",
+    "importance": 1
+  },
+  {
+    "id": "v-n1-002",
+    "word": "顕著",
+    "reading": "けんちょ",
+    "meaning": "현저함",
+    "partOfSpeech": "な형용사",
+    "level": "N1",
+    "example": "効果は顕著に現れた。",
+    "exampleReading": "こうかはけんちょにあらわれた。",
+    "exampleTranslation": "효과가 현저하게 나타났다.",
+    "importance": 3
+  },
+  {
+    "id": "v-n1-003",
+    "word": "促進",
+    "reading": "そくしん",
+    "meaning": "촉진",
+    "partOfSpeech": "명사",
+    "level": "N1",
+    "example": "地域経済の発展を促進する。",
+    "exampleReading": "ちいきけいざいのはってんをそくしんする。",
+    "exampleTranslation": "지역 경제 발전을 촉진하다.",
+    "importance": 3
+  },
+  {
+    "id": "v-n1-004",
+    "word": "懸念",
+    "reading": "けねん",
+    "meaning": "우려",
+    "partOfSpeech": "명사",
+    "level": "N1",
+    "example": "業績悪化が懸念されている。",
+    "exampleReading": "ぎょうせきあっかがけねんされている。",
+    "exampleTranslation": "실적 악화가 우려되고 있다.",
+    "importance": 3,
+    "tags": [
+      "비즈니스"
+    ]
+  },
+  {
+    "id": "v-n1-005",
+    "word": "抜本的",
+    "reading": "ばっぽんてき",
+    "meaning": "발본적, 근본적",
+    "partOfSpeech": "な형용사",
+    "level": "N1",
+    "example": "抜本的な改革が求められる。",
+    "exampleReading": "ばっぽんてきなかいかくがもとめられる。",
+    "exampleTranslation": "근본적인 개혁이 요구된다.",
+    "importance": 2
+  },
+  {
+    "id": "v-n1-006",
+    "word": "覆す",
+    "reading": "くつがえす",
+    "meaning": "뒤집다",
+    "partOfSpeech": "동사(1류)",
+    "level": "N1",
+    "example": "従来の常識を覆す発見だ。",
+    "exampleReading": "じゅうらいのじょうしきをくつがえすはっけんだ。",
+    "exampleTranslation": "기존의 상식을 뒤집는 발견이다.",
+    "importance": 3
+  },
+  {
+    "id": "v-n1-007",
+    "word": "免れる",
+    "reading": "まぬかれる",
+    "meaning": "면하다",
+    "partOfSpeech": "동사(2류)",
+    "level": "N1",
+    "example": "責任を免れることはできない。",
+    "exampleReading": "せきにんをまぬかれることはできない。",
+    "exampleTranslation": "책임을 면할 수는 없다.",
+    "importance": 2
+  },
+  {
+    "id": "v-n1-008",
+    "word": "委ねる",
+    "reading": "ゆだねる",
+    "meaning": "맡기다, 위임하다",
+    "partOfSpeech": "동사(2류)",
+    "level": "N1",
+    "example": "判断を現場に委ねる。",
+    "exampleReading": "はんだんをげんばにゆだねる。",
+    "exampleTranslation": "판단을 현장에 맡기다.",
+    "importance": 2,
+    "tags": [
+      "비즈니스"
+    ]
+  },
+  {
+    "id": "v-n1-009",
+    "word": "如実",
+    "reading": "にょじつ",
+    "meaning": "여실함",
+    "partOfSpeech": "な형용사",
+    "level": "N1",
+    "example": "数字が現状を如実に示している。",
+    "exampleReading": "すうじがげんじょうをにょじつにしめしている。",
+    "exampleTranslation": "숫자가 현재 상황을 여실히 보여주고 있다.",
+    "importance": 2
+  },
+  {
+    "id": "v-n1-010",
+    "word": "円滑",
+    "reading": "えんかつ",
+    "meaning": "원활함",
+    "partOfSpeech": "な형용사",
+    "level": "N1",
+    "example": "業務が円滑に進むよう調整します。",
+    "exampleReading": "ぎょうむがえんかつにすすむようちょうせいします。",
+    "exampleTranslation": "업무가 원활히 진행되도록 조정하겠습니다.",
+    "importance": 3,
+    "tags": [
+      "비즈니스"
+    ]
+  },
+  {
+    "id": "v-n1-011",
+    "word": "逸脱",
+    "reading": "いつだつ",
+    "meaning": "일탈",
+    "partOfSpeech": "명사",
+    "level": "N1",
+    "example": "規定から逸脱した行為だ。",
+    "exampleReading": "きていからいつだつしたこういだ。",
+    "exampleTranslation": "규정에서 벗어난 행위다.",
+    "importance": 2
+  },
+  {
+    "id": "v-n1-012",
+    "word": "緻密",
+    "reading": "ちみつ",
+    "meaning": "치밀함",
+    "partOfSpeech": "な형용사",
+    "level": "N1",
+    "example": "緻密な計画を立てた。",
+    "exampleReading": "ちみつなけいかくをたてた。",
+    "exampleTranslation": "치밀한 계획을 세웠다.",
+    "importance": 2
+  },
+  {
+    "id": "v-n1-013",
+    "word": "画期的",
+    "reading": "かっきてき",
+    "meaning": "획기적",
+    "partOfSpeech": "な형용사",
+    "level": "N1",
+    "example": "画期的な技術が開発された。",
+    "exampleReading": "かっきてきなぎじゅつがかいはつされた。",
+    "exampleTranslation": "획기적인 기술이 개발되었다.",
+    "importance": 3
+  },
+  {
+    "id": "v-n1-014",
+    "word": "潜在",
+    "reading": "せんざい",
+    "meaning": "잠재",
+    "partOfSpeech": "명사",
+    "level": "N1",
+    "example": "潜在的な需要を掘り起こす。",
+    "exampleReading": "せんざいてきなじゅようをほりおこす。",
+    "exampleTranslation": "잠재적인 수요를 발굴하다.",
+    "importance": 3
+  },
+  {
+    "id": "v-n1-015",
+    "word": "是正",
+    "reading": "ぜせい",
+    "meaning": "시정",
+    "partOfSpeech": "명사",
+    "level": "N1",
+    "example": "格差の是正が課題だ。",
+    "exampleReading": "かくさのぜせいがかだいだ。",
+    "exampleTranslation": "격차 시정이 과제다.",
+    "importance": 2
+  },
+  {
+    "id": "v-n1-016",
+    "word": "踏まえる",
+    "reading": "ふまえる",
+    "meaning": "근거로 하다, 감안하다",
+    "partOfSpeech": "동사(2류)",
+    "level": "N1",
+    "example": "前回の結果を踏まえて判断します。",
+    "exampleReading": "ぜんかいのけっかをふまえてはんだんします。",
+    "exampleTranslation": "지난번 결과를 감안해 판단하겠습니다.",
+    "importance": 3,
+    "tags": [
+      "비즈니스"
+    ]
+  },
+  {
+    "id": "v-n1-017",
+    "word": "拍車",
+    "reading": "はくしゃ",
+    "meaning": "박차",
+    "partOfSpeech": "명사",
+    "level": "N1",
+    "example": "少子化に拍車がかかっている。",
+    "exampleReading": "しょうしかにはくしゃがかかっている。",
+    "exampleTranslation": "저출산에 박차가 가해지고 있다.",
+    "importance": 2
+  },
+  {
+    "id": "v-n1-018",
+    "word": "とりわけ",
+    "reading": "とりわけ",
+    "meaning": "특히",
+    "partOfSpeech": "부사",
+    "level": "N1",
+    "example": "とりわけ品質管理が重要だ。",
+    "exampleReading": "とりわけひんしつかんりがじゅうようだ。",
+    "exampleTranslation": "특히 품질 관리가 중요하다.",
+    "importance": 3
+  },
+  {
+    "id": "v-n1-019",
+    "word": "ひいては",
+    "reading": "ひいては",
+    "meaning": "나아가서는",
+    "partOfSpeech": "부사",
+    "level": "N1",
+    "example": "個人の成長が、ひいては会社の成長になる。",
+    "exampleReading": "こじんのせいちょうが、ひいてはかいしゃのせいちょうになる。",
+    "exampleTranslation": "개인의 성장이 나아가서는 회사의 성장이 된다.",
+    "importance": 2
+  },
+  {
+    "id": "v-n1-020",
+    "word": "もっぱら",
+    "reading": "もっぱら",
+    "meaning": "오로지",
+    "partOfSpeech": "부사",
+    "level": "N1",
+    "example": "最近はもっぱら日本語の勉強をしている。",
+    "exampleReading": "さいきんはもっぱらにほんごのべんきょうをしている。",
+    "exampleTranslation": "요즘은 오로지 일본어 공부만 하고 있다.",
+    "importance": 2
+  }
+]

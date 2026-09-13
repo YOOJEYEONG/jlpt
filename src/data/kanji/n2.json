@@ -1,0 +1,288 @@
+[
+  {
+    "id": "k-n2-001",
+    "character": "握",
+    "meaning": "쥐다",
+    "onyomi": [
+      "アク"
+    ],
+    "kunyomi": [
+      "にぎ(る)"
+    ],
+    "strokes": 12,
+    "level": "N2",
+    "words": [
+      {
+        "word": "把握",
+        "reading": "はあく",
+        "meaning": "파악"
+      },
+      {
+        "word": "握手",
+        "reading": "あくしゅ",
+        "meaning": "악수"
+      }
+    ],
+    "example": {
+      "jp": "現状を把握しています。",
+      "ko": "현재 상황을 파악하고 있습니다."
+    }
+  },
+  {
+    "id": "k-n2-002",
+    "character": "検",
+    "meaning": "조사하다",
+    "onyomi": [
+      "ケン"
+    ],
+    "kunyomi": [],
+    "strokes": 12,
+    "level": "N2",
+    "words": [
+      {
+        "word": "検討",
+        "reading": "けんとう",
+        "meaning": "검토"
+      },
+      {
+        "word": "検査",
+        "reading": "けんさ",
+        "meaning": "검사"
+      }
+    ],
+    "example": {
+      "jp": "前向きに検討いたします。",
+      "ko": "긍정적으로 검토하겠습니다."
+    }
+  },
+  {
+    "id": "k-n2-003",
+    "character": "傾",
+    "meaning": "기울다",
+    "onyomi": [
+      "ケイ"
+    ],
+    "kunyomi": [
+      "かたむ(く)"
+    ],
+    "strokes": 13,
+    "level": "N2",
+    "words": [
+      {
+        "word": "傾向",
+        "reading": "けいこう",
+        "meaning": "경향"
+      },
+      {
+        "word": "傾聴",
+        "reading": "けいちょう",
+        "meaning": "경청"
+      }
+    ],
+    "example": {
+      "jp": "上昇傾向が続いています。",
+      "ko": "상승 경향이 이어지고 있습니다."
+    }
+  },
+  {
+    "id": "k-n2-004",
+    "character": "拠",
+    "meaning": "근거, 의지하다",
+    "onyomi": [
+      "キョ",
+      "コ"
+    ],
+    "kunyomi": [],
+    "strokes": 8,
+    "level": "N2",
+    "words": [
+      {
+        "word": "根拠",
+        "reading": "こんきょ",
+        "meaning": "근거"
+      },
+      {
+        "word": "証拠",
+        "reading": "しょうこ",
+        "meaning": "증거"
+      }
+    ],
+    "example": {
+      "jp": "明確な根拠を示してください。",
+      "ko": "명확한 근거를 제시해 주세요."
+    }
+  },
+  {
+    "id": "k-n2-005",
+    "character": "維",
+    "meaning": "매다, 유지",
+    "onyomi": [
+      "イ"
+    ],
+    "kunyomi": [],
+    "strokes": 14,
+    "level": "N2",
+    "words": [
+      {
+        "word": "維持",
+        "reading": "いじ",
+        "meaning": "유지"
+      },
+      {
+        "word": "繊維",
+        "reading": "せんい",
+        "meaning": "섬유"
+      }
+    ],
+    "example": {
+      "jp": "品質を維持します。",
+      "ko": "품질을 유지합니다."
+    }
+  },
+  {
+    "id": "k-n2-006",
+    "character": "占",
+    "meaning": "차지하다",
+    "onyomi": [
+      "セン"
+    ],
+    "kunyomi": [
+      "し(める)",
+      "うらな(う)"
+    ],
+    "strokes": 5,
+    "level": "N2",
+    "words": [
+      {
+        "word": "占める",
+        "reading": "しめる",
+        "meaning": "차지하다"
+      },
+      {
+        "word": "独占",
+        "reading": "どくせん",
+        "meaning": "독점"
+      }
+    ],
+    "example": {
+      "jp": "輸出が半分を占めます。",
+      "ko": "수출이 절반을 차지합니다."
+    }
+  },
+  {
+    "id": "k-n2-007",
+    "character": "偏",
+    "meaning": "치우치다",
+    "onyomi": [
+      "ヘン"
+    ],
+    "kunyomi": [
+      "かたよ(る)"
+    ],
+    "strokes": 11,
+    "level": "N2",
+    "words": [
+      {
+        "word": "偏見",
+        "reading": "へんけん",
+        "meaning": "편견"
+      },
+      {
+        "word": "偏る",
+        "reading": "かたよる",
+        "meaning": "치우치다"
+      }
+    ],
+    "example": {
+      "jp": "情報が偏らないようにする。",
+      "ko": "정보가 치우치지 않도록 한다."
+    }
+  },
+  {
+    "id": "k-n2-008",
+    "character": "慎",
+    "meaning": "삼가다",
+    "onyomi": [
+      "シン"
+    ],
+    "kunyomi": [
+      "つつし(む)"
+    ],
+    "strokes": 13,
+    "level": "N2",
+    "words": [
+      {
+        "word": "慎重",
+        "reading": "しんちょう",
+        "meaning": "신중"
+      },
+      {
+        "word": "謹慎",
+        "reading": "きんしん",
+        "meaning": "근신"
+      }
+    ],
+    "example": {
+      "jp": "慎重に検討します。",
+      "ko": "신중히 검토하겠습니다."
+    }
+  },
+  {
+    "id": "k-n2-009",
+    "character": "採",
+    "meaning": "고르다, 채택",
+    "onyomi": [
+      "サイ"
+    ],
+    "kunyomi": [
+      "と(る)"
+    ],
+    "strokes": 11,
+    "level": "N2",
+    "words": [
+      {
+        "word": "採択",
+        "reading": "さいたく",
+        "meaning": "채택"
+      },
+      {
+        "word": "採算",
+        "reading": "さいさん",
+        "meaning": "채산"
+      }
+    ],
+    "example": {
+      "jp": "この案が採択されました。",
+      "ko": "이 안이 채택되었습니다."
+    }
+  },
+  {
+    "id": "k-n2-010",
+    "character": "補",
+    "meaning": "돕다, 보충",
+    "onyomi": [
+      "ホ"
+    ],
+    "kunyomi": [
+      "おぎな(う)"
+    ],
+    "strokes": 12,
+    "level": "N2",
+    "words": [
+      {
+        "word": "補足",
+        "reading": "ほそく",
+        "meaning": "보충"
+      },
+      {
+        "word": "候補",
+        "reading": "こうほ",
+        "meaning": "후보"
+      }
+    ],
+    "example": {
+      "jp": "一点だけ補足いたします。",
+      "ko": "한 가지만 보충하겠습니다."
+    }
+  }
+]

@@ -1,0 +1,17 @@
+[
+  { "id": "lt-01", "level": "N5", "area": "어휘", "question": "「わたしは まいにち にほんごを （　　）。」", "choices": ["べんきょうします", "べんきょうです", "べんきょうの", "べんきょうに"], "answerIndex": 0, "explanation": "「勉強します」가 동사 형태로 올바릅니다." },
+  { "id": "lt-02", "level": "N5", "area": "문법", "question": "「あした ともだち（　　）あいます。」", "choices": ["を", "に", "で", "が"], "answerIndex": 1, "explanation": "会う는 조사 に를 취합니다(友達に会う)." },
+  { "id": "lt-03", "level": "N5", "area": "한자", "question": "「会社」의 읽기로 올바른 것은?", "choices": ["かいしゃ", "がいしゃ", "かいしゃく", "こうしゃ"], "answerIndex": 0, "explanation": "会社는 かいしゃ로 읽습니다." },
+  { "id": "lt-04", "level": "N4", "area": "문법", "question": "「日本語が 話せる（　　）なりました。」", "choices": ["ように", "ために", "そうに", "みたいに"], "answerIndex": 0, "explanation": "가능형 + ようになる는 능력의 변화를 나타냅니다." },
+  { "id": "lt-05", "level": "N4", "area": "어휘", "question": "「会議の前に資料を読んで（　　）ます。」", "choices": ["しまい", "おき", "あり", "いき"], "answerIndex": 1, "explanation": "미리 준비하는 의미는 「〜ておく」입니다." },
+  { "id": "lt-06", "level": "N4", "area": "한자", "question": "「経験」의 읽기로 올바른 것은?", "choices": ["けいげん", "きょうけん", "けいけん", "きょうげん"], "answerIndex": 2, "explanation": "経験은 けいけん입니다." },
+  { "id": "lt-07", "level": "N3", "area": "문법", "question": "「日本語が嫌いな（　　）ではありません。」", "choices": ["わけ", "はず", "こと", "もの"], "answerIndex": 0, "explanation": "부분 부정 「〜わけではない」입니다." },
+  { "id": "lt-08", "level": "N3", "area": "어휘", "question": "「内容をご（　　）ください。」ビジネスで最も自然なのは？", "choices": ["確認", "検査", "観察", "点検"], "answerIndex": 0, "explanation": "비즈니스 표준 표현은 「ご確認ください」입니다." },
+  { "id": "lt-09", "level": "N3", "area": "독해", "question": "「電車が遅れたせいで遅刻した」の「せいで」の意味は？", "choices": ["덕분에", "탓에", "대신에", "위해서"], "answerIndex": 1, "explanation": "せいで는 부정적 원인 '탓에'입니다." },
+  { "id": "lt-10", "level": "N2", "area": "문법", "question": "「結果が分かり（　　）、ご連絡いたします。」", "choices": ["次第", "たびに", "ながら", "つつ"], "answerIndex": 0, "explanation": "「〜次第」는 '~하는 대로 즉시'입니다." },
+  { "id": "lt-11", "level": "N2", "area": "어휘", "question": "「社内で（　　）させていただきます。」検討の意味で適切なのは？", "choices": ["検討", "検問", "見当", "献身"], "answerIndex": 0, "explanation": "검토는 検討(けんとう)입니다. 見当은 '짐작'입니다." },
+  { "id": "lt-12", "level": "N2", "area": "문법", "question": "「資格は取った（　　）、まだ経験が足りない。」", "choices": ["ものの", "ものなら", "ものだから", "ものを"], "answerIndex": 0, "explanation": "문어체 역접 「〜ものの」입니다." },
+  { "id": "lt-13", "level": "N1", "area": "문법", "question": "「業績悪化で事業縮小を（　　）された。」", "choices": ["余儀なく", "やむを得ず", "仕方なく", "止むなく"], "answerIndex": 0, "explanation": "「〜を余儀なくされる」가 고정 표현입니다." },
+  { "id": "lt-14", "level": "N1", "area": "어휘", "question": "「顕著」の意味として正しいものは？", "choices": ["미미함", "현저함", "애매함", "평범함"], "answerIndex": 1, "explanation": "顕著(けんちょ)는 '뚜렷하고 현저함'입니다." },
+  { "id": "lt-15", "level": "N1", "area": "독해", "question": "「効率化を否定する必要はない。ただ、何を対象から外すかが重要だ」の筆者の立場は？", "choices": ["효율화 전면 반대", "효율화 전면 찬성", "효율화를 인정하되 적용 범위에 주의", "효율화에 무관심"], "answerIndex": 2, "explanation": "「否定する必要はない。ただ…」 구조가 조건부 수용을 나타냅니다." }
+]

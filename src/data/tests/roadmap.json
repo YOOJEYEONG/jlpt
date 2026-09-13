@@ -1,0 +1,8 @@
+[
+  { "level": "BASIC", "name": "일본어 기초", "months": "약 1개월", "words": 100, "kanji": 0, "grammar": 5, "reading": 0, "listening": 2, "description": "히라가나·가타카나를 완전히 외우고 기본 문장 구조와 조사를 익히는 단계입니다.", "goals": ["히라가나 46자 쓰기·읽기", "가타카나 46자 읽기", "기본 인사와 숫자·날짜·시간", "조사 は・が・を・に・で 이해"] },
+  { "level": "N5", "name": "JLPT N5", "months": "약 3개월", "words": 800, "kanji": 100, "grammar": 80, "reading": 10, "listening": 10, "description": "기본적인 일본어를 이해할 수 있는 단계. 교실·일상 회화 수준입니다.", "goals": ["기초 단어 800개", "N5 한자 100자", "ます형·て형·た형 활용 완성", "짧은 문장 독해"] },
+  { "level": "N4", "name": "JLPT N4", "months": "약 4개월", "words": 1500, "kanji": 300, "grammar": 120, "reading": 15, "listening": 15, "description": "일상적인 장면에서 쓰이는 일본어를 어느 정도 이해할 수 있는 단계입니다.", "goals": ["누적 단어 1,500개", "N4 한자 300자", "수동·사역·조건 표현", "간단한 이메일 읽기"] },
+  { "level": "N3", "name": "JLPT N3", "months": "약 5개월", "words": 3000, "kanji": 650, "grammar": 180, "reading": 20, "listening": 20, "description": "N5·N4와 N2 사이의 가교 단계. 실생활 일본어의 분기점입니다.", "goals": ["누적 단어 3,000개", "N3 한자 650자", "경어의 기초", "신문·안내문 수준 독해"] },
+  { "level": "N2", "name": "JLPT N2", "months": "약 6개월", "words": 6000, "kanji": 1000, "grammar": 220, "reading": 25, "listening": 25, "description": "일상뿐 아니라 폭넓은 장면의 일본어를 이해하는 단계. 많은 일본 기업의 실질적 지원 요건입니다.", "goals": ["누적 단어 6,000개", "N2 한자 1,000자", "문어체 문법 정복", "긴 지문 독해 속도 확보"] },
+  { "level": "N1", "name": "JLPT N1", "months": "약 8개월", "words": 10000, "kanji": 2000, "grammar": 280, "reading": 30, "listening": 30, "description": "폭넓은 장면에서 쓰이는 일본어를 논리적으로 이해하는 최고 단계입니다.", "goals": ["누적 단어 10,000개", "상용한자 2,000자", "논설문 요지 파악", "실전 모의고사 합격점 안정화"] }
+]
