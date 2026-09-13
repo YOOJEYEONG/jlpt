@@ -32,6 +32,13 @@ async function save(state: UserData): Promise<void> {
   }
 }
 
+/** 예약된 저장을 취소합니다(로그아웃 시). */
+export function cancelPendingSync(): void {
+  if (saveTimer !== null) window.clearTimeout(saveTimer);
+  saveTimer = null;
+  lastSerialized = null;
+}
+
 /** 예약된 저장을 즉시 실행합니다(탭을 닫거나 숨길 때 호출). */
 export function flushSync(): void {
   if (saveTimer === null) return;
@@ -67,6 +74,9 @@ export function startSync(): void {
     if (saveTimer !== null) window.clearTimeout(saveTimer);
     saveTimer = window.setTimeout(() => {
       saveTimer = null;
+      // 대기 중에 로그아웃했다면 보내지 않습니다(세션이 없어 401이 납니다).
+      const now = useAppStore.getState();
+      if (!now.serverStorage || !now.currentEmail) return;
       void save(data);
     }, SAVE_DELAY_MS);
   });

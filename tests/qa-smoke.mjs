@@ -70,6 +70,7 @@ for (let i = 0; i < qCount; i++) {
   await block.getByRole("button", { name: "정답 확인" }).click();
   await page.waitForTimeout(250);
 }
+await page.waitForTimeout(700); // 오답 저장이 끝나기를 기다립니다(느린 환경 대비)
 ok("독해 문제 풀이 완료", `${qCount}문항`);
 
 await page.goto(`${BASE}/wrong-answers`, { waitUntil: "networkidle" });

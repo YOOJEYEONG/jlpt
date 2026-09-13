@@ -8,6 +8,7 @@ import { Card, CardTitle } from "@/components/ui/card";
 import { Input, Label, Select } from "@/components/ui/field";
 import { PageHeader } from "@/components/layout/page-header";
 import { DEFAULT_DAILY_GOAL, useAppStore, useCurrentUser, type DailyGoal } from "@/lib/store";
+import { cancelPendingSync, flushSync } from "@/lib/sync";
 import { JLPT_LEVELS, LEVEL_LABEL, type JlptLevel, type JobGoal } from "@/lib/types";
 
 const GOAL_FIELDS: { key: keyof DailyGoal; label: string }[] = [
@@ -138,6 +139,9 @@ export default function SettingsPage() {
           <Button
             variant="outline"
             onClick={async () => {
+              // 남은 변경분을 먼저 올린 뒤 세션을 끊습니다.
+              flushSync();
+              cancelPendingSync();
               await signOut();
               router.push("/login");
             }}
