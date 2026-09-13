@@ -1,5 +1,5 @@
 import { chromium } from "playwright";
-const BASE = "http://localhost:3000";
+const BASE = process.env.QA_BASE ?? "http://localhost:3000";
 const b = await chromium.launch();
 process.on("exit", () => { console.log(log.join("\n")); console.log("이슈:", issues.join(" / ") || "없음"); });
 const log = [], issues = [];
