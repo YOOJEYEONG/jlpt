@@ -33,6 +33,8 @@ export default function WrongAnswersPage() {
   const [filter, setFilter] = useState<Filter>("all");
   const [mode, setMode] = useState<Mode>("list");
   const [retryIndex, setRetryIndex] = useState(0);
+  // 정답을 맞히면 목록에서 빠지므로, 다시 풀기를 시작한 시점의 목록을 고정합니다.
+  const [retryQueue, setRetryQueue] = useState<typeof all>([]);
 
   const all = useMemo(() => user?.data.wrongAnswers ?? [], [user]);
   const items = useMemo(() => {
@@ -44,7 +46,7 @@ export default function WrongAnswersPage() {
   if (!user) return null;
 
   const retryPool = all.filter((item) => !item.reviewedAt);
-  const retryItem = retryPool[retryIndex];
+  const retryItem = retryQueue[retryIndex];
 
   return (
     <div className="animate-fade-up">
@@ -55,7 +57,9 @@ export default function WrongAnswersPage() {
           retryPool.length > 0 ? (
             <Button
               onClick={() => {
-                setMode(mode === "retry" ? "list" : "retry");
+                const next = mode === "retry" ? "list" : "retry";
+                if (next === "retry") setRetryQueue(retryPool);
+                setMode(next);
                 setRetryIndex(0);
               }}
             >
@@ -82,7 +86,7 @@ export default function WrongAnswersPage() {
             <div className="flex items-center justify-between">
               <Badge tone="primary">{TYPE_LABEL[retryItem.type] ?? retryItem.type}</Badge>
               <span className="text-xs text-muted">
-                {retryIndex + 1} / {retryPool.length}
+                {retryIndex + 1} / {retryQueue.length}
               </span>
             </div>
             <p className="mt-2 text-xs text-muted">출처: {retryItem.sourceTitle}</p>
@@ -106,7 +110,7 @@ export default function WrongAnswersPage() {
             <Button
               className="mt-3 w-full"
               onClick={() => {
-                if (retryIndex + 1 >= retryPool.length) {
+                if (retryIndex + 1 >= retryQueue.length) {
                   setMode("list");
                   setRetryIndex(0);
                 } else {
@@ -114,7 +118,7 @@ export default function WrongAnswersPage() {
                 }
               }}
             >
-              {retryIndex + 1 >= retryPool.length ? "복습 마치기" : "다음 문제"}
+              {retryIndex + 1 >= retryQueue.length ? "복습 마치기" : "다음 문제"}
             </Button>
           </Card>
         ) : (

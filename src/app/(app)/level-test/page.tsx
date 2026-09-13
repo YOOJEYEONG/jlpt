@@ -10,7 +10,7 @@ import { Progress } from "@/components/ui/progress";
 import { PageHeader } from "@/components/layout/page-header";
 import { LEVEL_TEST } from "@/lib/content";
 import { useAppStore, useCurrentUser } from "@/lib/store";
-import { JLPT_LEVELS, LEVEL_LABEL, type JlptLevel } from "@/lib/types";
+import { LEVEL_LABEL, type JlptLevel } from "@/lib/types";
 import { cn, percent } from "@/lib/utils";
 
 const AREAS = ["어휘", "문법", "한자", "독해"] as const;
@@ -51,21 +51,16 @@ export default function LevelTestPage() {
       if (correct) byArea[item.area].correct += 1;
     });
 
-    // 정답률 60% 이상을 통과로 보고, 통과한 가장 높은 레벨의 다음 단계를 추천합니다.
+    // 정답률 60% 이상이면 그 레벨은 통과로 봅니다.
+    // 추천 레벨은 "통과하지 못한 가장 낮은 레벨" — 아직 다져지지 않은 곳부터 시작하는 것이 맞습니다.
     const order: JlptLevel[] = ["N5", "N4", "N3", "N2", "N1"];
-    let highestPassed: JlptLevel | null = null;
-    order.forEach((level) => {
+    const passed = (level: JlptLevel) => {
       const stat = byLevel[level];
-      if (stat && stat.total > 0 && stat.correct / stat.total >= 0.6) highestPassed = level;
-    });
+      return Boolean(stat && stat.total > 0 && stat.correct / stat.total >= 0.6);
+    };
 
-    let recommended: JlptLevel = "N5";
-    if (highestPassed) {
-      const passedIndex = JLPT_LEVELS.indexOf(highestPassed);
-      recommended = JLPT_LEVELS[Math.min(passedIndex + 1, JLPT_LEVELS.length - 1)];
-    } else {
-      recommended = score === 0 ? "BASIC" : "N5";
-    }
+    const firstGap = order.find((level) => !passed(level));
+    const recommended: JlptLevel = firstGap ?? "N1";
 
     const areaRates = AREAS.map((area) => ({
       area,

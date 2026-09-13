@@ -2,9 +2,9 @@
 
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
-import { createSrsState, isDue, reviewSrs, type SrsState } from "./srs";
+import { createSrsState, isDue, markForToday, reviewSrs, type SrsState } from "./srs";
 import type { JlptLevel, JobGoal, StudyType } from "./types";
-import { addDays, diffDays, toDateKey } from "./utils";
+import { diffDays, toDateKey } from "./utils";
 
 export interface DailyGoal {
   vocabulary: number;
@@ -322,7 +322,7 @@ export const useAppStore = create<AppState>()(
           applyToCurrent(state, (data) => {
             const today = toDateKey();
             const previous = data.progress[itemId] ?? { ...createSrsState(), status: "new" as const, favorite: false, lastStudied: null };
-            const srs = correct === null ? { ...previous, nextReview: addDays(today, 1) } : reviewSrs(previous, correct);
+            const srs = correct === null ? markForToday(previous) : reviewSrs(previous, correct);
             const status: ItemProgress["status"] =
               correct === false ? "learning" : srs.box >= 3 ? "known" : "learning";
 

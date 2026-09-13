@@ -59,7 +59,7 @@ npm run start
 ```
 
 - **정답**이면 한 단계 올라가 간격이 길어집니다.
-- **오답**이면 0단계로 떨어져 다음 날 다시 나옵니다.
+- **오답**(또는 단어 카드의 `모름` · `다시 보기`)이면 0단계로 떨어져 **같은 날 바로** 복습 목록에 올라옵니다.
 - 오늘 복습할 항목은 대시보드와 `/review`에 표시됩니다.
 
 관련 코드: `src/lib/srs.ts`, `src/lib/review.ts`
@@ -93,6 +93,24 @@ src/data/
 현재는 음원 파일 없이 브라우저 음성 합성으로 재생합니다.
 실제 MP3를 넣으려면 `public/audio/` 에 파일을 두고 `src/data/listening/all.json`의
 `audioUrl`을 `"/audio/파일명.mp3"` 로 바꾸기만 하면 같은 화면에서 실제 음원이 재생됩니다.
+
+---
+
+## QA 테스트
+
+주요 학습 흐름(가입 → 온보딩 → 단어 → 복습 → 독해 → 오답노트 → 모의고사 → 통계)을
+실제 브라우저로 자동 점검하는 스크립트가 `tests/` 에 있습니다.
+
+```bash
+npx playwright install chromium   # 처음 한 번만 (브라우저 내려받기)
+npm i -D playwright               # 처음 한 번만
+npm run dev                       # 다른 터미널에서 실행해 둔 상태로
+npm run qa                        # 로컬(localhost:3000) 점검
+QA_BASE=https://jlpt-mu.vercel.app npm run qa   # 배포본 점검
+```
+
+- `tests/qa-smoke.mjs` — 전체 화면 렌더링 · 모바일 가로 넘침 · 콘솔 에러
+- `tests/qa-deep.mjs` — 카운터 정확도 · 새로고침 후 데이터 유지 · 복습/오답 큐 동작
 
 ---
 

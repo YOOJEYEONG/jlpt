@@ -30,6 +30,14 @@ function pickUnlearned<T extends { id: string; level: JlptLevel }>(
   return [...fresh, ...rest].slice(0, limit);
 }
 
+/**
+ * 실제로 학습할 수 있는 분량과 오늘 이미 한 분량 중 큰 값을 목표로 삼습니다.
+ * 남은 콘텐츠가 없는데 목표만 남아 영원히 완료되지 않는 상황을 막습니다.
+ */
+function entryGoal(target: number, available: number, doneToday: number): number {
+  return Math.min(target, Math.max(available, doneToday));
+}
+
 export interface TodayPlanEntry {
   key: keyof Omit<DailyCounts, "seconds">;
   label: string;
@@ -67,13 +75,13 @@ export function buildTodayPlan(data: UserData): TodayPlan {
   ).slice(0, goal.business);
 
   const allEntries: TodayPlanEntry[] = [
-    { key: "vocabulary", label: "단어", href: "/vocabulary", goal: Math.min(goal.vocabulary, vocabulary.length || goal.vocabulary), done: counts?.vocabulary ?? 0, ids: vocabulary.map((item) => item.id) },
-    { key: "kanji", label: "한자", href: "/kanji", goal: Math.min(goal.kanji, kanji.length || goal.kanji), done: counts?.kanji ?? 0, ids: kanji.map((item) => item.id) },
-    { key: "grammar", label: "문법", href: "/grammar", goal: Math.min(goal.grammar, grammar.length || goal.grammar), done: counts?.grammar ?? 0, ids: grammar.map((item) => item.id) },
-    { key: "reading", label: "독해", href: "/reading", goal: Math.min(goal.reading, reading.length || goal.reading), done: counts?.reading ?? 0, ids: reading.map((item) => item.id) },
-    { key: "listening", label: "청해", href: "/listening", goal: Math.min(goal.listening, listening.length || goal.listening), done: counts?.listening ?? 0, ids: listening.map((item) => item.id) },
-    { key: "review", label: "복습", href: "/review", goal: Math.min(goal.review, dueIds.length), done: counts?.review ?? 0, ids: dueIds.slice(0, goal.review) },
-    { key: "business", label: "비즈니스 일본어", href: "/business-japanese", goal: Math.min(goal.business, business.length || goal.business), done: counts?.business ?? 0, ids: business.map((item) => item.id) },
+    { key: "vocabulary", label: "단어", href: "/vocabulary", goal: entryGoal(goal.vocabulary, vocabulary.length, counts?.vocabulary ?? 0), done: counts?.vocabulary ?? 0, ids: vocabulary.map((item) => item.id) },
+    { key: "kanji", label: "한자", href: "/kanji", goal: entryGoal(goal.kanji, kanji.length, counts?.kanji ?? 0), done: counts?.kanji ?? 0, ids: kanji.map((item) => item.id) },
+    { key: "grammar", label: "문법", href: "/grammar", goal: entryGoal(goal.grammar, grammar.length, counts?.grammar ?? 0), done: counts?.grammar ?? 0, ids: grammar.map((item) => item.id) },
+    { key: "reading", label: "독해", href: "/reading", goal: entryGoal(goal.reading, reading.length, counts?.reading ?? 0), done: counts?.reading ?? 0, ids: reading.map((item) => item.id) },
+    { key: "listening", label: "청해", href: "/listening", goal: entryGoal(goal.listening, listening.length, counts?.listening ?? 0), done: counts?.listening ?? 0, ids: listening.map((item) => item.id) },
+    { key: "review", label: "복습", href: "/review", goal: entryGoal(goal.review, dueIds.length, counts?.review ?? 0), done: counts?.review ?? 0, ids: dueIds.slice(0, goal.review) },
+    { key: "business", label: "비즈니스 일본어", href: "/business-japanese", goal: entryGoal(goal.business, business.length, counts?.business ?? 0), done: counts?.business ?? 0, ids: business.map((item) => item.id) },
   ];
 
   const entries = allEntries.filter((entry) => entry.goal > 0);

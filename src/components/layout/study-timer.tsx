@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import { useAppStore } from "@/lib/store";
 
-const TICK_SECONDS = 30;
+const TICK_SECONDS = 15;
 
 /** 탭이 보이는 동안 학습 시간을 누적합니다. */
 export function StudyTimer() {
