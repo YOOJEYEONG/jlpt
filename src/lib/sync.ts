@@ -48,16 +48,19 @@ export function cancelPendingSync(): void {
   lastSerialized = null;
 }
 
-/** 예약된 저장을 즉시 실행합니다(탭을 닫거나 숨길 때 호출). */
-export function flushSync(): void {
-  if (saveTimer === null) return;
+/**
+ * 예약된 저장을 즉시 실행합니다.
+ * 로그아웃 직전에는 await 해서, 저장 요청이 세션 삭제보다 먼저 도착하도록 합니다.
+ */
+export function flushSync(): Promise<void> {
+  if (saveTimer === null) return Promise.resolve();
   window.clearTimeout(saveTimer);
   saveTimer = null;
 
   const state = useAppStore.getState();
-  if (!state.serverStorage || !state.currentEmail) return;
+  if (!state.serverStorage || !state.currentEmail) return Promise.resolve();
   const data = state.data[state.currentEmail];
-  if (data) void save(data);
+  return data ? save(data) : Promise.resolve();
 }
 
 /**
@@ -90,9 +93,9 @@ export function startSync(): void {
     }, SAVE_DELAY_MS);
   });
 
-  window.addEventListener("pagehide", flushSync);
+  window.addEventListener("pagehide", () => void flushSync());
   document.addEventListener("visibilitychange", () => {
-    if (document.visibilityState === "hidden") flushSync();
+    if (document.visibilityState === "hidden") void flushSync();
   });
 }
 

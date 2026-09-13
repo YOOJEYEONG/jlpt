@@ -139,8 +139,8 @@ export default function SettingsPage() {
           <Button
             variant="outline"
             onClick={async () => {
-              // 남은 변경분을 먼저 올린 뒤 세션을 끊습니다.
-              flushSync();
+              // 남은 변경분이 서버에 도착한 것을 확인한 뒤 세션을 끊습니다.
+              await flushSync();
               cancelPendingSync();
               await signOut();
               router.push("/login");
