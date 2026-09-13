@@ -14,10 +14,14 @@ export default function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState<string | null>(null);
+  const [submitting, setSubmitting] = useState(false);
 
-  function handleSubmit(event: React.FormEvent) {
+  async function handleSubmit(event: React.FormEvent) {
     event.preventDefault();
-    const result = signIn({ email, password });
+    setError(null);
+    setSubmitting(true);
+    const result = await signIn({ email, password });
+    setSubmitting(false);
     if (!result.ok) {
       setError(result.message ?? "로그인에 실패했습니다.");
       return;
@@ -62,8 +66,8 @@ export default function LoginPage() {
           </p>
         ) : null}
 
-        <Button type="submit" className="w-full" size="lg">
-          로그인
+        <Button type="submit" className="w-full" size="lg" disabled={submitting}>
+          {submitting ? "로그인 중…" : "로그인"}
         </Button>
       </form>
 

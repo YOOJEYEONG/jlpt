@@ -15,14 +15,18 @@ export default function SignupPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState<string | null>(null);
+  const [submitting, setSubmitting] = useState(false);
 
-  function handleSubmit(event: React.FormEvent) {
+  async function handleSubmit(event: React.FormEvent) {
     event.preventDefault();
     if (password.length < 4) {
       setError("비밀번호는 4자 이상 입력해 주세요.");
       return;
     }
-    const result = signUp({ name, email, password });
+    setError(null);
+    setSubmitting(true);
+    const result = await signUp({ name, email, password });
+    setSubmitting(false);
     if (!result.ok) {
       setError(result.message ?? "회원가입에 실패했습니다.");
       return;
@@ -79,8 +83,8 @@ export default function SignupPage() {
           </p>
         ) : null}
 
-        <Button type="submit" className="w-full" size="lg">
-          가입하고 시작하기
+        <Button type="submit" className="w-full" size="lg" disabled={submitting}>
+          {submitting ? "가입 중…" : "가입하고 시작하기"}
         </Button>
       </form>
 
@@ -91,8 +95,8 @@ export default function SignupPage() {
         </Link>
       </p>
       <p className="mt-4 rounded-xl bg-background px-3 py-2 text-xs leading-relaxed text-muted">
-        계정과 학습 기록은 서버가 아닌 이 브라우저(localStorage)에 저장됩니다. 브라우저 데이터를 지우면
-        기록도 함께 사라집니다.
+        학습 기록은 계정에 저장되어, 다른 기기에서 로그인해도 이어서 공부할 수 있습니다. 인터넷 연결이
+        없을 때는 이 브라우저에 먼저 저장한 뒤 연결되면 자동으로 올라갑니다.
       </p>
     </Card>
   );

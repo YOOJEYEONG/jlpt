@@ -137,8 +137,8 @@ export default function SettingsPage() {
         <div className="mt-4 flex flex-wrap gap-2">
           <Button
             variant="outline"
-            onClick={() => {
-              signOut();
+            onClick={async () => {
+              await signOut();
               router.push("/login");
             }}
           >

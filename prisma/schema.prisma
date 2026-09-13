@@ -1,6 +1,8 @@
-// 현재 MVP는 브라우저 localStorage에 학습 기록을 저장합니다.
-// 서버 DB로 옮길 때 이 스키마를 그대로 사용할 수 있도록 목표 구조를 정의해 둡니다.
-// 사용 시: DATABASE_URL 설정 → npx prisma migrate dev
+// 계정과 학습 기록을 서버에 저장하기 위한 스키마.
+// 학습 콘텐츠(단어·문법·한자 등)는 src/data 의 JSON 파일로 관리하므로 DB에 두지 않습니다.
+// 사용자별 진도는 UserState.data(JSON)에 한 덩어리로 저장합니다.
+//   - 클라이언트 스토어(UserData)와 1:1로 대응해 화면 코드를 바꾸지 않고 동기화할 수 있습니다.
+//   - 통계를 서버에서 집계해야 할 때 이 JSON을 정규화 테이블로 나누면 됩니다.
 
 generator client {
   provider = "prisma-client-js"
@@ -11,175 +13,30 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-enum JlptLevel {
-  BASIC
-  N5
-  N4
-  N3
-  N2
-  N1
-}
-
-enum JobGoal {
-  JLPT_N1
-  JAPAN_JOB
-  BOTH
-}
-
 model User {
-  id        String   @id @default(cuid())
-  email     String   @unique
-  name      String
-  password  String
-  createdAt DateTime @default(now())
+  id           String   @id @default(cuid())
+  email        String   @unique
+  name         String
+  passwordHash String
+  createdAt    DateTime @default(now())
 
-  profile        UserProfile?
-  vocabularies   UserVocabulary[]
-  studyHistories StudyHistory[]
-  wrongAnswers   WrongAnswer[]
-  jobStudies     JobStudy[]
+  sessions Session[]
+  state    UserState?
 }
 
-model UserProfile {
-  id          String    @id @default(cuid())
-  userId      String    @unique
-  user        User      @relation(fields: [userId], references: [id], onDelete: Cascade)
-  targetJlpt  JlptLevel @default(N1)
-  currentLevel JlptLevel @default(N5)
-  jobGoal     JobGoal   @default(BOTH)
-  dailyGoal   Json
-  streak      Int       @default(0)
-  xp          Int       @default(0)
-  lastStudyAt DateTime?
-}
-
-model Vocabulary {
-  id                 String    @id
-  word               String
-  reading            String
-  meaning            String
-  partOfSpeech       String
-  level              JlptLevel
-  example            String
-  exampleReading     String
-  exampleTranslation String
-  importance         Int       @default(2)
-
-  userVocabularies UserVocabulary[]
-}
-
-model Grammar {
-  id          String    @id
-  title       String
-  meaning     String
-  connection  String
-  explanation String
-  level       JlptLevel
-  difficulty  Int       @default(2)
-  examples    Json
-  related     Json
-  examPoint   String
-}
-
-model Kanji {
-  id        String    @id
-  character String
-  meaning   String
-  onyomi    String[]
-  kunyomi   String[]
-  strokes   Int
-  level     JlptLevel
-  words     Json
-  example   Json
-}
-
-model Reading {
-  id          String     @id
-  title       String
-  type        String
-  level       JlptLevel
-  content     String
-  translation String
-  vocabHints  Json
-  questions   Question[]
-}
-
-model Listening {
-  id         String     @id
-  title      String
-  level      JlptLevel
-  audioUrl   String?
-  durationSec Int
-  scene      String
-  transcript Json
-  keyExpressions Json
-  questions  Question[]
-}
-
-model Question {
-  id          String    @id
-  category    String
-  content     String
-  choices     String[]
-  answerIndex Int
-  explanation String
-  level       JlptLevel
-
-  readingId   String?
-  reading     Reading?   @relation(fields: [readingId], references: [id])
-  listeningId String?
-  listening   Listening? @relation(fields: [listeningId], references: [id])
-
-  wrongAnswers WrongAnswer[]
-}
-
-model UserVocabulary {
-  id           String     @id @default(cuid())
-  userId       String
-  user         User       @relation(fields: [userId], references: [id], onDelete: Cascade)
-  vocabularyId String
-  vocabulary   Vocabulary @relation(fields: [vocabularyId], references: [id])
-  status       String     @default("new")
-  box          Int        @default(0)
-  reviewDate   DateTime
-  correctCount Int        @default(0)
-  wrongCount   Int        @default(0)
-  favorite     Boolean    @default(false)
-
-  @@unique([userId, vocabularyId])
-}
-
-model StudyHistory {
-  id        String   @id @default(cuid())
+model Session {
+  token     String   @id
   userId    String
   user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-  type      String
-  targetId  String
-  result    Boolean?
-  studiedAt DateTime @default(now())
+  expiresAt DateTime
+  createdAt DateTime @default(now())
 
-  @@index([userId, studiedAt])
+  @@index([userId])
 }
 
-model WrongAnswer {
-  id         String    @id @default(cuid())
-  userId     String
-  user       User      @relation(fields: [userId], references: [id], onDelete: Cascade)
-  questionId String
-  question   Question  @relation(fields: [questionId], references: [id])
-  chosenIndex Int
-  createdAt  DateTime  @default(now())
-  reviewedAt DateTime?
-
-  @@unique([userId, questionId])
-}
-
-model JobStudy {
-  id       String @id @default(cuid())
-  userId   String
-  user     User   @relation(fields: [userId], references: [id], onDelete: Cascade)
-  category String
-  progress Int    @default(0)
-
-  @@unique([userId, category])
+model UserState {
+  userId    String   @id
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  data      Json
+  updatedAt DateTime @updatedAt
 }

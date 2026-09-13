@@ -1,8 +1,10 @@
 import Link from "next/link";
+import { SyncProvider } from "@/components/layout/sync-provider";
 
 export default function AuthLayout({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex min-h-screen flex-col">
+      <SyncProvider />
       <header className="mx-auto w-full max-w-5xl px-5 py-5">
         <Link href="/" className="flex items-center gap-2">
           <span className="jp flex h-9 w-9 items-center justify-center rounded-xl bg-primary text-sm font-bold text-white">
