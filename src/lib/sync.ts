@@ -1,6 +1,6 @@
 "use client";
 
-import { useAppStore, type UserData } from "./store";
+import { hasUnsavedChanges, useAppStore, type UserData } from "./store";
 
 const SAVE_DELAY_MS = 1500;
 
@@ -8,16 +8,24 @@ let started = false;
 let saveTimer: number | null = null;
 let lastSerialized: string | null = null;
 
-/** 서버와 브라우저 중 더 많이 진행된 쪽을 고릅니다(경험치는 줄어들지 않으므로 기준으로 쓸 수 있습니다). */
+/** 서버와 브라우저 중 어느 쪽을 채택할지 결정합니다. */
 function isLocalAhead(local: UserData | undefined, server: UserData | null): boolean {
   if (!local) return false;
   if (!server) return true;
-  if (local.xp !== server.xp) return local.xp > server.xp;
-  return local.history.length > server.history.length;
+  // 아직 서버에 올리지 못한 변경이 남아 있으면 로컬이 최신입니다.
+  // (즐겨찾기·오답노트·설정처럼 경험치가 늘지 않는 변경도 여기서 보호됩니다.)
+  if (hasUnsavedChanges(local)) return true;
+  return (local.updatedAt ?? "") > (server.updatedAt ?? "");
+}
+
+/** 저장 성공 표시(syncedAt)는 변경 감지에서 제외합니다. 그렇지 않으면 저장이 무한히 반복됩니다. */
+function fingerprint(data: UserData): string {
+  return JSON.stringify({ ...data, syncedAt: null });
 }
 
 async function save(state: UserData): Promise<void> {
   const store = useAppStore.getState();
+  const email = store.currentEmail;
   store.setSyncState("syncing");
   try {
     const response = await fetch("/api/state", {
@@ -26,6 +34,7 @@ async function save(state: UserData): Promise<void> {
       body: JSON.stringify({ state }),
       keepalive: true,
     });
+    if (response.ok && email) useAppStore.getState().markSynced(email, state.updatedAt);
     store.setSyncState(response.ok ? "idle" : "error");
   } catch {
     store.setSyncState("error");
@@ -67,7 +76,7 @@ export function startSync(): void {
     const data = state.data[state.currentEmail];
     if (!data) return;
 
-    const serialized = JSON.stringify(data);
+    const serialized = fingerprint(data);
     if (serialized === lastSerialized) return;
     lastSerialized = serialized;
 
@@ -110,7 +119,7 @@ async function bootstrap(): Promise<void> {
     if (isLocalAhead(localState, serverState)) {
       // 오프라인에서 더 공부한 기록이 있으면 그것을 서버에 올립니다.
       useAppStore.getState().applyServerSession(body.user, localState);
-      lastSerialized = JSON.stringify(localState);
+      lastSerialized = fingerprint(localState);
       await save(localState);
       return;
     }
@@ -121,7 +130,7 @@ async function bootstrap(): Promise<void> {
     if (!serverState) {
       const fresh = useAppStore.getState().data[email];
       if (fresh) {
-        lastSerialized = JSON.stringify(fresh);
+        lastSerialized = fingerprint(fresh);
         await save(fresh);
       }
     }

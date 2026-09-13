@@ -123,6 +123,10 @@ export interface UserData {
   streak: number;
   lastStudyDate: string | null;
   badges: string[];
+  /** 마지막으로 학습 기록이 바뀐 시각. 서버와 어느 쪽이 최신인지 판단하는 기준입니다. */
+  updatedAt: string;
+  /** 마지막으로 서버 저장에 성공한 시점의 updatedAt. 이보다 updatedAt이 크면 아직 못 올린 변경이 있습니다. */
+  syncedAt: string | null;
 }
 
 export function createUserData(): UserData {
@@ -144,7 +148,16 @@ export function createUserData(): UserData {
     streak: 0,
     lastStudyDate: null,
     badges: [],
+    updatedAt: new Date().toISOString(),
+    syncedAt: null,
   };
+}
+
+/** 아직 못 올린 변경이 남아 있는지. */
+export function hasUnsavedChanges(data: UserData | undefined): boolean {
+  if (!data) return false;
+  if (!data.syncedAt) return true;
+  return (data.updatedAt ?? "") > data.syncedAt;
 }
 
 type CountKey = keyof Omit<DailyCounts, "seconds">;
@@ -209,6 +222,8 @@ interface AppState {
   signOut: () => Promise<void>;
   applyServerSession: (user: { email: string; name: string; createdAt: string }, state: UserData | null) => void;
   setServerStorage: (enabled: boolean) => void;
+  /** 서버 저장 성공을 기록합니다. updatedAt은 건드리지 않습니다. */
+  markSynced: (email: string, syncedAt: string) => void;
   setSyncState: (value: "idle" | "syncing" | "error") => void;
 
   completeOnboarding: (input: { currentLevel: JlptLevel; jobGoal: JobGoal; targetJlpt: JlptLevel }) => void;
@@ -234,11 +249,13 @@ interface AppState {
   addStudySeconds: (seconds: number) => void;
 }
 
+/** 모든 학습 기록 변경은 이 함수를 지나며, 여기서 updatedAt을 갱신합니다. */
 function applyToCurrent(state: AppState, updater: (data: UserData) => UserData): Partial<AppState> {
   const email = state.currentEmail;
   if (!email) return {};
   const current = state.data[email] ?? createUserData();
-  return { data: { ...state.data, [email]: updater(current) } };
+  const next = updater(current);
+  return { data: { ...state.data, [email]: { ...next, updatedAt: new Date().toISOString() } } };
 }
 
 function bumpStreak(data: UserData): UserData {
@@ -372,6 +389,13 @@ export const useAppStore = create<AppState>()(
         }),
 
       setServerStorage: (enabled) => set({ serverStorage: enabled }),
+
+      markSynced: (email, syncedAt) =>
+        set((state) => {
+          const data = state.data[email];
+          if (!data || data.syncedAt === syncedAt) return {};
+          return { data: { ...state.data, [email]: { ...data, syncedAt } } };
+        }),
       setSyncState: (value) => set({ syncState: value }),
 
       signOut: async () => {
@@ -540,7 +564,19 @@ export const useAppStore = create<AppState>()(
     }),
     {
       name: "nihongo-lms-v1",
-      version: 1,
+      version: 2,
+      migrate: (persisted) => {
+        // v1에는 updatedAt/syncedAt이 없었습니다. 없으면 "변경 있음"으로 보고 서버에 올립니다.
+        const state = persisted as AppState;
+        if (!state?.data) return state;
+        const now = new Date().toISOString();
+        for (const key of Object.keys(state.data)) {
+          const entry = state.data[key];
+          if (!entry.updatedAt) entry.updatedAt = now;
+          if (entry.syncedAt === undefined) entry.syncedAt = null;
+        }
+        return state;
+      },
     },
   ),
 );

@@ -132,7 +132,7 @@ else {
 
 // 8. 즐겨찾기 필터
 await page.goto(`${BASE}/vocabulary`, { waitUntil: "networkidle" });
-await page.getByRole("button", { name: "즐겨찾기" }).first().click();
+await page.locator(String.raw`button[aria-label="즐겨찾기"]`).first().click();
 await page.waitForTimeout(200);
 await page.getByRole("button", { name: /즐겨찾기만/ }).click();
 await page.waitForTimeout(300);
