@@ -1,4 +1,4 @@
-import { BUSINESS_PHRASES, GRAMMAR, KANJI, VOCABULARY } from "./content";
+import { BUSINESS_PHRASES, GRAMMAR, KANA_CHARS, KANJI, VOCABULARY } from "./content";
 import type { QuizQuestion, StudyType } from "./types";
 import type { DailyCounts } from "./store";
 import { seededShuffle } from "./utils";
@@ -28,6 +28,28 @@ export function buildReviewItems(dueIds: string[]): ReviewItem[] {
   const items: ReviewItem[] = [];
 
   dueIds.forEach((id) => {
+    const kana = KANA_CHARS.find((item) => item.id === id);
+    if (kana) {
+      const pool = KANA_CHARS.map((item) => item.romaji);
+      const { choices, answerIndex } = buildChoices(kana.romaji, pool, id);
+      items.push({
+        itemId: id,
+        type: "kana",
+        countKey: "kana",
+        title: `${kana.hiragana} / ${kana.katakana}`,
+        prompt: kana.hiragana,
+        subPrompt: "가나",
+        question: {
+          id: `review-${id}`,
+          question: "이 글자의 소리는 무엇입니까?",
+          choices,
+          answerIndex,
+          explanation: `${kana.hiragana} / ${kana.katakana} — ${kana.romaji} (${kana.korean})`,
+        },
+      });
+      return;
+    }
+
     const vocabulary = VOCABULARY.find((item) => item.id === id);
     if (vocabulary) {
       const pool = VOCABULARY.filter((item) => item.level === vocabulary.level).map((item) => item.meaning);

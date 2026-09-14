@@ -44,8 +44,8 @@ else ok("시작 버튼 존재");
 
 // ---------- 단어: 모름 처리 후 당일 복습 확인 ----------
 await page.goto(`${BASE}/vocabulary`, { waitUntil: "networkidle" });
-await page.getByRole("button", { name: "뜻 확인하기" }).click();
-await page.getByRole("button", { name: /모름/ }).click();
+// 기본은 학습 모드입니다. '아직 모르겠어요'는 당일 복습으로 예약됩니다.
+await page.getByRole("button", { name: /아직 모르겠어요/ }).click();
 await page.waitForTimeout(500);
 await page.goto(`${BASE}/review`, { waitUntil: "networkidle" });
 const reviewBody = await page.locator("body").innerText();

@@ -1,0 +1,1418 @@
+{
+  "basic": [
+    {
+      "row": "あ행",
+      "category": "basic",
+      "chars": [
+        {
+          "id": "kana-3042",
+          "hiragana": "あ",
+          "katakana": "ア",
+          "romaji": "a",
+          "korean": "아",
+          "example": {
+            "word": "あさ",
+            "meaning": "아침"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-3044",
+          "hiragana": "い",
+          "katakana": "イ",
+          "romaji": "i",
+          "korean": "이",
+          "example": {
+            "word": "いえ",
+            "meaning": "집"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-3046",
+          "hiragana": "う",
+          "katakana": "ウ",
+          "romaji": "u",
+          "korean": "우",
+          "example": {
+            "word": "うみ",
+            "meaning": "바다"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-3048",
+          "hiragana": "え",
+          "katakana": "エ",
+          "romaji": "e",
+          "korean": "에",
+          "example": {
+            "word": "えき",
+            "meaning": "역"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-304a",
+          "hiragana": "お",
+          "katakana": "オ",
+          "romaji": "o",
+          "korean": "오",
+          "example": {
+            "word": "おかね",
+            "meaning": "돈"
+          },
+          "tip": null
+        }
+      ]
+    },
+    {
+      "row": "か행",
+      "category": "basic",
+      "chars": [
+        {
+          "id": "kana-304b",
+          "hiragana": "か",
+          "katakana": "カ",
+          "romaji": "ka",
+          "korean": "카/가",
+          "example": {
+            "word": "かばん",
+            "meaning": "가방"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-304d",
+          "hiragana": "き",
+          "katakana": "キ",
+          "romaji": "ki",
+          "korean": "키/기",
+          "example": {
+            "word": "きって",
+            "meaning": "우표"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-304f",
+          "hiragana": "く",
+          "katakana": "ク",
+          "romaji": "ku",
+          "korean": "쿠/구",
+          "example": {
+            "word": "くるま",
+            "meaning": "자동차"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-3051",
+          "hiragana": "け",
+          "katakana": "ケ",
+          "romaji": "ke",
+          "korean": "케/게",
+          "example": {
+            "word": "けさ",
+            "meaning": "오늘 아침"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-3053",
+          "hiragana": "こ",
+          "katakana": "コ",
+          "romaji": "ko",
+          "korean": "코/고",
+          "example": {
+            "word": "こども",
+            "meaning": "아이"
+          },
+          "tip": null
+        }
+      ]
+    },
+    {
+      "row": "さ행",
+      "category": "basic",
+      "chars": [
+        {
+          "id": "kana-3055",
+          "hiragana": "さ",
+          "katakana": "サ",
+          "romaji": "sa",
+          "korean": "사",
+          "example": {
+            "word": "さかな",
+            "meaning": "생선"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-3057",
+          "hiragana": "し",
+          "katakana": "シ",
+          "romaji": "shi",
+          "korean": "시",
+          "example": {
+            "word": "しごと",
+            "meaning": "일"
+          },
+          "tip": "ツ와 헷갈립니다. シ는 점이 아래에서 위로 올라갑니다."
+        },
+        {
+          "id": "kana-3059",
+          "hiragana": "す",
+          "katakana": "ス",
+          "romaji": "su",
+          "korean": "스",
+          "example": {
+            "word": "すし",
+            "meaning": "초밥"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-305b",
+          "hiragana": "せ",
+          "katakana": "セ",
+          "romaji": "se",
+          "korean": "세",
+          "example": {
+            "word": "せんせい",
+            "meaning": "선생님"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-305d",
+          "hiragana": "そ",
+          "katakana": "ソ",
+          "romaji": "so",
+          "korean": "소",
+          "example": {
+            "word": "そら",
+            "meaning": "하늘"
+          },
+          "tip": "ン과 헷갈립니다. ソ는 위에서 아래로 짧게 씁니다."
+        }
+      ]
+    },
+    {
+      "row": "た행",
+      "category": "basic",
+      "chars": [
+        {
+          "id": "kana-305f",
+          "hiragana": "た",
+          "katakana": "タ",
+          "romaji": "ta",
+          "korean": "타/다",
+          "example": {
+            "word": "たまご",
+            "meaning": "달걀"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-3061",
+          "hiragana": "ち",
+          "katakana": "チ",
+          "romaji": "chi",
+          "korean": "치/지",
+          "example": {
+            "word": "ちかてつ",
+            "meaning": "지하철"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-3064",
+          "hiragana": "つ",
+          "katakana": "ツ",
+          "romaji": "tsu",
+          "korean": "츠",
+          "example": {
+            "word": "つくえ",
+            "meaning": "책상"
+          },
+          "tip": "작게 쓴 っ는 받침(촉음)이 됩니다. 예: きって(킷테)"
+        },
+        {
+          "id": "kana-3066",
+          "hiragana": "て",
+          "katakana": "テ",
+          "romaji": "te",
+          "korean": "테/데",
+          "example": {
+            "word": "てがみ",
+            "meaning": "편지"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-3068",
+          "hiragana": "と",
+          "katakana": "ト",
+          "romaji": "to",
+          "korean": "토/도",
+          "example": {
+            "word": "とけい",
+            "meaning": "시계"
+          },
+          "tip": null
+        }
+      ]
+    },
+    {
+      "row": "な행",
+      "category": "basic",
+      "chars": [
+        {
+          "id": "kana-306a",
+          "hiragana": "な",
+          "katakana": "ナ",
+          "romaji": "na",
+          "korean": "나",
+          "example": {
+            "word": "なつ",
+            "meaning": "여름"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-306b",
+          "hiragana": "に",
+          "katakana": "ニ",
+          "romaji": "ni",
+          "korean": "니",
+          "example": {
+            "word": "にわ",
+            "meaning": "정원"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-306c",
+          "hiragana": "ぬ",
+          "katakana": "ヌ",
+          "romaji": "nu",
+          "korean": "누",
+          "example": {
+            "word": "ぬの",
+            "meaning": "천"
+          },
+          "tip": "め와 헷갈리기 쉽습니다. ぬ는 끝에 고리가 있습니다."
+        },
+        {
+          "id": "kana-306d",
+          "hiragana": "ね",
+          "katakana": "ネ",
+          "romaji": "ne",
+          "korean": "네",
+          "example": {
+            "word": "ねこ",
+            "meaning": "고양이"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-306e",
+          "hiragana": "の",
+          "katakana": "ノ",
+          "romaji": "no",
+          "korean": "노",
+          "example": {
+            "word": "のみもの",
+            "meaning": "음료"
+          },
+          "tip": null
+        }
+      ]
+    },
+    {
+      "row": "は행",
+      "category": "basic",
+      "chars": [
+        {
+          "id": "kana-306f",
+          "hiragana": "は",
+          "katakana": "ハ",
+          "romaji": "ha",
+          "korean": "하",
+          "example": {
+            "word": "はな",
+            "meaning": "꽃"
+          },
+          "tip": "조사로 쓰일 때는 '와(wa)'로 읽습니다."
+        },
+        {
+          "id": "kana-3072",
+          "hiragana": "ひ",
+          "katakana": "ヒ",
+          "romaji": "hi",
+          "korean": "히",
+          "example": {
+            "word": "ひと",
+            "meaning": "사람"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-3075",
+          "hiragana": "ふ",
+          "katakana": "フ",
+          "romaji": "fu",
+          "korean": "후",
+          "example": {
+            "word": "ふゆ",
+            "meaning": "겨울"
+          },
+          "tip": "영어 f와 h의 중간 소리입니다. 입술을 붙이지 않습니다."
+        },
+        {
+          "id": "kana-3078",
+          "hiragana": "へ",
+          "katakana": "ヘ",
+          "romaji": "he",
+          "korean": "헤",
+          "example": {
+            "word": "へや",
+            "meaning": "방"
+          },
+          "tip": "조사로 쓰일 때는 '에(e)'로 읽습니다."
+        },
+        {
+          "id": "kana-307b",
+          "hiragana": "ほ",
+          "katakana": "ホ",
+          "romaji": "ho",
+          "korean": "호",
+          "example": {
+            "word": "ほん",
+            "meaning": "책"
+          },
+          "tip": null
+        }
+      ]
+    },
+    {
+      "row": "ま행",
+      "category": "basic",
+      "chars": [
+        {
+          "id": "kana-307e",
+          "hiragana": "ま",
+          "katakana": "マ",
+          "romaji": "ma",
+          "korean": "마",
+          "example": {
+            "word": "まど",
+            "meaning": "창문"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-307f",
+          "hiragana": "み",
+          "katakana": "ミ",
+          "romaji": "mi",
+          "korean": "미",
+          "example": {
+            "word": "みず",
+            "meaning": "물"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-3080",
+          "hiragana": "む",
+          "katakana": "ム",
+          "romaji": "mu",
+          "korean": "무",
+          "example": {
+            "word": "むし",
+            "meaning": "벌레"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-3081",
+          "hiragana": "め",
+          "katakana": "メ",
+          "romaji": "me",
+          "korean": "메",
+          "example": {
+            "word": "め",
+            "meaning": "눈"
+          },
+          "tip": "ぬ와 비슷하지만 고리가 없습니다."
+        },
+        {
+          "id": "kana-3082",
+          "hiragana": "も",
+          "katakana": "モ",
+          "romaji": "mo",
+          "korean": "모",
+          "example": {
+            "word": "もり",
+            "meaning": "숲"
+          },
+          "tip": null
+        }
+      ]
+    },
+    {
+      "row": "や행",
+      "category": "basic",
+      "chars": [
+        {
+          "id": "kana-3084",
+          "hiragana": "や",
+          "katakana": "ヤ",
+          "romaji": "ya",
+          "korean": "야",
+          "example": {
+            "word": "やま",
+            "meaning": "산"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-3086",
+          "hiragana": "ゆ",
+          "katakana": "ユ",
+          "romaji": "yu",
+          "korean": "유",
+          "example": {
+            "word": "ゆき",
+            "meaning": "눈(雪)"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-3088",
+          "hiragana": "よ",
+          "katakana": "ヨ",
+          "romaji": "yo",
+          "korean": "요",
+          "example": {
+            "word": "よる",
+            "meaning": "밤"
+          },
+          "tip": null
+        }
+      ]
+    },
+    {
+      "row": "ら행",
+      "category": "basic",
+      "chars": [
+        {
+          "id": "kana-3089",
+          "hiragana": "ら",
+          "katakana": "ラ",
+          "romaji": "ra",
+          "korean": "라",
+          "example": {
+            "word": "らいねん",
+            "meaning": "내년"
+          },
+          "tip": "한국어 ㄹ보다 혀를 살짝 튕깁니다."
+        },
+        {
+          "id": "kana-308a",
+          "hiragana": "り",
+          "katakana": "リ",
+          "romaji": "ri",
+          "korean": "리",
+          "example": {
+            "word": "りんご",
+            "meaning": "사과"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-308b",
+          "hiragana": "る",
+          "katakana": "ル",
+          "romaji": "ru",
+          "korean": "루",
+          "example": {
+            "word": "るす",
+            "meaning": "부재중"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-308c",
+          "hiragana": "れ",
+          "katakana": "レ",
+          "romaji": "re",
+          "korean": "레",
+          "example": {
+            "word": "れきし",
+            "meaning": "역사"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-308d",
+          "hiragana": "ろ",
+          "katakana": "ロ",
+          "romaji": "ro",
+          "korean": "로",
+          "example": {
+            "word": "ろく",
+            "meaning": "여섯"
+          },
+          "tip": null
+        }
+      ]
+    },
+    {
+      "row": "わ행",
+      "category": "basic",
+      "chars": [
+        {
+          "id": "kana-308f",
+          "hiragana": "わ",
+          "katakana": "ワ",
+          "romaji": "wa",
+          "korean": "와",
+          "example": {
+            "word": "わたし",
+            "meaning": "나"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-3092",
+          "hiragana": "を",
+          "katakana": "ヲ",
+          "romaji": "wo",
+          "korean": "오(조사)",
+          "example": {
+            "word": "ほんをよむ",
+            "meaning": "책을 읽다"
+          },
+          "tip": "조사 전용 글자입니다. 발음은 お와 같습니다."
+        }
+      ]
+    },
+    {
+      "row": "ん",
+      "category": "basic",
+      "chars": [
+        {
+          "id": "kana-3093",
+          "hiragana": "ん",
+          "katakana": "ン",
+          "romaji": "n",
+          "korean": "ㄴ/ㅁ/ㅇ 받침",
+          "example": {
+            "word": "にほん",
+            "meaning": "일본"
+          },
+          "tip": "뒤에 오는 소리에 따라 ㄴ·ㅁ·ㅇ 받침처럼 발음됩니다."
+        }
+      ]
+    }
+  ],
+  "dakuten": [
+    {
+      "row": "が행",
+      "category": "dakuten",
+      "chars": [
+        {
+          "id": "kana-304c",
+          "hiragana": "が",
+          "katakana": "ガ",
+          "romaji": "ga",
+          "korean": "가",
+          "example": {
+            "word": "がっこう",
+            "meaning": "학교"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-304e",
+          "hiragana": "ぎ",
+          "katakana": "ギ",
+          "romaji": "gi",
+          "korean": "기",
+          "example": {
+            "word": "ぎんこう",
+            "meaning": "은행"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-3050",
+          "hiragana": "ぐ",
+          "katakana": "グ",
+          "romaji": "gu",
+          "korean": "구",
+          "example": {
+            "word": "ぐあい",
+            "meaning": "상태"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-3052",
+          "hiragana": "げ",
+          "katakana": "ゲ",
+          "romaji": "ge",
+          "korean": "게",
+          "example": {
+            "word": "げんき",
+            "meaning": "건강함"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-3054",
+          "hiragana": "ご",
+          "katakana": "ゴ",
+          "romaji": "go",
+          "korean": "고",
+          "example": {
+            "word": "ごはん",
+            "meaning": "밥"
+          },
+          "tip": null
+        }
+      ]
+    },
+    {
+      "row": "ざ행",
+      "category": "dakuten",
+      "chars": [
+        {
+          "id": "kana-3056",
+          "hiragana": "ざ",
+          "katakana": "ザ",
+          "romaji": "za",
+          "korean": "자",
+          "example": {
+            "word": "ざっし",
+            "meaning": "잡지"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-3058",
+          "hiragana": "じ",
+          "katakana": "ジ",
+          "romaji": "ji",
+          "korean": "지",
+          "example": {
+            "word": "じかん",
+            "meaning": "시간"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-305a",
+          "hiragana": "ず",
+          "katakana": "ズ",
+          "romaji": "zu",
+          "korean": "즈",
+          "example": {
+            "word": "ずつう",
+            "meaning": "두통"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-305c",
+          "hiragana": "ぜ",
+          "katakana": "ゼ",
+          "romaji": "ze",
+          "korean": "제",
+          "example": {
+            "word": "ぜんぶ",
+            "meaning": "전부"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-305e",
+          "hiragana": "ぞ",
+          "katakana": "ゾ",
+          "romaji": "zo",
+          "korean": "조",
+          "example": {
+            "word": "ぞう",
+            "meaning": "코끼리"
+          },
+          "tip": null
+        }
+      ]
+    },
+    {
+      "row": "だ행",
+      "category": "dakuten",
+      "chars": [
+        {
+          "id": "kana-3060",
+          "hiragana": "だ",
+          "katakana": "ダ",
+          "romaji": "da",
+          "korean": "다",
+          "example": {
+            "word": "だいがく",
+            "meaning": "대학"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-3062",
+          "hiragana": "ぢ",
+          "katakana": "ヂ",
+          "romaji": "ji",
+          "korean": "지",
+          "example": {
+            "word": "じかん",
+            "meaning": "시간"
+          },
+          "tip": "현대 일본어에서는 거의 쓰지 않습니다. じ를 씁니다."
+        },
+        {
+          "id": "kana-3065",
+          "hiragana": "づ",
+          "katakana": "ヅ",
+          "romaji": "zu",
+          "korean": "즈",
+          "example": {
+            "word": "ずつう",
+            "meaning": "두통"
+          },
+          "tip": "현대 일본어에서는 거의 쓰지 않습니다. ず를 씁니다."
+        },
+        {
+          "id": "kana-3067",
+          "hiragana": "で",
+          "katakana": "デ",
+          "romaji": "de",
+          "korean": "데",
+          "example": {
+            "word": "でんわ",
+            "meaning": "전화"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-3069",
+          "hiragana": "ど",
+          "katakana": "ド",
+          "romaji": "do",
+          "korean": "도",
+          "example": {
+            "word": "どようび",
+            "meaning": "토요일"
+          },
+          "tip": null
+        }
+      ]
+    },
+    {
+      "row": "ば행",
+      "category": "dakuten",
+      "chars": [
+        {
+          "id": "kana-3070",
+          "hiragana": "ば",
+          "katakana": "バ",
+          "romaji": "ba",
+          "korean": "바",
+          "example": {
+            "word": "ばしょ",
+            "meaning": "장소"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-3073",
+          "hiragana": "び",
+          "katakana": "ビ",
+          "romaji": "bi",
+          "korean": "비",
+          "example": {
+            "word": "びょういん",
+            "meaning": "병원"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-3076",
+          "hiragana": "ぶ",
+          "katakana": "ブ",
+          "romaji": "bu",
+          "korean": "부",
+          "example": {
+            "word": "ぶんか",
+            "meaning": "문화"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-3079",
+          "hiragana": "べ",
+          "katakana": "ベ",
+          "romaji": "be",
+          "korean": "베",
+          "example": {
+            "word": "べんきょう",
+            "meaning": "공부"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-307c",
+          "hiragana": "ぼ",
+          "katakana": "ボ",
+          "romaji": "bo",
+          "korean": "보",
+          "example": {
+            "word": "ぼうし",
+            "meaning": "모자"
+          },
+          "tip": null
+        }
+      ]
+    },
+    {
+      "row": "ぱ행",
+      "category": "dakuten",
+      "chars": [
+        {
+          "id": "kana-3071",
+          "hiragana": "ぱ",
+          "katakana": "パ",
+          "romaji": "pa",
+          "korean": "파",
+          "example": {
+            "word": "パン",
+            "meaning": "빵"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-3074",
+          "hiragana": "ぴ",
+          "katakana": "ピ",
+          "romaji": "pi",
+          "korean": "피",
+          "example": {
+            "word": "ピアノ",
+            "meaning": "피아노"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-3077",
+          "hiragana": "ぷ",
+          "katakana": "プ",
+          "romaji": "pu",
+          "korean": "푸",
+          "example": {
+            "word": "プール",
+            "meaning": "수영장"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-307a",
+          "hiragana": "ぺ",
+          "katakana": "ペ",
+          "romaji": "pe",
+          "korean": "페",
+          "example": {
+            "word": "ペン",
+            "meaning": "펜"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-307d",
+          "hiragana": "ぽ",
+          "katakana": "ポ",
+          "romaji": "po",
+          "korean": "포",
+          "example": {
+            "word": "ポスト",
+            "meaning": "우체통"
+          },
+          "tip": null
+        }
+      ]
+    }
+  ],
+  "yoon": [
+    {
+      "row": "きゃ행",
+      "category": "yoon",
+      "chars": [
+        {
+          "id": "kana-304d3083",
+          "hiragana": "きゃ",
+          "katakana": "キャ",
+          "romaji": "kya",
+          "korean": "캬",
+          "example": {
+            "word": "きゃく",
+            "meaning": "손님"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-304d3085",
+          "hiragana": "きゅ",
+          "katakana": "キュ",
+          "romaji": "kyu",
+          "korean": "큐",
+          "example": {
+            "word": "きゅう",
+            "meaning": "아홉"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-304d3087",
+          "hiragana": "きょ",
+          "katakana": "キョ",
+          "romaji": "kyo",
+          "korean": "쿄",
+          "example": {
+            "word": "きょう",
+            "meaning": "오늘"
+          },
+          "tip": null
+        }
+      ]
+    },
+    {
+      "row": "しゃ행",
+      "category": "yoon",
+      "chars": [
+        {
+          "id": "kana-30573083",
+          "hiragana": "しゃ",
+          "katakana": "シャ",
+          "romaji": "sha",
+          "korean": "샤",
+          "example": {
+            "word": "しゃしん",
+            "meaning": "사진"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-30573085",
+          "hiragana": "しゅ",
+          "katakana": "シュ",
+          "romaji": "shu",
+          "korean": "슈",
+          "example": {
+            "word": "しゅみ",
+            "meaning": "취미"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-30573087",
+          "hiragana": "しょ",
+          "katakana": "ショ",
+          "romaji": "sho",
+          "korean": "쇼",
+          "example": {
+            "word": "しょくじ",
+            "meaning": "식사"
+          },
+          "tip": null
+        }
+      ]
+    },
+    {
+      "row": "ちゃ행",
+      "category": "yoon",
+      "chars": [
+        {
+          "id": "kana-30613083",
+          "hiragana": "ちゃ",
+          "katakana": "チャ",
+          "romaji": "cha",
+          "korean": "차",
+          "example": {
+            "word": "おちゃ",
+            "meaning": "차"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-30613085",
+          "hiragana": "ちゅ",
+          "katakana": "チュ",
+          "romaji": "chu",
+          "korean": "추",
+          "example": {
+            "word": "ちゅうい",
+            "meaning": "주의"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-30613087",
+          "hiragana": "ちょ",
+          "katakana": "チョ",
+          "romaji": "cho",
+          "korean": "초",
+          "example": {
+            "word": "ちょうし",
+            "meaning": "컨디션"
+          },
+          "tip": null
+        }
+      ]
+    },
+    {
+      "row": "にゃ행",
+      "category": "yoon",
+      "chars": [
+        {
+          "id": "kana-306b3083",
+          "hiragana": "にゃ",
+          "katakana": "ニャ",
+          "romaji": "nya",
+          "korean": "냐",
+          "example": {
+            "word": "こんにゃく",
+            "meaning": "곤약"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-306b3085",
+          "hiragana": "にゅ",
+          "katakana": "ニュ",
+          "romaji": "nyu",
+          "korean": "뉴",
+          "example": {
+            "word": "にゅうしゃ",
+            "meaning": "입사"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-306b3087",
+          "hiragana": "にょ",
+          "katakana": "ニョ",
+          "romaji": "nyo",
+          "korean": "뇨",
+          "example": {
+            "word": "にょうぼう",
+            "meaning": "아내"
+          },
+          "tip": null
+        }
+      ]
+    },
+    {
+      "row": "ひゃ행",
+      "category": "yoon",
+      "chars": [
+        {
+          "id": "kana-30723083",
+          "hiragana": "ひゃ",
+          "katakana": "ヒャ",
+          "romaji": "hya",
+          "korean": "햐",
+          "example": {
+            "word": "ひゃく",
+            "meaning": "백"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-30723085",
+          "hiragana": "ひゅ",
+          "katakana": "ヒュ",
+          "romaji": "hyu",
+          "korean": "휴",
+          "example": {
+            "word": "ひゅう",
+            "meaning": "휙(의성어)"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-30723087",
+          "hiragana": "ひょ",
+          "katakana": "ヒョ",
+          "romaji": "hyo",
+          "korean": "효",
+          "example": {
+            "word": "ひょうげん",
+            "meaning": "표현"
+          },
+          "tip": null
+        }
+      ]
+    },
+    {
+      "row": "みゃ행",
+      "category": "yoon",
+      "chars": [
+        {
+          "id": "kana-307f3083",
+          "hiragana": "みゃ",
+          "katakana": "ミャ",
+          "romaji": "mya",
+          "korean": "먀",
+          "example": {
+            "word": "みゃく",
+            "meaning": "맥"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-307f3085",
+          "hiragana": "みゅ",
+          "katakana": "ミュ",
+          "romaji": "myu",
+          "korean": "뮤",
+          "example": {
+            "word": "ミュージック",
+            "meaning": "음악"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-307f3087",
+          "hiragana": "みょ",
+          "katakana": "ミョ",
+          "romaji": "myo",
+          "korean": "묘",
+          "example": {
+            "word": "みょうじ",
+            "meaning": "성씨"
+          },
+          "tip": null
+        }
+      ]
+    },
+    {
+      "row": "りゃ행",
+      "category": "yoon",
+      "chars": [
+        {
+          "id": "kana-308a3083",
+          "hiragana": "りゃ",
+          "katakana": "リャ",
+          "romaji": "rya",
+          "korean": "랴",
+          "example": {
+            "word": "りゃくご",
+            "meaning": "약어"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-308a3085",
+          "hiragana": "りゅ",
+          "katakana": "リュ",
+          "romaji": "ryu",
+          "korean": "류",
+          "example": {
+            "word": "りゅうがく",
+            "meaning": "유학"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-308a3087",
+          "hiragana": "りょ",
+          "katakana": "リョ",
+          "romaji": "ryo",
+          "korean": "료",
+          "example": {
+            "word": "りょうり",
+            "meaning": "요리"
+          },
+          "tip": null
+        }
+      ]
+    },
+    {
+      "row": "ぎゃ행",
+      "category": "yoon",
+      "chars": [
+        {
+          "id": "kana-304e3083",
+          "hiragana": "ぎゃ",
+          "katakana": "ギャ",
+          "romaji": "gya",
+          "korean": "갸",
+          "example": {
+            "word": "ぎゃく",
+            "meaning": "반대"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-304e3085",
+          "hiragana": "ぎゅ",
+          "katakana": "ギュ",
+          "romaji": "gyu",
+          "korean": "규",
+          "example": {
+            "word": "ぎゅうにゅう",
+            "meaning": "우유"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-304e3087",
+          "hiragana": "ぎょ",
+          "katakana": "ギョ",
+          "romaji": "gyo",
+          "korean": "교",
+          "example": {
+            "word": "ぎょうむ",
+            "meaning": "업무"
+          },
+          "tip": null
+        }
+      ]
+    },
+    {
+      "row": "じゃ행",
+      "category": "yoon",
+      "chars": [
+        {
+          "id": "kana-30583083",
+          "hiragana": "じゃ",
+          "katakana": "ジャ",
+          "romaji": "ja",
+          "korean": "자",
+          "example": {
+            "word": "じゃま",
+            "meaning": "방해"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-30583085",
+          "hiragana": "じゅ",
+          "katakana": "ジュ",
+          "romaji": "ju",
+          "korean": "주",
+          "example": {
+            "word": "じゅぎょう",
+            "meaning": "수업"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-30583087",
+          "hiragana": "じょ",
+          "katakana": "ジョ",
+          "romaji": "jo",
+          "korean": "조",
+          "example": {
+            "word": "じょうず",
+            "meaning": "잘함"
+          },
+          "tip": null
+        }
+      ]
+    },
+    {
+      "row": "びゃ행",
+      "category": "yoon",
+      "chars": [
+        {
+          "id": "kana-30733083",
+          "hiragana": "びゃ",
+          "katakana": "ビャ",
+          "romaji": "bya",
+          "korean": "뱌",
+          "example": {
+            "word": "さんびゃく",
+            "meaning": "삼백"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-30733085",
+          "hiragana": "びゅ",
+          "katakana": "ビュ",
+          "romaji": "byu",
+          "korean": "뷰",
+          "example": {
+            "word": "ビュッフェ",
+            "meaning": "뷔페"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-30733087",
+          "hiragana": "びょ",
+          "katakana": "ビョ",
+          "romaji": "byo",
+          "korean": "뵤",
+          "example": {
+            "word": "びょうき",
+            "meaning": "병"
+          },
+          "tip": null
+        }
+      ]
+    },
+    {
+      "row": "ぴゃ행",
+      "category": "yoon",
+      "chars": [
+        {
+          "id": "kana-30743083",
+          "hiragana": "ぴゃ",
+          "katakana": "ピャ",
+          "romaji": "pya",
+          "korean": "퍄",
+          "example": {
+            "word": "はっぴゃく",
+            "meaning": "팔백"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-30743085",
+          "hiragana": "ぴゅ",
+          "katakana": "ピュ",
+          "romaji": "pyu",
+          "korean": "퓨",
+          "example": {
+            "word": "ピュア",
+            "meaning": "퓨어"
+          },
+          "tip": null
+        },
+        {
+          "id": "kana-30743087",
+          "hiragana": "ぴょ",
+          "katakana": "ピョ",
+          "romaji": "pyo",
+          "korean": "표",
+          "example": {
+            "word": "はっぴょう",
+            "meaning": "발표"
+          },
+          "tip": null
+        }
+      ]
+    }
+  ]
+}

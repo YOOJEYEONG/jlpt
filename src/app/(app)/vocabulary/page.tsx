@@ -16,7 +16,7 @@ import { JLPT_LEVELS, LEVEL_LABEL, type JlptLevel } from "@/lib/types";
 import { cn, percent, speakJapanese } from "@/lib/utils";
 
 type LevelFilter = JlptLevel | "ALL";
-type Mode = "card" | "list";
+type Mode = "learn" | "card" | "list";
 
 const LEVEL_OPTIONS: { value: LevelFilter; label: string }[] = [
   { value: "ALL", label: "전체" },
@@ -32,7 +32,7 @@ export default function VocabularyPage() {
   const toggleFavorite = useAppStore((state) => state.toggleFavorite);
 
   const [level, setLevel] = useState<LevelFilter>(user?.data.currentLevel === "BASIC" ? "N5" : (user?.data.currentLevel ?? "ALL"));
-  const [mode, setMode] = useState<Mode>("card");
+  const [mode, setMode] = useState<Mode>("learn");
   const [onlyFavorite, setOnlyFavorite] = useState(false);
   const [index, setIndex] = useState(0);
   const [revealed, setRevealed] = useState(false);
@@ -68,7 +68,13 @@ export default function VocabularyPage() {
     <div className="animate-fade-up">
       <PageHeader
         title="단어 학습"
-        description="카드를 뒤집어 뜻을 확인하고, 아는지 모르는지 직접 평가하세요. 결과에 따라 복습 날짜가 정해집니다."
+        description={
+          mode === "learn"
+            ? "읽기와 뜻, 예문을 함께 보면서 단어를 익힙니다. 다 외웠다면 테스트 모드로 확인하세요."
+            : mode === "card"
+              ? "뜻을 떠올린 뒤 카드를 확인하고, 아는지 모르는지 직접 평가하세요. 결과에 따라 복습 날짜가 정해집니다."
+              : "레벨별 단어를 한눈에 훑어봅니다."
+        }
       />
 
       <div className="mb-4 space-y-3">
@@ -79,8 +85,9 @@ export default function VocabularyPage() {
             value={mode}
             onChange={setMode}
             options={[
-              { value: "card" as Mode, label: "카드 학습" },
-              { value: "list" as Mode, label: "목록 보기" },
+              { value: "learn" as Mode, label: "학습" },
+              { value: "card" as Mode, label: "테스트" },
+              { value: "list" as Mode, label: "목록" },
             ]}
           />
           <button
@@ -108,6 +115,80 @@ export default function VocabularyPage() {
             ) : null
           }
         />
+      ) : mode === "learn" && current ? (
+        <div>
+          <Card>
+            <div className="mb-4 flex items-center justify-between">
+              <LevelBadge level={current.level} />
+              <div className="flex items-center gap-1">
+                <button
+                  aria-label="발음 듣기"
+                  onClick={() => speakJapanese(current.word)}
+                  className="rounded-lg p-2 text-muted hover:bg-background hover:text-primary"
+                >
+                  <Volume2 className="h-4 w-4" />
+                </button>
+                <button
+                  aria-label="즐겨찾기"
+                  onClick={() => toggleFavorite(current.id)}
+                  className={cn(
+                    "rounded-lg p-2 hover:bg-background",
+                    progress[current.id]?.favorite ? "text-accent" : "text-muted",
+                  )}
+                >
+                  <Star className={cn("h-4 w-4", progress[current.id]?.favorite && "fill-current")} />
+                </button>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <p className="jp text-sm text-primary">{current.reading}</p>
+              <p className="jp mt-1 text-4xl font-bold sm:text-5xl">{current.word}</p>
+              <p className="mt-3 text-xl font-bold">{current.meaning}</p>
+              <p className="mt-1 text-xs text-muted">{current.partOfSpeech}</p>
+            </div>
+
+            <div className="mt-5 rounded-xl bg-background px-4 py-3">
+              <p className="text-xs font-semibold text-muted">例文</p>
+              <p className="jp mt-1 text-base">{current.example}</p>
+              <p className="jp mt-0.5 text-xs text-muted">{current.exampleReading}</p>
+              <p className="mt-1.5 text-sm text-muted">{current.exampleTranslation}</p>
+              <button
+                onClick={() => speakJapanese(current.example)}
+                className="mt-2 inline-flex items-center gap-1 text-xs font-semibold text-primary"
+              >
+                <Volume2 className="h-3.5 w-3.5" /> 예문 듣기
+              </button>
+            </div>
+
+            <div className="mt-5 grid grid-cols-2 gap-2">
+              <Button variant="outline" onClick={() => answer(null)}>
+                아직 모르겠어요
+              </Button>
+              <Button className="bg-success hover:bg-[#12833c]" onClick={() => answer(true)}>
+                <Check className="h-4 w-4" /> 외웠어요
+              </Button>
+            </div>
+          </Card>
+
+          <div className="mt-3 flex items-center justify-between text-xs text-muted">
+            <button
+              onClick={() => setIndex((prev) => (prev - 1 + items.length) % items.length)}
+              className="rounded-lg px-2 py-1 hover:text-foreground"
+            >
+              ← 이전 단어
+            </button>
+            <span>
+              {Math.min(index + 1, items.length)} / {items.length}
+            </span>
+            <button
+              onClick={() => setIndex((prev) => (prev + 1) % items.length)}
+              className="rounded-lg px-2 py-1 hover:text-foreground"
+            >
+              다음 단어 →
+            </button>
+          </div>
+        </div>
       ) : mode === "card" && current ? (
         <div>
           <Card className="text-center">

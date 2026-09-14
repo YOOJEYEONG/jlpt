@@ -26,8 +26,7 @@ await p1.waitForURL("**/dashboard", { timeout: 15000 });
 
 await p1.goto(`${BASE}/vocabulary`, { waitUntil: "networkidle" });
 for (let i = 0; i < 5; i++) {
-  await p1.getByRole("button", { name: "뜻 확인하기" }).click();
-  await p1.getByRole("button", { name: /알고 있음/ }).click();
+  await p1.getByRole("button", { name: /외웠어요/ }).click();
   await p1.waitForTimeout(220);
 }
 await p1.goto(`${BASE}/grammar`, { waitUntil: "networkidle" });
@@ -64,8 +63,7 @@ if (p2.url().includes("dashboard")) {
   await p2.waitForTimeout(1000);
   log.push("기기2 단어페이지 상태: " + (await p2.locator("body").innerText()).replace(/\n+/g, " | ").slice(0, 260));
   for (let i = 0; i < 2; i++) {
-    await p2.getByRole("button", { name: "뜻 확인하기" }).click();
-    await p2.getByRole("button", { name: /알고 있음/ }).click();
+    await p2.getByRole("button", { name: /외웠어요/ }).click();
     await p2.waitForTimeout(220);
   }
   await p2.waitForTimeout(2500);

@@ -12,6 +12,7 @@ import { cancelPendingSync, flushSync } from "@/lib/sync";
 import { JLPT_LEVELS, LEVEL_LABEL, type JlptLevel, type JobGoal } from "@/lib/types";
 
 const GOAL_FIELDS: { key: keyof DailyGoal; label: string }[] = [
+  { key: "kana", label: "가나(기초)" },
   { key: "vocabulary", label: "단어" },
   { key: "kanji", label: "한자" },
   { key: "grammar", label: "문법" },

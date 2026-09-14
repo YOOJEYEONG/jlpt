@@ -87,10 +87,10 @@ export default function LandingPage() {
 
         <dl className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-4">
           {[
+            { label: "히라가나·가타카나", value: CONTENT_TOTALS.kana },
             { label: "수록 단어", value: CONTENT_TOTALS.vocabulary },
             { label: "문법 항목", value: CONTENT_TOTALS.grammar },
             { label: "한자", value: CONTENT_TOTALS.kanji },
-            { label: "비즈니스 표현", value: CONTENT_TOTALS.business },
           ].map((stat) => (
             <div key={stat.label} className="rounded-2xl border border-line bg-surface p-4">
               <dt className="text-xs text-muted">{stat.label}</dt>

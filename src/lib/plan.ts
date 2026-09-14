@@ -1,5 +1,6 @@
 import {
   BUSINESS_PHRASES,
+  KANA_CHARS,
   GRAMMAR,
   KANJI,
   LISTENINGS,
@@ -65,6 +66,12 @@ export function buildTodayPlan(data: UserData): TodayPlan {
     .filter(([, progress]) => progress.status !== "new" && isDue(progress, today))
     .map(([id]) => id);
 
+  // 기초 단계에서는 가나부터 시작합니다.
+  const kana =
+    data.currentLevel === "BASIC"
+      ? KANA_CHARS.filter((item) => !data.progress[item.id] || data.progress[item.id].status !== "known").slice(0, goal.kana)
+      : [];
+
   const vocabulary = pickUnlearned(VOCABULARY, data, levels, goal.vocabulary);
   const grammar = pickUnlearned(GRAMMAR, data, levels, goal.grammar);
   const kanji = pickUnlearned(KANJI, data, levels, goal.kanji);
@@ -75,6 +82,7 @@ export function buildTodayPlan(data: UserData): TodayPlan {
   ).slice(0, goal.business);
 
   const allEntries: TodayPlanEntry[] = [
+    { key: "kana", label: "히라가나 · 가타카나", href: "/kana", goal: entryGoal(goal.kana, kana.length, counts?.kana ?? 0), done: counts?.kana ?? 0, ids: kana.map((item) => item.id) },
     { key: "vocabulary", label: "단어", href: "/vocabulary", goal: entryGoal(goal.vocabulary, vocabulary.length, counts?.vocabulary ?? 0), done: counts?.vocabulary ?? 0, ids: vocabulary.map((item) => item.id) },
     { key: "kanji", label: "한자", href: "/kanji", goal: entryGoal(goal.kanji, kanji.length, counts?.kanji ?? 0), done: counts?.kanji ?? 0, ids: kanji.map((item) => item.id) },
     { key: "grammar", label: "문법", href: "/grammar", goal: entryGoal(goal.grammar, grammar.length, counts?.grammar ?? 0), done: counts?.grammar ?? 0, ids: grammar.map((item) => item.id) },
@@ -121,6 +129,7 @@ function accuracyOf(data: UserData, ids: string[]): number | null {
 
 export function areaProgress(data: UserData): AreaProgress[] {
   const sets = [
+    { key: "kana", label: "가나", items: KANA_CHARS.map((item) => ({ ...item, level: "BASIC" as const })) },
     { key: "vocabulary", label: "어휘", items: VOCABULARY },
     { key: "grammar", label: "문법", items: GRAMMAR },
     { key: "kanji", label: "한자", items: KANJI },

@@ -1,5 +1,7 @@
 import type {
   BusinessPhrase,
+  KanaChar,
+  KanaData,
   Grammar,
   InterviewQuestion,
   JlptLevel,
@@ -43,6 +45,7 @@ import interviewAll from "@/data/job/interview.json";
 import roadmapAll from "@/data/tests/roadmap.json";
 import levelTestAll from "@/data/tests/level-test.json";
 import mockAll from "@/data/tests/mock.json";
+import kanaAll from "@/data/kana.json";
 
 export const VOCABULARY = [
   ...vocabN5,
@@ -77,6 +80,18 @@ export const INTERVIEW_QUESTIONS = interviewAll as InterviewQuestion[];
 export const ROADMAP = roadmapAll as RoadmapStage[];
 export const LEVEL_TEST = levelTestAll as LevelTestQuestion[];
 export const MOCK_TESTS = mockAll as MockTest[];
+export const KANA = kanaAll as KanaData;
+
+/** 가나 104자를 한 줄로 펼친 목록. 진도·복습 계산에 씁니다. */
+export const KANA_CHARS: KanaChar[] = [
+  ...KANA.basic,
+  ...KANA.dakuten,
+  ...KANA.yoon,
+].flatMap((row) => row.chars);
+
+export function findKana(id: string) {
+  return KANA_CHARS.find((item) => item.id === id);
+}
 
 export const BUSINESS_CATEGORIES = Array.from(
   new Set(BUSINESS_PHRASES.map((phrase) => phrase.category)),
@@ -117,6 +132,7 @@ export function findMockTest(id: string) {
 
 /** 콘텐츠 총량 — 진도율 계산의 분모로 사용합니다. */
 export const CONTENT_TOTALS = {
+  kana: KANA_CHARS.length,
   vocabulary: VOCABULARY.length,
   grammar: GRAMMAR.length,
   kanji: KANJI.length,

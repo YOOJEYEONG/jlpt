@@ -24,8 +24,7 @@ await page.waitForURL("**/dashboard");
 const before = (await body()).match(/단어\s*\n?\s*(\d+) \/ (\d+)/);
 await page.goto(`${BASE}/vocabulary`, { waitUntil: "networkidle" });
 for (let i = 0; i < 3; i++) {
-  await page.getByRole("button", { name: "뜻 확인하기" }).click();
-  await page.getByRole("button", { name: /알고 있음/ }).click();
+  await page.getByRole("button", { name: /외웠어요/ }).click();
   await page.waitForTimeout(250);
 }
 await page.goto(`${BASE}/dashboard`, { waitUntil: "networkidle" });
@@ -41,8 +40,7 @@ else L("새로고침 후 세션 유지");
 
 // 3. 복습: 정답 맞히면 사라지고 오답이면 남는지
 await page.goto(`${BASE}/vocabulary`, { waitUntil: "networkidle" });
-await page.getByRole("button", { name: "뜻 확인하기" }).click();
-await page.getByRole("button", { name: /모름/ }).click();
+await page.getByRole("button", { name: /아직 모르겠어요/ }).click();
 await page.waitForTimeout(300);
 await page.goto(`${BASE}/review`, { waitUntil: "networkidle" });
 const r0 = (await body()).match(/오늘 복습할 항목\s*\n?\s*(\d+)개/);

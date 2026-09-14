@@ -10,7 +10,7 @@ import type { JlptLevel, JobGoal } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
 const LEVEL_OPTIONS: { value: JlptLevel; title: string; body: string }[] = [
-  { value: "BASIC", title: "일본어를 처음 시작합니다", body: "히라가나·가타카나부터 차근차근 시작합니다." },
+  { value: "BASIC", title: "일본어를 처음 시작합니다", body: "히라가나·가타카나 104자부터 차근차근 시작합니다." },
   { value: "N5", title: "N5 수준입니다", body: "기본 인사와 간단한 문장을 압니다." },
   { value: "N4", title: "N4 수준입니다", body: "일상 회화를 어느 정도 이해합니다." },
   { value: "N3", title: "N3 수준입니다", body: "기본 신문·안내문을 읽을 수 있습니다." },

@@ -1,6 +1,6 @@
 "use client";
 
-import { hasUnsavedChanges, useAppStore, type UserData } from "./store";
+import { DEFAULT_DAILY_GOAL, hasUnsavedChanges, useAppStore, type UserData } from "./store";
 
 const SAVE_DELAY_MS = 1500;
 
@@ -99,6 +99,17 @@ export function startSync(): void {
   });
 }
 
+/** 예전 버전에서 저장된 기록에 새로 생긴 항목을 채웁니다. */
+function normalize(state: UserData | null): UserData | null {
+  if (!state) return null;
+  return {
+    ...state,
+    dailyGoal: { ...DEFAULT_DAILY_GOAL, ...state.dailyGoal },
+    updatedAt: state.updatedAt ?? new Date().toISOString(),
+    syncedAt: state.syncedAt ?? null,
+  };
+}
+
 async function bootstrap(): Promise<void> {
   const store = useAppStore.getState();
 
@@ -116,7 +127,7 @@ async function bootstrap(): Promise<void> {
     }
 
     const email = String(body.user.email).toLowerCase();
-    const serverState = (body.state as UserData | null) ?? null;
+    const serverState = normalize((body.state as UserData | null) ?? null);
     const localState = useAppStore.getState().data[email];
 
     if (isLocalAhead(localState, serverState)) {

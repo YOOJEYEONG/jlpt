@@ -14,6 +14,7 @@ export const LEVEL_LABEL: Record<JlptLevel, string> = {
 export type JobGoal = "JLPT_N1" | "JAPAN_JOB" | "BOTH";
 
 export type StudyType =
+  | "kana"
   | "vocabulary"
   | "grammar"
   | "kanji"
@@ -160,6 +161,28 @@ export interface InterviewQuestion {
   sampleAnswerKo: string;
   keyExpressions: { jp: string; ko: string }[];
   tip: string;
+}
+
+export interface KanaChar {
+  id: string;
+  hiragana: string;
+  katakana: string;
+  romaji: string;
+  korean: string;
+  example: { word: string; meaning: string } | null;
+  tip: string | null;
+}
+
+export interface KanaRow {
+  row: string;
+  category: "basic" | "dakuten" | "yoon";
+  chars: KanaChar[];
+}
+
+export interface KanaData {
+  basic: KanaRow[];
+  dakuten: KanaRow[];
+  yoon: KanaRow[];
 }
 
 export interface RoadmapStage {

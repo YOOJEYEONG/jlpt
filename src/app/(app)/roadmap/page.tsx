@@ -6,7 +6,7 @@ import { Badge, LevelBadge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { PageHeader } from "@/components/layout/page-header";
-import { GRAMMAR, KANJI, LISTENINGS, READINGS, ROADMAP, VOCABULARY } from "@/lib/content";
+import { GRAMMAR, KANA_CHARS, KANJI, LISTENINGS, READINGS, ROADMAP, VOCABULARY } from "@/lib/content";
 import { useCurrentUser } from "@/lib/store";
 import { JLPT_LEVELS, type JlptLevel } from "@/lib/types";
 import { cn, percent } from "@/lib/utils";
@@ -21,6 +21,8 @@ export default function RoadmapPage() {
 
   const { data } = user;
   const currentIndex = JLPT_LEVELS.indexOf(data.currentLevel);
+  const kanaLearned = KANA_CHARS.filter((item) => data.progress[item.id] && data.progress[item.id].status !== "new").length;
+  const kanaRate = percent(kanaLearned, KANA_CHARS.length);
   const targetIndex = JLPT_LEVELS.indexOf(data.targetJlpt);
 
   return (
@@ -113,10 +115,23 @@ export default function RoadmapPage() {
 
                 <Progress
                   className="mt-3"
-                  value={rate}
-                  label={`수록 콘텐츠 진행률 (${studied}/${total})`}
-                  barClassName={rate === 100 ? "bg-success" : undefined}
+                  value={stage.level === "BASIC" ? kanaRate : rate}
+                  label={
+                    stage.level === "BASIC"
+                      ? `가나 ${kanaLearned}/${KANA_CHARS.length}자`
+                      : `수록 콘텐츠 진행률 (${studied}/${total})`
+                  }
+                  barClassName={(stage.level === "BASIC" ? kanaRate : rate) === 100 ? "bg-success" : undefined}
                 />
+
+                {stage.level === "BASIC" ? (
+                  <Link
+                    href="/kana"
+                    className="mt-3 inline-flex h-10 items-center rounded-xl bg-primary px-4 text-xs font-bold text-white"
+                  >
+                    히라가나 · 가타카나 배우기 →
+                  </Link>
+                ) : null}
               </Card>
             </li>
           );

@@ -7,6 +7,7 @@ import type { JlptLevel, JobGoal, StudyType } from "./types";
 import { diffDays, toDateKey } from "./utils";
 
 export interface DailyGoal {
+  kana: number;
   vocabulary: number;
   grammar: number;
   kanji: number;
@@ -17,6 +18,7 @@ export interface DailyGoal {
 }
 
 export const DEFAULT_DAILY_GOAL: DailyGoal = {
+  kana: 10,
   vocabulary: 30,
   grammar: 5,
   kanji: 10,
@@ -66,6 +68,7 @@ export interface MockResult {
 }
 
 export interface DailyCounts {
+  kana: number;
   vocabulary: number;
   grammar: number;
   kanji: number;
@@ -79,6 +82,7 @@ export interface DailyCounts {
 
 function emptyCounts(): DailyCounts {
   return {
+    kana: 0,
     vocabulary: 0,
     grammar: 0,
     kanji: 0,
@@ -199,6 +203,7 @@ async function postJson(url: string, payload: unknown): Promise<JsonResponse> {
 }
 
 const XP_BY_TYPE: Record<CountKey, number> = {
+  kana: 3,
   vocabulary: 4,
   grammar: 6,
   kanji: 5,
@@ -380,11 +385,13 @@ export const useAppStore = create<AppState>()(
               )
             : [...current.accounts, { email, name: user.name, password: "", createdAt: user.createdAt }];
 
+          const adopted = state ?? current.data[email] ?? createUserData();
           return {
             serverStorage: true,
             accounts,
             currentEmail: email,
-            data: { ...current.data, [email]: state ?? current.data[email] ?? createUserData() },
+            // 예전 버전 기록에 새로 생긴 목표 항목을 채웁니다.
+            data: { ...current.data, [email]: { ...adopted, dailyGoal: { ...DEFAULT_DAILY_GOAL, ...adopted.dailyGoal } } },
           };
         }),
 
@@ -564,16 +571,18 @@ export const useAppStore = create<AppState>()(
     }),
     {
       name: "nihongo-lms-v1",
-      version: 2,
+      version: 3,
       migrate: (persisted) => {
-        // v1에는 updatedAt/syncedAt이 없었습니다. 없으면 "변경 있음"으로 보고 서버에 올립니다.
         const state = persisted as AppState;
         if (!state?.data) return state;
         const now = new Date().toISOString();
         for (const key of Object.keys(state.data)) {
           const entry = state.data[key];
+          // v2: 동기화 판단용 타임스탬프. 없으면 "올리지 못한 변경"으로 보고 서버에 올립니다.
           if (!entry.updatedAt) entry.updatedAt = now;
           if (entry.syncedAt === undefined) entry.syncedAt = null;
+          // v3: 가나 학습이 추가되면서 하루 목표에 kana가 생겼습니다.
+          entry.dailyGoal = { ...DEFAULT_DAILY_GOAL, ...entry.dailyGoal };
         }
         return state;
       },

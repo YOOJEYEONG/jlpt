@@ -9,6 +9,7 @@ import {
   Home,
   Languages,
   Map,
+  Sparkles,
   MessageSquare,
   RotateCcw,
   Settings,
@@ -36,6 +37,10 @@ export const NAV_GROUPS: NavGroup[] = [
       { href: "/roadmap", label: "학습 로드맵", icon: Map },
       { href: "/level-test", label: "레벨 테스트", icon: ClipboardList },
     ],
+  },
+  {
+    title: "일본어 기초",
+    items: [{ href: "/kana", label: "히라가나 · 가타카나", icon: Sparkles }],
   },
   {
     title: "JLPT 학습",
