@@ -42,7 +42,7 @@ export default function BusinessJapanesePage() {
       />
 
       <div className="mb-4 space-y-3">
-        <Tabs size="sm" value={category} onChange={setCategory} options={options} />
+        <Tabs label="분류" size="sm" value={category} onChange={setCategory} options={options} />
         <Progress value={percent(learned, items.length)} label={`학습한 표현 ${learned} / ${items.length}`} />
       </div>
 
@@ -86,7 +86,7 @@ export default function BusinessJapanesePage() {
                 </div>
 
                 <Button
-                  className={cn("mt-3 w-full", learnedItem && "bg-success hover:bg-[#12833c]")}
+                  className={cn("mt-3 w-full", learnedItem && "bg-success hover:bg-[#115c31]")}
                   variant={learnedItem ? "primary" : "outline"}
                   onClick={() =>
                     studyItem({

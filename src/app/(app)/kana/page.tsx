@@ -94,6 +94,7 @@ export default function KanaPage() {
       <div className="mb-4 space-y-3">
         <div className="flex flex-wrap items-center gap-2">
           <Tabs
+            label="글자 종류"
             value={script}
             onChange={(value) => { setScript(value); setSelected(null); setChosen(null); }}
             options={[
@@ -102,6 +103,7 @@ export default function KanaPage() {
             ]}
           />
           <Tabs
+            label="학습 방식"
             size="sm"
             value={mode}
             onChange={(value) => { setMode(value); setChosen(null); setQuizIndex(0); setTraceIndex(0); setScore({ correct: 0, wrong: 0 }); }}
@@ -114,6 +116,7 @@ export default function KanaPage() {
         </div>
 
         <Tabs
+          label="글자 묶음"
           size="sm"
           value={group}
           onChange={(value) => { setGroup(value); setSelected(null); setChosen(null); setQuizIndex(0); setTraceIndex(0); }}
@@ -238,7 +241,7 @@ export default function KanaPage() {
                 ) : null}
 
                 <Button
-                  className="mt-4 w-full bg-success hover:bg-[#12833c]"
+                  className="mt-4 w-full bg-success hover:bg-[#115c31]"
                   onClick={() =>
                     studyItem({
                       itemId: selected.id,
@@ -290,7 +293,7 @@ export default function KanaPage() {
                 이전
               </Button>
               <Button
-                className="bg-success hover:bg-[#12833c]"
+                className="bg-success hover:bg-[#115c31]"
                 onClick={() => {
                   studyItem({
                     itemId: traceChar.id,

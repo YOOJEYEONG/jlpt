@@ -38,7 +38,7 @@ export default function RoadmapPage() {
         <ChevronDown className="h-4 w-4 -rotate-90 text-muted" />
         <span className="text-sm text-muted">목표</span>
         <LevelBadge level={data.targetJlpt} />
-        <Link href="/settings" className="ml-auto text-xs font-semibold text-primary">
+        <Link href="/settings" className="ml-auto inline-flex min-h-6 items-center text-xs font-semibold text-primary">
           목표 변경 →
         </Link>
       </Card>
@@ -147,13 +147,13 @@ export default function RoadmapPage() {
               JLPT와 별개로 진행합니다. 경어 · 전화 응대 · 메일 작성 · 면접 답변 · 이력서 표현을 다룹니다.
             </p>
             <div className="mt-3 flex flex-wrap gap-2">
-              <Link href="/business-japanese" className="rounded-xl bg-accent px-3 py-2 text-xs font-bold text-white">
+              <Link href="/business-japanese" className="inline-flex min-h-6 items-center rounded-xl bg-accent px-3 py-2 text-xs font-bold text-white">
                 비즈니스 일본어
               </Link>
-              <Link href="/interview" className="rounded-xl bg-surface px-3 py-2 text-xs font-bold text-accent">
+              <Link href="/interview" className="inline-flex min-h-6 items-center rounded-xl bg-surface px-3 py-2 text-xs font-bold text-accent">
                 면접 일본어
               </Link>
-              <Link href="/japanese-job" className="rounded-xl bg-surface px-3 py-2 text-xs font-bold text-accent">
+              <Link href="/japanese-job" className="inline-flex min-h-6 items-center rounded-xl bg-surface px-3 py-2 text-xs font-bold text-accent">
                 취업 준비 현황
               </Link>
             </div>

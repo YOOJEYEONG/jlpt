@@ -180,6 +180,8 @@ export default function AdminPage() {
               <Label htmlFor={field.key}>{field.label}</Label>
               <Input
                 id={field.key}
+                autoComplete="off"
+                spellCheck={false}
                 placeholder={field.placeholder}
                 value={fields[field.key] ?? ""}
                 onChange={(event) => setFields((prev) => ({ ...prev, [field.key]: event.target.value }))}

@@ -54,14 +54,14 @@ if (!/외운 글자 1 \/ 104/.test(await body())) I("카나 진도", "외운 글
 else L("카나 진도 반영", "1 / 104");
 
 // 3. 가타카나 전환
-await p.getByRole("tab", { name: "가타카나" }).click();
+await p.getByRole("button", { name: "가타카나" }).click();
 await p.waitForTimeout(300);
 const kata = await p.locator("button:has(span.jp)").first().innerText();
 if (!/[ア-ン]/.test(kata)) I("가타카나 전환", `첫 글자=${kata}`);
 else L("가타카나 전환", kata.replace(/\n/g, " "));
 
 // 4. 연습 모드
-await p.getByRole("tab", { name: "소리 맞히기" }).click();
+await p.getByRole("button", { name: "소리 맞히기" }).click();
 await p.waitForTimeout(400);
 const quizBody = await body();
 if (!/이 글자의 소리는\?/.test(quizBody)) I("카나 연습", "연습 화면이 뜨지 않음");
@@ -91,7 +91,7 @@ if (!/학습한 단어 1 \//.test(await body())) I("단어 학습모드", "외�
 else L("단어 학습 모드 진도 반영");
 
 // 6. 테스트 모드는 여전히 뜻이 가려지는지
-await p.getByRole("tab", { name: "테스트" }).click();
+await p.getByRole("button", { name: "테스트" }).click();
 await p.waitForTimeout(400);
 const testMode = await body();
 if (!/뜻 확인하기/.test(testMode)) I("단어 테스트모드", "뜻 확인 버튼이 없음");

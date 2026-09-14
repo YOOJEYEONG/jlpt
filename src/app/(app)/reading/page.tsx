@@ -76,7 +76,7 @@ export default function ReadingPage() {
 
           <button
             onClick={() => setShowTranslation((prev) => !prev)}
-            className="mt-3 inline-flex items-center gap-1.5 text-xs font-semibold text-primary"
+            className="mt-3 inline-flex min-h-6 items-center gap-1.5 text-xs font-semibold text-primary"
           >
             {showTranslation ? <EyeOff className="h-3.5 w-3.5" /> : <Eye className="h-3.5 w-3.5" />}
             {showTranslation ? "해석 숨기기" : "한국어 해석 보기"}
@@ -170,7 +170,7 @@ export default function ReadingPage() {
       />
 
       <div className="mb-4 space-y-3">
-        <Tabs value={level} onChange={setLevel} options={LEVEL_OPTIONS} />
+        <Tabs label="JLPT 레벨" value={level} onChange={setLevel} options={LEVEL_OPTIONS} />
         <p className="text-xs text-muted">
           완료한 지문 {done} / {items.length} ({percent(done, items.length)}%)
         </p>

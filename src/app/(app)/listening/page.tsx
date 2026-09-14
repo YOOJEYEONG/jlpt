@@ -173,7 +173,7 @@ export default function ListeningPage() {
         description="음원을 듣고 문제를 풉니다. 속도 조절, 스크립트, 해석, 주요 표현을 함께 제공합니다."
       />
 
-      <Tabs className="mb-4" value={level} onChange={setLevel} options={LEVEL_OPTIONS} />
+      <Tabs label="JLPT 레벨" className="mb-4" value={level} onChange={setLevel} options={LEVEL_OPTIONS} />
 
       {items.length === 0 ? (
         <EmptyState title="표시할 청해 문제가 없습니다" description="다른 레벨을 선택해 보세요." />

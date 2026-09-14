@@ -64,6 +64,7 @@ export default function KanjiPage() {
 
       <div className="mb-4 space-y-3">
         <Tabs
+          label="JLPT 레벨"
           value={level}
           onChange={(value) => {
             setLevel(value);
@@ -160,7 +161,7 @@ export default function KanjiPage() {
                   <li key={word.word} className="flex items-center justify-between rounded-xl bg-primary-soft px-3 py-2">
                     <span>
                       <span className="jp text-sm font-bold">{word.word}</span>
-                      <span className="jp ml-2 text-xs text-primary/70">{word.reading}</span>
+                      <span className="jp ml-2 text-xs text-primary">{word.reading}</span>
                     </span>
                     <span className="text-xs text-foreground/80">{word.meaning}</span>
                   </li>
@@ -175,7 +176,7 @@ export default function KanjiPage() {
             </div>
 
             <div className="mt-4 flex flex-wrap gap-2">
-              <Button onClick={() => complete(true)} className="bg-success hover:bg-[#12833c]">
+              <Button onClick={() => complete(true)} className="bg-success hover:bg-[#115c31]">
                 <Check className="h-4 w-4" /> 외웠어요
               </Button>
               <Button variant="outline" onClick={() => complete(false)}>

@@ -4,14 +4,16 @@
   --background: #f6f7f9;
   --surface: #ffffff;
   --foreground: #14161a;
-  --muted: #6b7280;
+  --muted: #5b636f;
+  /* 보조 라벨용. 흰 배경에서 4.5:1을 넘습니다. */
+  --muted-soft: #6b7280;
   --border: #e6e8ec;
   --primary: #2f5bd8;
   --primary-soft: #eaf0ff;
-  --accent: #f0913a;
-  --accent-soft: #fff3e6;
-  --success: #16a34a;
-  --danger: #dc2626;
+  --accent: #b45309;
+  --accent-soft: #fdf1e3;
+  --success: #15713c;
+  --danger: #c02222;
 }
 
 @theme inline {
@@ -19,6 +21,7 @@
   --color-surface: var(--surface);
   --color-foreground: var(--foreground);
   --color-muted: var(--muted);
+  --color-muted-soft: var(--muted-soft);
   --color-line: var(--border);
   --color-primary: var(--primary);
   --color-primary-soft: var(--primary-soft);
@@ -34,12 +37,51 @@
   border-color: var(--border);
 }
 
+html {
+  color-scheme: light;
+}
+
 html,
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
+}
+
+/* 탭 지연(300ms)과 회색 하이라이트를 없앱니다. */
+button,
+a,
+[role="button"] {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1,
+h2 {
+  text-wrap: balance;
+}
+
+/* 숫자가 바뀔 때 자릿수가 흔들리지 않도록 합니다. */
+.num {
+  font-variant-numeric: tabular-nums;
+}
+
+:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 .jp {

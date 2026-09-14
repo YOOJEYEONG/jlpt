@@ -94,7 +94,7 @@ export default function StatisticsPage() {
             <Card key={stat.label}>
               <Icon className="h-4 w-4 text-primary" />
               <p className="mt-2 text-xs text-muted">{stat.label}</p>
-              <p className="mt-0.5 text-lg font-bold">{stat.value}</p>
+              <p className="num mt-0.5 text-lg font-bold">{stat.value}</p>
             </Card>
           );
         })}
@@ -178,11 +178,11 @@ export default function StatisticsPage() {
           <div className="mt-4 grid grid-cols-2 gap-2 text-sm">
             <div className="rounded-xl bg-background p-3">
               <p className="text-xs text-muted">단어 학습 횟수</p>
-              <p className="mt-0.5 font-bold">{totals.vocabulary}회</p>
+              <p className="num mt-0.5 font-bold">{totals.vocabulary}회</p>
             </div>
             <div className="rounded-xl bg-background p-3">
               <p className="text-xs text-muted">푼 독해 · 청해</p>
-              <p className="mt-0.5 font-bold">{totals.questions}회</p>
+              <p className="num mt-0.5 font-bold">{totals.questions}회</p>
             </div>
           </div>
           <div className="mt-3 flex flex-wrap gap-2">

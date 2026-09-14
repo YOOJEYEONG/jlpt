@@ -13,7 +13,7 @@ const buttonVariants = cva(
         secondary: "bg-primary-soft text-primary hover:bg-[#dde6ff]",
         outline: "border border-line bg-surface text-foreground hover:bg-background",
         ghost: "text-muted hover:bg-background hover:text-foreground",
-        danger: "bg-danger text-white hover:bg-[#b91c1c]",
+        danger: "bg-danger text-white hover:bg-[#9b1b1b]",
         accent: "bg-accent text-white hover:bg-[#dd7d24]",
       },
       size: {

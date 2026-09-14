@@ -117,12 +117,34 @@ QA_BASE=https://jlpt-mu.vercel.app npm run qa   # 배포본 점검
 - `tests/qa-speech.mjs` — 발음 재생이 일본어 음성으로, 한자가 아닌 읽기로 나가는지
 - `tests/qa-trace.mjs` — 따라쓰기 판에 마우스로 실제 획이 그려지는지(캔버스 픽셀 비교)
 - `tests/qa-reset.mjs` — 따라쓰기 초기화, 영역별 진행도 초기화가 서버까지 반영되는지
+- `tests/qa-a11y.mjs` — axe로 WCAG 2.2 AA 자동 검사(21개 화면) + 스킵 링크 · 키보드 조작 ·
+  포커스 표시 · 랜드마크 · 제목 구조 · 터치 타깃 수동 점검
+
+접근성 검사에는 `@axe-core/playwright`도 함께 필요합니다.
+
+```bash
+npm i -D playwright @axe-core/playwright
+```
 
 콘텐츠 JSON 무결성 검사는 브라우저 없이 바로 돌릴 수 있습니다.
 
 ```bash
 npm run validate   # id 중복, 필수 필드 누락, 레벨 불일치, 잘못 섞인 문자 검사
 ```
+
+---
+
+## 접근성
+
+WCAG 2.2 AA를 기준으로 삼습니다. 자동 검사(axe) 위반 0을 유지하고, 자동 검사가 잡지 못하는
+항목은 `tests/qa-a11y.mjs`에서 직접 확인합니다.
+
+- 색 대비: 본문 4.5:1 이상. 강조색(`--accent`)과 성공·위험색은 이 기준에 맞춰 정했습니다.
+- 키보드: 첫 Tab에서 "본문으로 바로가기"가 나타나고, 모든 학습 동작을 키보드로 할 수 있습니다.
+- 포커스는 항상 눈에 보입니다(`:focus-visible` 2px 윤곽선).
+- 랜드마크(`main`, 이름 붙인 `nav`)와 제목 단계(h1 → h2)를 지킵니다.
+- 터치 타깃은 24×24px 이상, 하단 내비게이션은 안전영역(`env(safe-area-inset-bottom)`)을 피합니다.
+- `prefers-reduced-motion`을 존중해 애니메이션을 끕니다.
 
 ---
 

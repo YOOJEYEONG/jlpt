@@ -175,7 +175,7 @@ export default function ReviewPage() {
                 <span className="text-sm font-semibold">{item.title}</span>
                 <Link
                   href={"content" in item ? "/reading" : "/listening"}
-                  className="text-xs font-semibold text-primary"
+                  className="inline-flex min-h-6 items-center text-xs font-semibold text-primary"
                 >
                   다시 풀기 →
                 </Link>

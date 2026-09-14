@@ -80,9 +80,10 @@ export default function VocabularyPage() {
       />
 
       <div className="mb-4 space-y-3">
-        <Tabs value={level} onChange={(value) => { setLevel(value); setIndex(0); setRevealed(false); }} options={LEVEL_OPTIONS} />
+        <Tabs label="JLPT 레벨" value={level} onChange={(value) => { setLevel(value); setIndex(0); setRevealed(false); }} options={LEVEL_OPTIONS} />
         <div className="flex flex-wrap items-center gap-2">
           <Tabs
+            label="학습 방식"
             size="sm"
             value={mode}
             onChange={setMode}
@@ -156,7 +157,7 @@ export default function VocabularyPage() {
               <Button variant="outline" onClick={() => answer(null)}>
                 아직 모르겠어요
               </Button>
-              <Button className="bg-success hover:bg-[#12833c]" onClick={() => answer(true)}>
+              <Button className="bg-success hover:bg-[#115c31]" onClick={() => answer(true)}>
                 <Check className="h-4 w-4" /> 외웠어요
               </Button>
             </div>
@@ -234,7 +235,7 @@ export default function VocabularyPage() {
                 <Button variant="outline" onClick={() => answer(null)}>
                   <RotateCcw className="h-4 w-4" /> 다시 보기
                 </Button>
-                <Button onClick={() => answer(true)} className="bg-success hover:bg-[#12833c]">
+                <Button onClick={() => answer(true)} className="bg-success hover:bg-[#115c31]">
                   <Check className="h-4 w-4" /> 알고 있음
                 </Button>
               </div>

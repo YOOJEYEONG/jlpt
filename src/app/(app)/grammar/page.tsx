@@ -61,7 +61,7 @@ export default function GrammarPage() {
       />
 
       <div className="mb-4 space-y-3">
-        <Tabs value={level} onChange={setLevel} options={LEVEL_OPTIONS} />
+        <Tabs label="JLPT 레벨" value={level} onChange={setLevel} options={LEVEL_OPTIONS} />
         <Progress value={percent(learned, items.length)} label={`학습한 문법 ${learned} / ${items.length}`} />
       </div>
 
@@ -123,7 +123,7 @@ export default function GrammarPage() {
                                 <p className="jp text-base font-semibold">{example.jp}</p>
                                 <SpeakButton label="예문 듣기" text={example.reading} className="shrink-0" />
                               </div>
-                              <p className="jp mt-0.5 text-xs text-primary/70">{example.reading}</p>
+                              <p className="jp mt-0.5 text-xs text-primary">{example.reading}</p>
                               <p className="mt-1 text-sm text-foreground/80">{example.ko}</p>
                             </li>
                           ))}
@@ -147,7 +147,7 @@ export default function GrammarPage() {
                       ) : null}
 
                       <div className="flex flex-wrap gap-2">
-                        <Button onClick={() => complete(item.id, item.title, true)} className="bg-success hover:bg-[#12833c]">
+                        <Button onClick={() => complete(item.id, item.title, true)} className="bg-success hover:bg-[#115c31]">
                           <Check className="h-4 w-4" /> 이해했어요
                         </Button>
                         <Button variant="outline" onClick={() => complete(item.id, item.title, false)}>

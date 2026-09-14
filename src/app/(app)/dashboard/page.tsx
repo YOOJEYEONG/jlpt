@@ -57,7 +57,7 @@ export default function DashboardPage() {
       <section className="grid gap-3 sm:grid-cols-3">
         <Card className="flex items-center gap-4">
           <ProgressRing value={overall}>
-            <span className="text-lg font-bold">{overall}%</span>
+            <span className="num text-lg font-bold">{overall}%</span>
             <span className="text-[10px] text-muted">진행률</span>
           </ProgressRing>
           <div className="min-w-0">
@@ -79,14 +79,14 @@ export default function DashboardPage() {
           <p className="mt-3 text-xs text-muted">
             {LEVEL_LABEL[data.currentLevel]} 단계 콘텐츠를 학습 중입니다.
           </p>
-          <Link href="/roadmap" className="mt-2 inline-block text-xs font-semibold text-primary">
+          <Link href="/roadmap" className="mt-2 inline-flex min-h-6 items-center text-xs font-semibold text-primary">
             로드맵 보기 →
           </Link>
         </Card>
 
         <Card>
           <p className="text-xs text-muted">오늘 학습 시간</p>
-          <p className="mt-1 text-2xl font-bold">{formatDuration(counts.seconds)}</p>
+          <p className="num mt-1 text-2xl font-bold">{formatDuration(counts.seconds)}</p>
           <p className="mt-2 text-xs text-muted">누적 경험치 {data.xp.toLocaleString()} XP</p>
           <Progress className="mt-2" value={percent(xp.current, xp.needed)} />
         </Card>
@@ -105,7 +105,7 @@ export default function DashboardPage() {
             </p>
           </div>
           <div className="text-right">
-            <p className="text-2xl font-bold text-primary">{percent(plan.totalDone, plan.totalGoal)}%</p>
+            <p className="num text-2xl font-bold text-primary">{percent(plan.totalDone, plan.totalGoal)}%</p>
           </div>
         </div>
 
@@ -134,7 +134,7 @@ export default function DashboardPage() {
                       )}
                       {entry.label}
                     </span>
-                    <span className={finished ? "text-xs font-bold text-success" : "text-xs font-bold text-muted"}>
+                    <span className={finished ? "num text-xs font-bold text-success" : "num text-xs font-bold text-muted"}>
                       {done} / {entry.goal}
                     </span>
                   </Link>
@@ -184,7 +184,7 @@ export default function DashboardPage() {
               </li>
             ))}
           </ul>
-          <Link href="/japanese-job" className="mt-4 inline-block text-xs font-semibold text-primary">
+          <Link href="/japanese-job" className="mt-4 inline-flex min-h-6 items-center text-xs font-semibold text-primary">
             취업 준비 상세 보기 →
           </Link>
         </Card>

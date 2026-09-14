@@ -17,7 +17,7 @@ export function Progress({
       {label ? (
         <div className="mb-1.5 flex items-center justify-between text-xs text-muted">
           <span>{label}</span>
-          <span className="font-semibold text-foreground">{safe}%</span>
+          <span className="font-semibold tabular-nums text-foreground">{safe}%</span>
         </div>
       ) : null}
       <div
@@ -29,7 +29,7 @@ export function Progress({
         aria-label={label ?? "진행률"}
       >
         <div
-          className={cn("h-full rounded-full bg-primary transition-all duration-500", barClassName)}
+          className={cn("h-full rounded-full bg-primary transition-[width] duration-500 ease-out", barClassName)}
           style={{ width: `${safe}%` }}
         />
       </div>
@@ -67,7 +67,7 @@ export function ProgressRing({
           strokeLinecap="round"
           strokeDasharray={circumference}
           strokeDashoffset={offset}
-          className="transition-all duration-700"
+          className="transition-[stroke-dashoffset] duration-700 ease-out"
         />
       </svg>
       <div className="absolute inset-0 flex flex-col items-center justify-center">{children}</div>

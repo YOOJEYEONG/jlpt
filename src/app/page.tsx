@@ -147,7 +147,7 @@ export default function LandingPage() {
       <footer className="mx-auto max-w-5xl px-5 py-12">
         <div className="rounded-2xl bg-foreground p-7 text-center text-white">
           <p className="text-lg font-bold">오늘부터 시작해도 늦지 않습니다</p>
-          <p className="mt-1.5 text-sm text-white/70">
+          <p className="mt-1.5 text-sm text-white/90">
             레벨 테스트 15문항이면 어디서 시작할지 정해집니다.
           </p>
           <Link

@@ -30,7 +30,7 @@ export function Sidebar() {
           <div className="mx-4 mb-3 flex items-center justify-between rounded-xl bg-primary-soft px-3 py-2.5">
             <div className="min-w-0">
               <p className="truncate text-xs font-semibold text-primary">{user.account.name}님</p>
-              <p className="truncate text-[11px] text-primary/70">목표 {user.data.targetJlpt}</p>
+              <p className="truncate text-[11px] text-primary">목표 {user.data.targetJlpt}</p>
             </div>
             <span className="flex items-center gap-1 text-xs font-bold text-accent">
               <Flame className="h-3.5 w-3.5" />
@@ -39,10 +39,10 @@ export function Sidebar() {
           </div>
         ) : null}
 
-        <nav className="flex-1 overflow-y-auto px-3 pb-6">
+        <nav aria-label="주요 메뉴" className="flex-1 overflow-y-auto px-3 pb-6">
           {NAV_GROUPS.map((group) => (
             <div key={group.title} className="mb-4">
-              <p className="px-2 pb-1.5 text-[11px] font-bold uppercase tracking-wide text-[#9aa1ad]">
+              <p className="px-2 pb-1.5 text-[11px] font-bold uppercase tracking-wide text-muted">
                 {group.title}
               </p>
               <ul className="space-y-0.5">

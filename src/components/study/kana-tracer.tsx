@@ -143,7 +143,7 @@ export function KanaTracer({
   return (
     <div>
       <div className="flex flex-wrap items-center justify-between gap-2">
-        <Tabs size="sm" value={guide} onChange={setGuide} options={GUIDE_OPTIONS} />
+        <Tabs label="안내 진하기" size="sm" value={guide} onChange={setGuide} options={GUIDE_OPTIONS} />
         <span className="text-xs text-muted">쓴 획 {strokeCount}</span>
       </div>
 

@@ -26,7 +26,7 @@ await p.waitForURL("**/dashboard");
 
 // --- 1. 따라쓰기 초기화 버튼 ---
 await p.goto(`${BASE}/kana`, { waitUntil: "networkidle" });
-await p.getByRole("tab", { name: "따라쓰기" }).click();
+await p.getByRole("button", { name: "따라쓰기" }).click();
 await p.waitForTimeout(400);
 const box = await p.locator("canvas").boundingBox();
 await p.mouse.move(box.x + 50, box.y + 50);
@@ -54,7 +54,7 @@ if (!/쓴 획 0/.test(await body())) I("따라쓰기 초기화", "획 카운트�
 else L("획 카운트 0으로 복귀");
 
 // --- 2. 가나 진행도 쌓기 ---
-await p.getByRole("tab", { name: "표 보기" }).click();
+await p.getByRole("button", { name: "표 보기" }).click();
 await p.waitForTimeout(300);
 for (let i = 0; i < 3; i++) {
   await p.locator("button:has(span.jp)").nth(i).click();

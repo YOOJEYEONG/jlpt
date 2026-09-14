@@ -22,7 +22,7 @@ await p.getByRole("button", { name: /학습 시작하기/ }).click();
 await p.waitForURL("**/dashboard");
 
 await p.goto(`${BASE}/kana`, { waitUntil: "networkidle" });
-await p.getByRole("tab", { name: "따라쓰기" }).click();
+await p.getByRole("button", { name: "따라쓰기" }).click();
 await p.waitForTimeout(500);
 
 const canvas = p.locator("canvas");
@@ -77,7 +77,7 @@ const guideOn = await p.evaluate(() => {
   for (let i = 0; i < d.length; i += 4) if (d[i] > 150 && d[i] < 235 && Math.abs(d[i] - d[i + 2]) < 12) gray++;
   return gray;
 });
-await p.getByRole("tab", { name: "없이" }).click();
+await p.getByRole("button", { name: "없이" }).click();
 await p.waitForTimeout(400);
 const guideOff = await p.evaluate(() => {
   const c = document.querySelector("canvas");
@@ -102,7 +102,7 @@ if (!/쓴 획 0/.test(nextStroke)) I("글자 전환", `다음 글자인데 획�
 else L("다음 글자 전환 시 초기화");
 
 // 가타카나 전환
-await p.getByRole("tab", { name: "가타카나" }).click();
+await p.getByRole("button", { name: "가타카나" }).click();
 await p.waitForTimeout(400);
 if (!(await p.locator("canvas").isVisible())) I("가타카나 따라쓰기", "연습판이 사라짐");
 else L("가타카나 따라쓰기 전환");
@@ -110,7 +110,7 @@ else L("가타카나 따라쓰기 전환");
 // 모바일
 await p.setViewportSize({ width: 390, height: 844 });
 await p.goto(`${BASE}/kana`, { waitUntil: "networkidle" });
-await p.getByRole("tab", { name: "따라쓰기" }).click();
+await p.getByRole("button", { name: "따라쓰기" }).click();
 await p.waitForTimeout(400);
 const sw = await p.evaluate(() => document.documentElement.scrollWidth);
 if (sw > 391) I("모바일 가로넘침", `scrollWidth=${sw}`);

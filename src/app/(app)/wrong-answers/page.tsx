@@ -127,6 +127,7 @@ export default function WrongAnswersPage() {
       ) : (
         <>
           <Tabs
+            label="복습 상태"
             className="mb-4"
             value={filter}
             onChange={setFilter}
