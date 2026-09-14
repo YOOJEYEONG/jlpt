@@ -61,11 +61,11 @@ if (!/[ア-ン]/.test(kata)) I("가타카나 전환", `첫 글자=${kata}`);
 else L("가타카나 전환", kata.replace(/\n/g, " "));
 
 // 4. 연습 모드
-await p.getByRole("tab", { name: "연습하기" }).click();
+await p.getByRole("tab", { name: "소리 맞히기" }).click();
 await p.waitForTimeout(400);
 const quizBody = await body();
 if (!/이 글자의 소리는\?/.test(quizBody)) I("카나 연습", "연습 화면이 뜨지 않음");
-else L("카나 연습 모드 진입");
+else L("카나 소리 맞히기 진입");
 await p.locator("ul.grid > li > button").first().click();
 await p.waitForTimeout(300);
 if (!(await p.getByRole("button", { name: "다음 글자" }).isVisible().catch(() => false))) I("카나 연습", "정답 확인 후 다음 버튼 없음");

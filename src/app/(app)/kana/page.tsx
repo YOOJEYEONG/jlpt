@@ -13,10 +13,11 @@ import { useAppStore, useCurrentUser } from "@/lib/store";
 import type { KanaChar, KanaRow } from "@/lib/types";
 import { cn, percent, seededShuffle, speakJapanese } from "@/lib/utils";
 import { SpeakButton, VoiceNotice } from "@/components/study/speak-button";
+import { KanaTracer } from "@/components/study/kana-tracer";
 
 type Script = "hiragana" | "katakana";
 type Group = "basic" | "dakuten" | "yoon";
-type Mode = "table" | "practice";
+type Mode = "table" | "trace" | "practice";
 
 const GROUP_LABEL: Record<Group, string> = {
   basic: "기본 46자",
@@ -43,6 +44,7 @@ export default function KanaPage() {
   const [mode, setMode] = useState<Mode>("table");
   const [selected, setSelected] = useState<KanaChar | null>(null);
 
+  const [traceIndex, setTraceIndex] = useState(0);
   const [quizIndex, setQuizIndex] = useState(0);
   const [chosen, setChosen] = useState<number | null>(null);
   const [score, setScore] = useState({ correct: 0, wrong: 0 });
@@ -57,6 +59,7 @@ export default function KanaPage() {
   const learned = KANA_CHARS.filter((item) => progress[item.id] && progress[item.id].status !== "new").length;
   const groupLearned = groupChars.filter((item) => progress[item.id] && progress[item.id].status !== "new").length;
 
+  const traceChar = groupChars[traceIndex % Math.max(1, groupChars.length)];
   const current = quizList[quizIndex % Math.max(1, quizList.length)];
   const quiz = current ? makeChoices(current, groupChars) : null;
 
@@ -83,7 +86,7 @@ export default function KanaPage() {
       <VoiceNotice />
       <PageHeader
         title="히라가나 · 가타카나"
-        description="일본어의 출발점입니다. 표에서 글자를 눌러 소리와 예시 단어를 확인하고, 연습 모드로 외웠는지 확인하세요."
+        description="일본어의 출발점입니다. 표에서 소리를 익히고, 따라쓰기로 손에 익힌 뒤, 소리 맞히기로 확인하세요."
       />
 
       <div className="mb-4 space-y-3">
@@ -99,10 +102,11 @@ export default function KanaPage() {
           <Tabs
             size="sm"
             value={mode}
-            onChange={(value) => { setMode(value); setChosen(null); setQuizIndex(0); setScore({ correct: 0, wrong: 0 }); }}
+            onChange={(value) => { setMode(value); setChosen(null); setQuizIndex(0); setTraceIndex(0); setScore({ correct: 0, wrong: 0 }); }}
             options={[
               { value: "table" as Mode, label: "표 보기" },
-              { value: "practice" as Mode, label: "연습하기" },
+              { value: "trace" as Mode, label: "따라쓰기" },
+              { value: "practice" as Mode, label: "소리 맞히기" },
             ]}
           />
         </div>
@@ -110,7 +114,7 @@ export default function KanaPage() {
         <Tabs
           size="sm"
           value={group}
-          onChange={(value) => { setGroup(value); setSelected(null); setChosen(null); setQuizIndex(0); }}
+          onChange={(value) => { setGroup(value); setSelected(null); setChosen(null); setQuizIndex(0); setTraceIndex(0); }}
           options={(Object.keys(GROUP_LABEL) as Group[]).map((key) => ({ value: key, label: GROUP_LABEL[key] }))}
         />
 
@@ -223,6 +227,91 @@ export default function KanaPage() {
                 <p className="mt-3 text-sm text-muted">왼쪽 표에서 글자를 눌러 보세요.</p>
               </div>
             )}
+          </Card>
+        </div>
+      ) : mode === "trace" && traceChar ? (
+        <div className="grid gap-4 lg:grid-cols-[1fr_300px]">
+          <Card>
+            <div className="flex flex-wrap items-center justify-between gap-2">
+              <Badge tone="primary">
+                {GROUP_LABEL[group]} · {traceIndex + 1} / {groupChars.length}
+              </Badge>
+              <div className="flex items-center gap-2">
+                <span className="jp text-sm text-muted">
+                  {traceChar.romaji} · {traceChar.korean}
+                </span>
+                <SpeakButton label="소리 듣기" text={traceChar.example?.word ?? traceChar.hiragana} />
+              </div>
+            </div>
+
+            <KanaTracer
+              key={`${script}-${traceChar.id}`}
+              character={script === "hiragana" ? traceChar.hiragana : traceChar.katakana}
+              romaji={traceChar.romaji}
+            />
+
+            <div className="mt-4 grid grid-cols-3 gap-2">
+              <Button
+                variant="outline"
+                onClick={() => setTraceIndex((prev) => (prev - 1 + groupChars.length) % groupChars.length)}
+              >
+                이전
+              </Button>
+              <Button
+                className="bg-success hover:bg-[#12833c]"
+                onClick={() => {
+                  studyItem({
+                    itemId: traceChar.id,
+                    type: "kana",
+                    countKey: "kana",
+                    title: `${traceChar.hiragana} / ${traceChar.katakana} 쓰기`,
+                    correct: true,
+                    isReview: progress[traceChar.id]?.status === "learning",
+                  });
+                  setTraceIndex((prev) => (prev + 1) % groupChars.length);
+                }}
+              >
+                <Check className="h-4 w-4" /> 다 썼어요
+              </Button>
+              <Button
+                variant="outline"
+                onClick={() => setTraceIndex((prev) => (prev + 1) % groupChars.length)}
+              >
+                다음
+              </Button>
+            </div>
+          </Card>
+
+          <Card className="h-fit">
+            <CardTitle>쓰는 순서 요령</CardTitle>
+            <ul className="mt-3 space-y-2 text-xs leading-relaxed text-muted">
+              <li>· 왼쪽에서 오른쪽으로, 위에서 아래로 씁니다.</li>
+              <li>· 가로획을 먼저 긋고 세로획을 나중에 긋는 경우가 많습니다.</li>
+              <li>· 바깥을 먼저 만들고 안을 채웁니다.</li>
+              <li>· 글자가 격자 가운데에 오도록 크기를 맞춥니다.</li>
+            </ul>
+
+            <div className="mt-4 rounded-xl bg-background p-3 text-center">
+              <p className="jp text-4xl font-bold">
+                {script === "hiragana" ? traceChar.hiragana : traceChar.katakana}
+              </p>
+              <p className="mt-1 text-xs text-muted">
+                {script === "hiragana" ? "히라가나" : "가타카나"} · {traceChar.romaji}
+              </p>
+              {traceChar.example ? (
+                <p className="jp mt-2 text-sm">
+                  {traceChar.example.word}
+                  <span className="ml-1 text-xs text-muted">{traceChar.example.meaning}</span>
+                </p>
+              ) : null}
+            </div>
+
+            {traceChar.tip ? (
+              <p className="mt-3 flex gap-2 rounded-xl bg-accent-soft p-3 text-xs text-accent">
+                <Lightbulb className="h-4 w-4 shrink-0" />
+                {traceChar.tip}
+              </p>
+            ) : null}
           </Card>
         </div>
       ) : (

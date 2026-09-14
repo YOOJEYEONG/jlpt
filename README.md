@@ -115,6 +115,7 @@ QA_BASE=https://jlpt-mu.vercel.app npm run qa   # 배포본 점검
 - `tests/qa-persistence.mjs` — 저장 전에 새로고침해도 즐겨찾기·오답 기록이 남는지
 - `tests/qa-basics.mjs` — 가나 표·연습, 단어 학습 모드에서 뜻·읽기·예문 노출
 - `tests/qa-speech.mjs` — 발음 재생이 일본어 음성으로, 한자가 아닌 읽기로 나가는지
+- `tests/qa-trace.mjs` — 따라쓰기 판에 마우스로 실제 획이 그려지는지(캔버스 픽셀 비교)
 
 콘텐츠 JSON 무결성 검사는 브라우저 없이 바로 돌릴 수 있습니다.
 
