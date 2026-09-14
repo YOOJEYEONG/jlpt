@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { Check, Star, Volume2 } from "lucide-react";
+import { Check, Star } from "lucide-react";
 import { Badge, LevelBadge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardTitle } from "@/components/ui/card";
@@ -12,7 +12,8 @@ import { PageHeader } from "@/components/layout/page-header";
 import { KANJI } from "@/lib/content";
 import { useAppStore, useCurrentUser } from "@/lib/store";
 import { JLPT_LEVELS, LEVEL_LABEL, type JlptLevel } from "@/lib/types";
-import { cn, percent, speakJapanese } from "@/lib/utils";
+import { cn, percent } from "@/lib/utils";
+import { SpeakButton, VoiceNotice } from "@/components/study/speak-button";
 
 type LevelFilter = JlptLevel | "ALL";
 
@@ -58,6 +59,7 @@ export default function KanjiPage() {
 
   return (
     <div className="animate-fade-up">
+      <VoiceNotice />
       <PageHeader title="한자 학습" description="음독 · 훈독 · 대표 단어 · 예문을 함께 익힙니다." />
 
       <div className="mb-4 space-y-3">
@@ -131,12 +133,12 @@ export default function KanjiPage() {
               <div>
                 <p className="text-lg font-bold">{selected.meaning}</p>
                 <p className="mt-1 text-xs text-muted">총 {selected.strokes}획</p>
-                <button
-                  onClick={() => speakJapanese(selected.words[0]?.word ?? selected.character)}
-                  className="mt-2 inline-flex items-center gap-1 text-xs font-semibold text-primary"
-                >
-                  <Volume2 className="h-3.5 w-3.5" /> 대표 단어 듣기
-                </button>
+                <SpeakButton
+                  className="mt-2"
+                  variant="text"
+                  label="대표 단어 듣기"
+                  text={selected.words[0]?.reading ?? selected.onyomi[0] ?? ""}
+                />
               </div>
             </div>
 

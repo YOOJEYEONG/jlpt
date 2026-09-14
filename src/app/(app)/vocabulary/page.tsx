@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { Check, RotateCcw, Star, Volume2, X } from "lucide-react";
+import { Check, RotateCcw, Star, X } from "lucide-react";
 import { Badge, LevelBadge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -13,7 +13,8 @@ import { VOCABULARY } from "@/lib/content";
 import { srsLabel } from "@/lib/srs";
 import { useAppStore, useCurrentUser } from "@/lib/store";
 import { JLPT_LEVELS, LEVEL_LABEL, type JlptLevel } from "@/lib/types";
-import { cn, percent, speakJapanese } from "@/lib/utils";
+import { cn, percent } from "@/lib/utils";
+import { SpeakButton, VoiceNotice } from "@/components/study/speak-button";
 
 type LevelFilter = JlptLevel | "ALL";
 type Mode = "learn" | "card" | "list";
@@ -66,6 +67,7 @@ export default function VocabularyPage() {
 
   return (
     <div className="animate-fade-up">
+      <VoiceNotice />
       <PageHeader
         title="단어 학습"
         description={
@@ -121,13 +123,7 @@ export default function VocabularyPage() {
             <div className="mb-4 flex items-center justify-between">
               <LevelBadge level={current.level} />
               <div className="flex items-center gap-1">
-                <button
-                  aria-label="발음 듣기"
-                  onClick={() => speakJapanese(current.word)}
-                  className="rounded-lg p-2 text-muted hover:bg-background hover:text-primary"
-                >
-                  <Volume2 className="h-4 w-4" />
-                </button>
+                <SpeakButton text={current.reading} />
                 <button
                   aria-label="즐겨찾기"
                   onClick={() => toggleFavorite(current.id)}
@@ -153,12 +149,7 @@ export default function VocabularyPage() {
               <p className="jp mt-1 text-base">{current.example}</p>
               <p className="jp mt-0.5 text-xs text-muted">{current.exampleReading}</p>
               <p className="mt-1.5 text-sm text-muted">{current.exampleTranslation}</p>
-              <button
-                onClick={() => speakJapanese(current.example)}
-                className="mt-2 inline-flex items-center gap-1 text-xs font-semibold text-primary"
-              >
-                <Volume2 className="h-3.5 w-3.5" /> 예문 듣기
-              </button>
+              <SpeakButton className="mt-2" variant="text" label="예문 듣기" text={current.exampleReading} />
             </div>
 
             <div className="mt-5 grid grid-cols-2 gap-2">
@@ -195,13 +186,7 @@ export default function VocabularyPage() {
             <div className="mb-4 flex items-center justify-between">
               <LevelBadge level={current.level} />
               <div className="flex items-center gap-1">
-                <button
-                  aria-label="발음 듣기"
-                  onClick={() => speakJapanese(current.word)}
-                  className="rounded-lg p-2 text-muted hover:bg-background hover:text-primary"
-                >
-                  <Volume2 className="h-4 w-4" />
-                </button>
+                <SpeakButton text={current.reading} />
                 <button
                   aria-label="즐겨찾기"
                   onClick={() => toggleFavorite(current.id)}
@@ -229,12 +214,7 @@ export default function VocabularyPage() {
                   <p className="jp mt-1 text-base">{current.example}</p>
                   <p className="jp mt-0.5 text-xs text-muted">{current.exampleReading}</p>
                   <p className="mt-1.5 text-sm text-muted">{current.exampleTranslation}</p>
-                  <button
-                    onClick={() => speakJapanese(current.example)}
-                    className="mt-2 inline-flex items-center gap-1 text-xs font-semibold text-primary"
-                  >
-                    <Volume2 className="h-3.5 w-3.5" /> 예문 듣기
-                  </button>
+                  <SpeakButton className="mt-2" variant="text" label="예문 듣기" text={current.exampleReading} />
                 </div>
                 {progress[current.id] ? (
                   <p className="text-center text-xs text-muted">
@@ -307,13 +287,7 @@ export default function VocabularyPage() {
                     ) : (
                       <Badge>미학습</Badge>
                     )}
-                    <button
-                      aria-label="발음 듣기"
-                      onClick={() => speakJapanese(item.word)}
-                      className="rounded-lg p-2 text-muted hover:text-primary"
-                    >
-                      <Volume2 className="h-4 w-4" />
-                    </button>
+                    <SpeakButton text={item.reading} />
                     <button
                       aria-label="즐겨찾기"
                       onClick={() => toggleFavorite(item.id)}

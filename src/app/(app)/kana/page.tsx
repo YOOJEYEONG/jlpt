@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { Check, Lightbulb, Volume2, X } from "lucide-react";
+import { Check, Lightbulb, X } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardTitle } from "@/components/ui/card";
@@ -12,6 +12,7 @@ import { KANA, KANA_CHARS } from "@/lib/content";
 import { useAppStore, useCurrentUser } from "@/lib/store";
 import type { KanaChar, KanaRow } from "@/lib/types";
 import { cn, percent, seededShuffle, speakJapanese } from "@/lib/utils";
+import { SpeakButton, VoiceNotice } from "@/components/study/speak-button";
 
 type Script = "hiragana" | "katakana";
 type Group = "basic" | "dakuten" | "yoon";
@@ -79,6 +80,7 @@ export default function KanaPage() {
 
   return (
     <div className="animate-fade-up">
+      <VoiceNotice />
       <PageHeader
         title="히라가나 · 가타카나"
         description="일본어의 출발점입니다. 표에서 글자를 눌러 소리와 예시 단어를 확인하고, 연습 모드로 외웠는지 확인하세요."
@@ -166,13 +168,7 @@ export default function KanaPage() {
               <>
                 <div className="flex items-start justify-between">
                   <Badge tone="primary">{selected.romaji}</Badge>
-                  <button
-                    aria-label="소리 듣기"
-                    onClick={() => speakJapanese(selected.example?.word ?? selected.hiragana)}
-                    className="rounded-lg p-2 text-muted hover:text-primary"
-                  >
-                    <Volume2 className="h-4 w-4" />
-                  </button>
+                  <SpeakButton label="소리 듣기" text={selected.example?.word ?? selected.hiragana} />
                 </div>
 
                 <div className="mt-3 grid grid-cols-2 gap-2 text-center">

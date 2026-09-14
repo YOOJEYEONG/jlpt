@@ -9,6 +9,8 @@ export interface ReviewItem {
   countKey: keyof Omit<DailyCounts, "seconds">;
   prompt: string;
   subPrompt?: string;
+  /** 발음 재생용 かな. 한자를 그대로 읽히면 엉뚱한 음이 나올 수 있습니다. */
+  speech: string;
   title: string;
   question: QuizQuestion;
 }
@@ -39,6 +41,7 @@ export function buildReviewItems(dueIds: string[]): ReviewItem[] {
         title: `${kana.hiragana} / ${kana.katakana}`,
         prompt: kana.hiragana,
         subPrompt: "가나",
+        speech: kana.example?.word ?? kana.hiragana,
         question: {
           id: `review-${id}`,
           question: "이 글자의 소리는 무엇입니까?",
@@ -61,6 +64,7 @@ export function buildReviewItems(dueIds: string[]): ReviewItem[] {
         title: `${vocabulary.word} (${vocabulary.reading})`,
         prompt: vocabulary.word,
         subPrompt: vocabulary.partOfSpeech,
+        speech: vocabulary.reading,
         question: {
           id: `review-${id}`,
           question: "이 단어의 뜻은 무엇입니까?",
@@ -83,6 +87,7 @@ export function buildReviewItems(dueIds: string[]): ReviewItem[] {
         title: `${kanji.character} (${kanji.meaning})`,
         prompt: kanji.character,
         subPrompt: `${kanji.strokes}획`,
+        speech: kanji.words[0]?.reading ?? kanji.character,
         question: {
           id: `review-${id}`,
           question: "이 한자의 뜻은 무엇입니까?",
@@ -105,6 +110,7 @@ export function buildReviewItems(dueIds: string[]): ReviewItem[] {
         title: grammar.title,
         prompt: grammar.title,
         subPrompt: grammar.connection,
+        speech: grammar.examples[0]?.reading ?? grammar.title,
         question: {
           id: `review-${id}`,
           question: "이 문법의 의미는 무엇입니까?",
@@ -127,6 +133,7 @@ export function buildReviewItems(dueIds: string[]): ReviewItem[] {
         title: phrase.jp,
         prompt: phrase.jp,
         subPrompt: phrase.category,
+        speech: phrase.reading,
         question: {
           id: `review-${id}`,
           question: "이 표현의 뜻은 무엇입니까?",

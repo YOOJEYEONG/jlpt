@@ -14,7 +14,8 @@ import { findListening, findReading } from "@/lib/content";
 import { buildReviewItems, type ReviewItem } from "@/lib/review";
 import { SRS_INTERVALS } from "@/lib/srs";
 import { dueItemIds, useAppStore, useCurrentUser } from "@/lib/store";
-import { percent, speakJapanese } from "@/lib/utils";
+import { percent } from "@/lib/utils";
+import { SpeakButton } from "@/components/study/speak-button";
 
 export default function ReviewPage() {
   const user = useCurrentUser();
@@ -111,12 +112,7 @@ export default function ReviewPage() {
           <div className="text-center">
             <Badge tone="primary">{current.subPrompt}</Badge>
             <p className="jp mt-3 text-3xl font-bold sm:text-4xl">{current.prompt}</p>
-            <button
-              onClick={() => speakJapanese(current.prompt)}
-              className="mt-2 text-xs font-semibold text-primary"
-            >
-              발음 듣기
-            </button>
+            <SpeakButton className="mt-2" variant="text" label="발음 듣기" text={current.speech} />
           </div>
 
           <div className="mt-5">

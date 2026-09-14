@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { Check, Star, Volume2 } from "lucide-react";
+import { Check, Star } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -10,7 +10,8 @@ import { Tabs } from "@/components/ui/tabs";
 import { PageHeader } from "@/components/layout/page-header";
 import { BUSINESS_CATEGORIES, BUSINESS_PHRASES } from "@/lib/content";
 import { useAppStore, useCurrentUser } from "@/lib/store";
-import { cn, percent, speakJapanese } from "@/lib/utils";
+import { cn, percent } from "@/lib/utils";
+import { SpeakButton, VoiceNotice } from "@/components/study/speak-button";
 
 export default function BusinessJapanesePage() {
   const user = useCurrentUser();
@@ -34,6 +35,7 @@ export default function BusinessJapanesePage() {
 
   return (
     <div className="animate-fade-up">
+      <VoiceNotice />
       <PageHeader
         title="비즈니스 일본어"
         description="일본 회사에서 실제로 쓰는 표현입니다. 존경어 · 겸양어 · 전화 · 메일 · 회의 상황별로 익히세요."
@@ -54,13 +56,7 @@ export default function BusinessJapanesePage() {
                 <div className="flex items-start justify-between gap-2">
                   <Badge tone="primary">{item.category}</Badge>
                   <div className="flex items-center gap-1">
-                    <button
-                      aria-label="발음 듣기"
-                      onClick={() => speakJapanese(item.jp)}
-                      className="rounded-lg p-1.5 text-muted hover:text-primary"
-                    >
-                      <Volume2 className="h-4 w-4" />
-                    </button>
+                    <SpeakButton text={item.reading} className="p-1.5" />
                     <button
                       aria-label="즐겨찾기"
                       onClick={() => toggleFavorite(item.id)}

@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { Pause, Play, RotateCcw } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { cn, findJapaneseVoice } from "@/lib/utils";
 
 const RATES = [0.7, 0.85, 1, 1.15];
 
@@ -22,6 +22,7 @@ export function AudioPlayer({
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [playing, setPlaying] = useState(false);
   const [rate, setRate] = useState(1);
+  const [voiceMissing, setVoiceMissing] = useState(false);
 
   useEffect(() => {
     return () => {
@@ -48,11 +49,19 @@ export function AudioPlayer({
     }
     if (typeof window === "undefined" || !("speechSynthesis" in window)) return;
 
+    // 일본어 음성이 없으면 한자를 한국어 한자음으로 읽어 버리므로 재생하지 않습니다.
+    const voice = findJapaneseVoice();
+    if (!voice) {
+      setVoiceMissing(true);
+      return;
+    }
+
     window.speechSynthesis.cancel();
     setPlaying(true);
     lines.forEach((line, index) => {
       const utterance = new SpeechSynthesisUtterance(line);
-      utterance.lang = "ja-JP";
+      utterance.voice = voice;
+      utterance.lang = voice.lang;
       utterance.rate = rate * 0.95;
       if (index === lines.length - 1) utterance.onend = () => setPlaying(false);
       window.speechSynthesis.speak(utterance);
@@ -102,6 +111,13 @@ export function AudioPlayer({
 
         <span className="ml-auto text-xs text-muted">약 {durationSec}초</span>
       </div>
+
+      {voiceMissing ? (
+        <p className="mt-3 rounded-lg bg-accent-soft px-3 py-2 text-[11px] leading-relaxed text-accent">
+          이 기기에 일본어 음성이 설치되어 있지 않아 재생할 수 없습니다. 아래 스크립트로 학습하거나,
+          시스템 설정에서 일본어 음성을 추가해 주세요.
+        </p>
+      ) : null}
 
       {!audioUrl ? (
         <p className="mt-3 text-[11px] leading-relaxed text-muted">

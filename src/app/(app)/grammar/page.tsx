@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { BookMarked, Check, ChevronDown, Star, Volume2 } from "lucide-react";
+import { BookMarked, Check, ChevronDown, Star } from "lucide-react";
 import { Badge, LevelBadge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -12,7 +12,8 @@ import { PageHeader } from "@/components/layout/page-header";
 import { GRAMMAR } from "@/lib/content";
 import { useAppStore, useCurrentUser } from "@/lib/store";
 import { JLPT_LEVELS, LEVEL_LABEL, type JlptLevel } from "@/lib/types";
-import { cn, percent, speakJapanese } from "@/lib/utils";
+import { cn, percent } from "@/lib/utils";
+import { SpeakButton } from "@/components/study/speak-button";
 
 type LevelFilter = JlptLevel | "ALL";
 
@@ -120,13 +121,7 @@ export default function GrammarPage() {
                             <li key={example.jp} className="rounded-xl bg-primary-soft p-3">
                               <div className="flex items-start justify-between gap-2">
                                 <p className="jp text-base font-semibold">{example.jp}</p>
-                                <button
-                                  aria-label="예문 듣기"
-                                  onClick={() => speakJapanese(example.jp)}
-                                  className="shrink-0 rounded-lg p-1 text-primary"
-                                >
-                                  <Volume2 className="h-4 w-4" />
-                                </button>
+                                <SpeakButton label="예문 듣기" text={example.reading} className="shrink-0" />
                               </div>
                               <p className="jp mt-0.5 text-xs text-primary/70">{example.reading}</p>
                               <p className="mt-1 text-sm text-foreground/80">{example.ko}</p>

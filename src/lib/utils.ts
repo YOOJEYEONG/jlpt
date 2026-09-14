@@ -59,17 +59,50 @@ export function formatDuration(seconds: number): string {
   return `${m}분`;
 }
 
-/** Browser speech synthesis for Japanese text. Silently no-ops when unavailable. */
-export function speakJapanese(text: string, rate = 0.95): void {
-  if (typeof window === "undefined" || !("speechSynthesis" in window)) return;
+let voiceCache: SpeechSynthesisVoice[] = [];
+
+function refreshVoices(): SpeechSynthesisVoice[] {
+  if (typeof window === "undefined" || !("speechSynthesis" in window)) return [];
+  const voices = window.speechSynthesis.getVoices();
+  if (voices.length > 0) voiceCache = voices;
+  return voiceCache;
+}
+
+if (typeof window !== "undefined" && "speechSynthesis" in window) {
+  refreshVoices();
+  window.speechSynthesis.addEventListener?.("voiceschanged", () => refreshVoices());
+}
+
+/** 기기에 설치된 일본어 음성. 없으면 null. */
+export function findJapaneseVoice(): SpeechSynthesisVoice | null {
+  return refreshVoices().find((voice) => voice.lang?.toLowerCase().startsWith("ja")) ?? null;
+}
+
+export function hasJapaneseVoice(): boolean {
+  return findJapaneseVoice() !== null;
+}
+
+/**
+ * 일본어를 소리로 읽어 줍니다.
+ * 일본어 음성이 없는 기기에서 그냥 재생하면 한자를 한국어 한자음으로 읽어 버리므로
+ * (私 → "사"), 일본어 음성이 있을 때만 재생하고 없으면 false를 돌려줍니다.
+ * 읽기(かな)를 넘기면 한자 읽기를 잘못 고르는 일도 막을 수 있습니다.
+ */
+export function speakJapanese(text: string, rate = 0.95): boolean {
+  if (typeof window === "undefined" || !("speechSynthesis" in window)) return false;
+  const voice = findJapaneseVoice();
+  if (!voice || !text) return false;
+
   try {
     window.speechSynthesis.cancel();
     const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = "ja-JP";
+    utterance.voice = voice;
+    utterance.lang = voice.lang;
     utterance.rate = rate;
     window.speechSynthesis.speak(utterance);
+    return true;
   } catch {
-    // 음성 합성을 지원하지 않는 환경에서는 무시합니다.
+    return false;
   }
 }
 

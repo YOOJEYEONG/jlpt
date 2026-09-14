@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { Check, Eye, EyeOff, Volume2 } from "lucide-react";
+import { Check, Eye, EyeOff } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardTitle } from "@/components/ui/card";
@@ -11,7 +11,8 @@ import { Tabs } from "@/components/ui/tabs";
 import { PageHeader } from "@/components/layout/page-header";
 import { INTERVIEW_CATEGORIES, INTERVIEW_QUESTIONS } from "@/lib/content";
 import { useAppStore, useCurrentUser } from "@/lib/store";
-import { percent, speakJapanese } from "@/lib/utils";
+import { percent } from "@/lib/utils";
+import { SpeakButton, VoiceNotice } from "@/components/study/speak-button";
 
 export default function InterviewPage() {
   const user = useCurrentUser();
@@ -44,6 +45,7 @@ export default function InterviewPage() {
 
   return (
     <div className="animate-fade-up">
+      <VoiceNotice />
       <PageHeader
         title="일본 취업 면접"
         description="질문 → 모범 답변 → 해석 → 주요 표현 → 직접 답변 연습 순서로 준비합니다."
@@ -102,12 +104,7 @@ export default function InterviewPage() {
             <p className="jp mt-3 text-lg font-bold">{selected.questionJp}</p>
             <p className="jp mt-1 text-xs text-muted">{selected.questionReading}</p>
             <p className="mt-1.5 text-sm text-muted">{selected.questionKo}</p>
-            <button
-              onClick={() => speakJapanese(selected.questionJp)}
-              className="mt-2 inline-flex items-center gap-1 text-xs font-semibold text-primary"
-            >
-              <Volume2 className="h-3.5 w-3.5" /> 질문 듣기
-            </button>
+            <SpeakButton className="mt-2" variant="text" label="질문 듣기" text={selected.questionReading} />
 
             <div className="mt-5">
               <p className="mb-1.5 text-sm font-bold">내 답변 연습</p>
@@ -123,9 +120,7 @@ export default function InterviewPage() {
                   {showAnswer ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
                   {showAnswer ? "모범 답변 숨기기" : "모범 답변 보기"}
                 </Button>
-                <Button variant="outline" size="sm" onClick={() => speakJapanese(draft || selected.sampleAnswerJp)}>
-                  <Volume2 className="h-4 w-4" /> 소리 내어 듣기
-                </Button>
+                <SpeakButton variant="text" label="모범 답변 듣기" text={selected.sampleAnswerJp} />
               </div>
             </div>
 
