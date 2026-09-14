@@ -11,6 +11,7 @@ import type {
   MockTest,
   ReadingPassage,
   RoadmapStage,
+  StudyType,
   Vocabulary,
 } from "./types";
 
@@ -129,6 +130,22 @@ export function findListening(id: string) {
 export function findMockTest(id: string) {
   return MOCK_TESTS.find((item) => item.id === id);
 }
+
+/** 영역별 항목 id 묶음. 진행도를 부분 초기화할 때 씁니다. */
+export const AREA_IDS: { key: string; label: string; ids: string[]; types: StudyType[] }[] = [
+  { key: "kana", label: "히라가나 · 가타카나", ids: KANA_CHARS.map((item) => item.id), types: ["kana"] },
+  { key: "vocabulary", label: "단어", ids: VOCABULARY.map((item) => item.id), types: ["vocabulary"] },
+  { key: "grammar", label: "문법", ids: GRAMMAR.map((item) => item.id), types: ["grammar"] },
+  { key: "kanji", label: "한자", ids: KANJI.map((item) => item.id), types: ["kanji"] },
+  { key: "reading", label: "독해", ids: READINGS.map((item) => item.id), types: ["reading"] },
+  { key: "listening", label: "청해", ids: LISTENINGS.map((item) => item.id), types: ["listening"] },
+  {
+    key: "job",
+    label: "비즈니스 · 면접",
+    ids: [...BUSINESS_PHRASES.map((item) => item.id), ...INTERVIEW_QUESTIONS.map((item) => item.id)],
+    types: ["business", "interview"],
+  },
+];
 
 /** 콘텐츠 총량 — 진도율 계산의 분모로 사용합니다. */
 export const CONTENT_TOTALS = {

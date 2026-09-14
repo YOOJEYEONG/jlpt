@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { Check, Lightbulb, X } from "lucide-react";
+import { Check, Lightbulb, RotateCcw, X } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardTitle } from "@/components/ui/card";
@@ -38,6 +38,8 @@ function makeChoices(target: KanaChar, pool: KanaChar[]) {
 export default function KanaPage() {
   const user = useCurrentUser();
   const studyItem = useAppStore((state) => state.studyItem);
+  const clearProgress = useAppStore((state) => state.clearProgress);
+  const [confirmReset, setConfirmReset] = useState(false);
 
   const [script, setScript] = useState<Script>("hiragana");
   const [group, setGroup] = useState<Group>("basic");
@@ -119,6 +121,36 @@ export default function KanaPage() {
         />
 
         <Progress value={percent(learned, KANA_CHARS.length)} label={`외운 글자 ${learned} / ${KANA_CHARS.length}`} />
+
+        {learned > 0 ? (
+          <div className="flex justify-end">
+            {confirmReset ? (
+              <span className="flex items-center gap-2">
+                <span className="text-xs text-muted">외운 글자 {learned}자를 모두 지웁니다.</span>
+                <Button
+                  size="sm"
+                  variant="danger"
+                  onClick={() => {
+                    clearProgress(KANA_CHARS.map((item) => item.id), ["kana"]);
+                    setConfirmReset(false);
+                  }}
+                >
+                  정말 지웁니다
+                </Button>
+                <Button size="sm" variant="ghost" onClick={() => setConfirmReset(false)}>
+                  취소
+                </Button>
+              </span>
+            ) : (
+              <button
+                onClick={() => setConfirmReset(true)}
+                className="inline-flex items-center gap-1 text-xs font-semibold text-muted hover:text-danger"
+              >
+                <RotateCcw className="h-3.5 w-3.5" /> 가나 진행도 초기화
+              </button>
+            )}
+          </div>
+        ) : null}
       </div>
 
       {mode === "table" ? (

@@ -2,11 +2,12 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { LogOut, Save, Trash2 } from "lucide-react";
+import { LogOut, RotateCcw, Save, Trash2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardTitle } from "@/components/ui/card";
 import { Input, Label, Select } from "@/components/ui/field";
 import { PageHeader } from "@/components/layout/page-header";
+import { AREA_IDS } from "@/lib/content";
 import { DEFAULT_DAILY_GOAL, useAppStore, useCurrentUser, type DailyGoal } from "@/lib/store";
 import { cancelPendingSync, flushSync } from "@/lib/sync";
 import { JLPT_LEVELS, LEVEL_LABEL, type JlptLevel, type JobGoal } from "@/lib/types";
@@ -27,6 +28,7 @@ export default function SettingsPage() {
   const user = useCurrentUser();
   const updateSettings = useAppStore((state) => state.updateSettings);
   const resetProgress = useAppStore((state) => state.resetProgress);
+  const clearProgress = useAppStore((state) => state.clearProgress);
   const signOut = useAppStore((state) => state.signOut);
 
   const [currentLevel, setCurrentLevel] = useState<JlptLevel>(user?.data.currentLevel ?? "N5");
@@ -35,6 +37,7 @@ export default function SettingsPage() {
   const [dailyGoal, setDailyGoal] = useState<DailyGoal>(user?.data.dailyGoal ?? DEFAULT_DAILY_GOAL);
   const [saved, setSaved] = useState(false);
   const [confirmReset, setConfirmReset] = useState(false);
+  const [confirmArea, setConfirmArea] = useState<string | null>(null);
 
   if (!user) return null;
 
@@ -132,9 +135,63 @@ export default function SettingsPage() {
       </Card>
 
       <Card className="mt-3">
+        <CardTitle>진행도 초기화</CardTitle>
+        <p className="mt-1 text-sm text-muted">
+          영역별로 학습 기록만 지웁니다. 계정과 목표 설정, 연속 학습일은 그대로 남습니다.
+        </p>
+        <ul className="mt-4 space-y-2">
+          {AREA_IDS.map((area) => {
+            const studied = area.ids.filter(
+              (id) => user.data.progress[id] && user.data.progress[id].status !== "new",
+            ).length;
+            const confirming = confirmArea === area.key;
+            return (
+              <li
+                key={area.key}
+                className="flex flex-wrap items-center justify-between gap-2 rounded-xl bg-background px-3 py-2"
+              >
+                <span className="text-sm font-semibold">
+                  {area.label}
+                  <span className="ml-2 text-xs font-medium text-muted">
+                    {studied} / {area.ids.length}
+                  </span>
+                </span>
+                {confirming ? (
+                  <span className="flex gap-2">
+                    <Button
+                      size="sm"
+                      variant="danger"
+                      onClick={() => {
+                        clearProgress(area.ids, area.types);
+                        setConfirmArea(null);
+                      }}
+                    >
+                      정말 지웁니다
+                    </Button>
+                    <Button size="sm" variant="ghost" onClick={() => setConfirmArea(null)}>
+                      취소
+                    </Button>
+                  </span>
+                ) : (
+                  <Button
+                    size="sm"
+                    variant="outline"
+                    disabled={studied === 0}
+                    onClick={() => setConfirmArea(area.key)}
+                  >
+                    <RotateCcw className="h-3.5 w-3.5" /> 초기화
+                  </Button>
+                )}
+              </li>
+            );
+          })}
+        </ul>
+      </Card>
+
+      <Card className="mt-3">
         <CardTitle>데이터</CardTitle>
         <p className="mt-1 text-sm text-muted">
-          학습 기록은 이 브라우저에만 저장됩니다. 초기화하면 되돌릴 수 없습니다.
+          아래 전체 초기화는 학습 기록·오답노트·통계를 모두 지웁니다. 되돌릴 수 없습니다.
         </p>
         <div className="mt-4 flex flex-wrap gap-2">
           <Button

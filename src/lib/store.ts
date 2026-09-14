@@ -235,6 +235,8 @@ interface AppState {
   updateSettings: (input: Partial<Pick<UserData, "currentLevel" | "targetJlpt" | "jobGoal" | "dailyGoal">>) => void;
   saveLevelTest: (result: NonNullable<UserData["levelTestResult"]>) => void;
   resetProgress: () => void;
+  /** 특정 영역의 학습 기록만 지웁니다. types를 주면 해당 오답도 함께 지웁니다. */
+  clearProgress: (ids: string[], types?: StudyType[]) => void;
 
   studyItem: (input: {
     itemId: string;
@@ -443,6 +445,21 @@ export const useAppStore = create<AppState>()(
             dailyGoal: data.dailyGoal,
             onboarded: data.onboarded,
           })),
+        ),
+
+      clearProgress: (ids, types) =>
+        set((state) =>
+          applyToCurrent(state, (data) => {
+            const remove = new Set(ids);
+            const progress = Object.fromEntries(
+              Object.entries(data.progress).filter(([key]) => !remove.has(key)),
+            );
+            const wrongAnswers = types
+              ? data.wrongAnswers.filter((item) => !types.includes(item.type))
+              : data.wrongAnswers;
+            const history = data.history.filter((item) => !remove.has(item.targetId));
+            return { ...data, progress, wrongAnswers, history };
+          }),
         ),
 
       studyItem: ({ itemId, type, countKey, title, correct, isReview }) =>

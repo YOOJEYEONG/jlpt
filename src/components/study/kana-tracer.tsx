@@ -167,7 +167,7 @@ export function KanaTracer({
           <Undo2 className="h-4 w-4" /> 한 획 지우기
         </Button>
         <Button variant="outline" size="sm" onClick={clear} disabled={strokeCount === 0}>
-          <Eraser className="h-4 w-4" /> 전부 지우기
+          <Eraser className="h-4 w-4" /> 초기화
         </Button>
       </div>
 
